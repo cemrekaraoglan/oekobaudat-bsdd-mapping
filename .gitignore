@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Environment variables (IMPORTANT - keeps credentials private!)
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+test_*.py
+
+# Output files (optional - uncomment if you don't want to commit outputs)
+# Mapping/etim_oekobaudat_mappings.ttl
+# Mapping/etim_oekobaudat_mappings.json
+# Mapping/oekobaudat_owl.ttl

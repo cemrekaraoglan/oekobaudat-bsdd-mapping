@@ -1,0 +1,245 @@
+# baseURI: https://bsdd.buildingsmart.org/rdfs/def
+# prefix: bsdd
+
+@prefix bsdd: <https://bsdd.buildingsmart.org/def#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://bsdd.buildingsmart.org/rdfs/def>
+  a owl:Ontology ;
+.
+
+bsdd:Domain a rdfs:Class ;
+  skos:prefLabel "Domain"@en .
+
+bsdd:Organization a rdfs:Class ;
+  skos:prefLabel "Organization"@en .
+
+bsdd:Code a rdf:Property ;
+  skos:prefLabel "Code"@en ;
+  rdfs:range xsd:string .
+
+bsdd:Version a rdf:Property ;
+  skos:prefLabel "Version"@en ;
+  rdfs:range xsd:string .
+
+bsdd:Name a rdf:Property ;
+  skos:prefLabel "Name"@en ;
+  owl:equivalentProperty skos:prefLabel ;
+  rdfs:range xsd:string .
+
+bsdd:ReleaseDate a rdf:Property ;
+  skos:prefLabel "Release Date"@en ;
+  rdfs:range xsd:date .
+
+bsdd:Status a rdf:Property ;
+  skos:prefLabel "Status"@en ;
+  rdfs:range xsd:string .
+
+bsdd:MoreInfoUrl a rdf:Property ;
+  skos:prefLabel "More Info URL"@en ;
+  rdfs:range xsd:string .
+
+bsdd:NamespaceUri a rdf:Property ;
+  skos:prefLabel "Namespace URI"@en ;
+  rdfs:range xsd:anyURI .
+
+bsdd:LanguageIsoCode a rdf:Property ;
+  skos:prefLabel "Language ISO Code"@en ;
+  rdfs:range xsd:language .
+
+bsdd:License a rdf:Property ;
+  skos:prefLabel "License"@en ;
+  rdfs:range xsd:string .
+
+bsdd:LicenseUrl a rdf:Property ;
+  skos:prefLabel "License URL"@en ;
+  rdfs:range xsd:anyURI .
+
+bsdd:QualityAssuranceProcedure a rdf:Property ;
+  skos:prefLabel "Quality Assurance Procedure"@en ;
+  rdfs:range xsd:string .
+
+bsdd:QualityAssuranceProcedureUrl a rdf:Property ;
+  skos:prefLabel "Quality Assurance Procedure URL"@en ;
+  rdfs:range xsd:anyURI .
+
+bsdd:Classification a rdfs:Class ;
+  skos:prefLabel "Classification"@en .
+
+bsdd:UID a rdf:Property ;
+  skos:prefLabel "Unique Identification"@en ;
+  owl:equivalentProperty skos:notation ;
+  rdfs:range xsd:string .
+
+bsdd:Definition a rdf:Property ;
+  skos:prefLabel "Definition"@en ;
+  owl:equivalentProperty skos:definition ;
+  rdfs:range xsd:string .
+
+bsdd:Status a rdf:Property ;
+  skos:prefLabel "Status"@en ;
+  rdfs:range xsd:string .
+
+bsdd:ActivationDateUtc a rdf:Property ;
+  skos:prefLabel "Activation Date UTC"@en ;
+  rdfs:range xsd:date .
+
+bsdd:RevisionDateUtc a rdf:Property ;
+  skos:prefLabel "Revision Date UTC"@en ;
+  rdfs:range xsd:date .
+
+bsdd:VersionDateUtc a rdf:Property ;
+  skos:prefLabel "Version Date UTC"@en ;
+  rdfs:range xsd:date .
+
+bsdd:DeActivationDateUtc a rdf:Property ;
+  skos:prefLabel "Deactivation Date UTC"@en ;
+  rdfs:range xsd:date .
+
+bsdd:VersionNumber a rdf:Property ;
+  skos:prefLabel "Version Number"@en ;
+  rdfs:range xsd:integer .
+
+bsdd:RevisionNumber a rdf:Property ;
+  skos:prefLabel "Revision Number"@en ;
+  rdfs:range xsd:integer .
+
+bsdd:ReplacedObjectCode a rdf:Property ;
+  skos:prefLabel "Replaced Object Code"@en ;
+  rdfs:range xsd:string .
+
+bsdd:ReplacingObjectCode a rdf:Property ;
+  skos:prefLabel "Replacing Object Code"@en ;
+  rdfs:range xsd:string .
+
+bsdd:DeprecationExplanation a rdf:Property ;
+  skos:prefLabel "Deprecation Explanation"@en ;
+  rdfs:range xsd:string .
+
+bsdd:CreatorLanguageIsoCode a rdf:Property ;
+  skos:prefLabel "Creator Language ISO Code"@en ;
+  rdfs:range xsd:language .
+
+bsdd:VisualRepresentationUri a rdf:Property ;
+  skos:prefLabel "Visual Representation URI"@en ;
+  rdfs:range xsd:anyURI .
+
+bsdd:CountryOfUse a rdf:Property ;
+  skos:prefLabel "Country Of Use"@en ;
+  rdfs:range xsd:string .
+
+bsdd:SubdivisionOfUse a rdf:Property ;
+  skos:prefLabel "Subdivision Of Use"@en ;
+  rdfs:range xsd:string .
+
+bsdd:CountryOfOrigin a rdf:Property ;
+  skos:prefLabel "Country Of Origin"@en ;
+  rdfs:range xsd:string .
+
+bsdd:DocumentReference a rdf:Property ;
+  skos:prefLabel "Document Reference"@en ;
+  rdfs:range xsd:string .
+
+bsdd:ClassificationType a rdf:Property ;
+  skos:prefLabel "Classification Type"@en ;
+  rdfs:range xsd:string .
+        
+bsdd:ParentClassificationCode a rdf:Property ;
+  skos:prefLabel "Parent Classification Code"@en ;
+  rdfs:range xsd:string .
+
+bsdd:Synonym a rdf:Property ;
+  skos:prefLabel "Synonym"@en ;
+  rdfs:range xsd:string .
+
+bsdd:ClassificationRelation a rdfs:Class ;
+  skos:prefLabel "Classification Relation"@en .
+
+bsdd:RelationType a rdf:Property ;
+  skos:prefLabel "Relation Type"@en ;
+  rdfs:range xsd:string .
+
+bsdd:RelatedClassificationUri a rdf:Property ;
+  skos:prefLabel "Related Classification URI"@en ;
+  rdfs:range xsd:anyURI .
+
+bsdd:ClassificationProperty a rdfs:Class ;
+  skos:prefLabel "Classification Property"@en .
+
+bsdd:PropertyCode a rdf:Property ;
+  skos:prefLabel "Property Code"@en ;
+  rdfs:range xsd:string .
+
+bsdd:PropertySet a rdf:Property ;
+  skos:prefLabel "PropertySet"@en ;
+  rdfs:range xsd:string .
+
+bsdd:ExternalPropertyUri a rdf:Property ;
+  skos:prefLabel "External Property URI"@en ;
+  rdfs:range xsd:anyURI .
+
+bsdd:Unit a rdf:Property ;
+  skos:prefLabel "Unit"@en ;
+  rdfs:range xsd:string .
+
+bsdd:QudtUnit a rdf:Property ;
+  skos:prefLabel "QUDT Unit"@en ;
+  rdfs:range qudt:Unit .
+
+bsdd:SortNumber a rdf:Property ;
+  skos:prefLabel "Sort Number"@en ;
+  rdfs:range xsd:integer .
+
+bsdd:Symbol a rdf:Property ;
+  skos:prefLabel "Symbol"@en ;
+  rdfs:range xsd:string .
+
+bsdd:PropertyType a rdf:Property ;
+  skos:prefLabel "Property Type"@en ;
+  rdfs:range xsd:string .
+
+bsdd:PredefinedValue a rdf:Property ;
+  skos:prefLabel "Predefined Value"@en ;
+  rdfs:range xsd:string .
+
+bsdd:MinInclusive a rdf:Property ;
+  skos:prefLabel "Min Inclusive"@en ;
+  rdfs:range xsd:anySimpleType .
+
+bsdd:MaxInclusive a rdf:Property ;
+  skos:prefLabel "Max Inclusive"@en ;
+  rdfs:range xsd:anySimpleType .
+
+bsdd:MinExclusive a rdf:Property ;
+  skos:prefLabel "Min Exclusive"@en ;
+  rdfs:range xsd:anySimpleType .
+
+bsdd:MaxExclusive a rdf:Property ;
+  skos:prefLabel "Max Exclusive"@en ;
+  rdfs:range xsd:anySimpleType .
+
+bsdd:Pattern a rdf:Property ;
+  skos:prefLabel "Pattern"@en ;
+  rdfs:range xsd:string .
+
+bsdd:AllowedValue a rdfs:Class ;
+  skos:prefLabel "Allowed Value"@en .
+
+bsdd:Value a rdf:Property ;
+  skos:prefLabel "Value"@en ;
+  rdfs:range xsd:string .
+
+bsdd:Description a rdf:Property ;
+  skos:prefLabel "Description"@en ;
+  rdfs:range xsd:string.
+
+bsdd:Property a rdfs:Class ;
+  skos:prefLabel "Property"@en .
+  
+bsdd:Material a rdfs:Class ;
+  skos:prefLabel "Material"@en .

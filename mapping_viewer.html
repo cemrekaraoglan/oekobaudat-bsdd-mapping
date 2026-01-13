@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bsDD to Ökobaudat Mapping Viewer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+        
+        .controls {
+            padding: 20px 30px;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .control-group label {
+            font-weight: 600;
+            color: #495057;
+        }
+        
+        input[type="text"], input[type="file"], select {
+            padding: 8px 12px;
+            border: 2px solid #dee2e6;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="text"]:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        button {
+            padding: 8px 20px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        button:hover {
+            background: #5568d3;
+        }
+        
+        .stats {
+            padding: 20px 30px;
+            background: #f8f9fa;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .stat-card .number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+        
+        .stat-card .label {
+            color: #6c757d;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .mappings {
+            padding: 30px;
+        }
+        
+        .mapping-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .mapping-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mapping-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 15px;
+        }
+        
+        .bsdd-side, .oeko-side {
+            flex: 1;
+        }
+        
+        .arrow {
+            font-size: 2em;
+            color: #667eea;
+            margin: 0 20px;
+        }
+        
+        .class-name {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 5px;
+        }
+        
+        .class-code {
+            color: #6c757d;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .class-definition {
+            color: #495057;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        
+        .category-path {
+            color: #667eea;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        
+        .match-info {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .badge-exact {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .badge-close {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .badge-related {
+            background: #cce5ff;
+            color: #004085;
+        }
+        
+        .badge-none {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .confidence {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .confidence-bar {
+            width: 200px;
+            height: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transition: width 0.3s;
+        }
+        
+        .no-data {
+            text-align: center;
+            padding: 60px 20px;
+            color: #6c757d;
+        }
+        
+        .no-data h2 {
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .mapping-header {
+                flex-direction: column;
+            }
+            
+            .arrow {
+                transform: rotate(90deg);
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔗 bsDD to Ökobaudat Mapping Viewer</h1>
+            <p>Semantic Mappings between bsDD Classifications and Ökobaudat Categories</p>
+        </header>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="fileInput">Load JSON:</label>
+                <input type="file" id="fileInput" accept=".json">
+            </div>
+            
+            <div class="control-group">
+                <label for="searchInput">Search:</label>
+                <input type="text" id="searchInput" placeholder="Search by name...">
+            </div>
+            
+            <div class="control-group">
+                <label for="matchFilter">Filter by match type:</label>
+                <select id="matchFilter">
+                    <option value="all">All</option>
+                    <option value="exactMatch">Exact Match</option>
+                    <option value="closeMatch">Close Match</option>
+                    <option value="relatedMatch">Related Match</option>
+                    <option value="noMatch">No Match</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="sortSelect">Sort by:</label>
+                <select id="sortSelect">
+                    <option value="confidence-desc">Confidence (High to Low)</option>
+                    <option value="confidence-asc">Confidence (Low to High)</option>
+                    <option value="name-asc">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                </select>
+            </div>
+            
+            <button onclick="exportFiltered()">Export Filtered</button>
+        </div>
+        
+        <div class="stats" id="stats">
+            <div class="stat-card">
+                <div class="number" id="totalCount">0</div>
+                <div class="label">Total Mappings</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="exactCount">0</div>
+                <div class="label">Exact Matches</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="closeCount">0</div>
+                <div class="label">Close Matches</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="relatedCount">0</div>
+                <div class="label">Related Matches</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="avgConfidence">0.0</div>
+                <div class="label">Avg Confidence</div>
+            </div>
+        </div>
+        
+        <div class="mappings" id="mappings">
+            <div class="no-data">
+                <h2>No data loaded</h2>
+                <p>Please load a JSON mapping file using the file input above.</p>
+                <p style="margin-top: 10px;">Generate mappings using: <code>python bsdd_oekobaudat_mapper.py</code></p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let allMappings = [];
+        let filteredMappings = [];
+        
+        document.getElementById('fileInput').addEventListener('change', loadFile);
+        document.getElementById('searchInput').addEventListener('input', applyFilters);
+        document.getElementById('matchFilter').addEventListener('change', applyFilters);
+        document.getElementById('sortSelect').addEventListener('change', applyFilters);
+        
+        function loadFile(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    allMappings = JSON.parse(e.target.result);
+                    applyFilters();
+                } catch (error) {
+                    alert('Error parsing JSON file: ' + error.message);
+                }
+            };
+            reader.readAsText(file);
+        }
+        
+        function applyFilters() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const matchType = document.getElementById('matchFilter').value;
+            
+            filteredMappings = allMappings.filter(mapping => {
+                const matchesSearch = searchTerm === '' || 
+                    mapping.bsdd.name.toLowerCase().includes(searchTerm) ||
+                    mapping.oekobaudat.name.toLowerCase().includes(searchTerm);
+                
+                const matchesType = matchType === 'all' || mapping.match_type === matchType;
+                
+                return matchesSearch && matchesType;
+            });
+            
+            sortMappings();
+            updateStats();
+            renderMappings();
+        }
+        
+        function sortMappings() {
+            const sortBy = document.getElementById('sortSelect').value;
+            
+            filteredMappings.sort((a, b) => {
+                switch (sortBy) {
+                    case 'confidence-desc':
+                        return b.confidence - a.confidence;
+                    case 'confidence-asc':
+                        return a.confidence - b.confidence;
+                    case 'name-asc':
+                        return a.bsdd.name.localeCompare(b.bsdd.name);
+                    case 'name-desc':
+                        return b.bsdd.name.localeCompare(a.bsdd.name);
+                    default:
+                        return 0;
+                }
+            });
+        }
+        
+        function updateStats() {
+            const stats = {
+                total: filteredMappings.length,
+                exact: 0,
+                close: 0,
+                related: 0,
+                totalConfidence: 0
+            };
+            
+            filteredMappings.forEach(mapping => {
+                if (mapping.match_type === 'exactMatch') stats.exact++;
+                else if (mapping.match_type === 'closeMatch') stats.close++;
+                else if (mapping.match_type === 'relatedMatch') stats.related++;
+                stats.totalConfidence += mapping.confidence;
+            });
+            
+            const avgConfidence = stats.total > 0 ? (stats.totalConfidence / stats.total) : 0;
+            
+            document.getElementById('totalCount').textContent = stats.total;
+            document.getElementById('exactCount').textContent = stats.exact;
+            document.getElementById('closeCount').textContent = stats.close;
+            document.getElementById('relatedCount').textContent = stats.related;
+            document.getElementById('avgConfidence').textContent = avgConfidence.toFixed(2);
+        }
+        
+        function renderMappings() {
+            const container = document.getElementById('mappings');
+            
+            if (filteredMappings.length === 0) {
+                container.innerHTML = `
+                    <div class="no-data">
+                        <h2>No mappings found</h2>
+                        <p>Try adjusting your search or filter criteria.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            container.innerHTML = filteredMappings.map(mapping => `
+                <div class="mapping-card">
+                    <div class="mapping-header">
+                        <div class="bsdd-side">
+                            <div class="class-name">${escapeHtml(mapping.bsdd.name)}</div>
+                            <div class="class-code">${escapeHtml(mapping.bsdd.code)}</div>
+                            ${mapping.bsdd.definition ? `<div class="class-definition">${escapeHtml(mapping.bsdd.definition)}</div>` : ''}
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="oeko-side">
+                            <div class="class-name">${escapeHtml(mapping.oekobaudat.name)}</div>
+                            <div class="class-code">${escapeHtml(mapping.oekobaudat.id)}</div>
+                            <div class="category-path">${escapeHtml(mapping.oekobaudat.path)}</div>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <span class="badge badge-${getBadgeClass(mapping.match_type)}">${formatMatchType(mapping.match_type)}</span>
+                        <div class="confidence">
+                            <span>Confidence:</span>
+                            <div class="confidence-bar">
+                                <div class="confidence-fill" style="width: ${mapping.confidence * 100}%"></div>
+                            </div>
+                            <span>${(mapping.confidence * 100).toFixed(0)}%</span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function getBadgeClass(matchType) {
+            const map = {
+                'exactMatch': 'exact',
+                'closeMatch': 'close',
+                'relatedMatch': 'related',
+                'noMatch': 'none'
+            };
+            return map[matchType] || 'none';
+        }
+        
+        function formatMatchType(matchType) {
+            const map = {
+                'exactMatch': 'Exact Match',
+                'closeMatch': 'Close Match',
+                'relatedMatch': 'Related Match',
+                'noMatch': 'No Match'
+            };
+            return map[matchType] || matchType;
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        function exportFiltered() {
+            if (filteredMappings.length === 0) {
+                alert('No mappings to export');
+                return;
+            }
+            
+            const dataStr = JSON.stringify(filteredMappings, null, 2);
+            const dataBlob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(dataBlob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'filtered_mappings.json';
+            link.click();
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
+
+

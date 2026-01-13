@@ -1,0 +1,13 @@
+# Requirements for bsDD to Ökobaudat Mapper
+
+# Core dependencies (required for all methods)
+requests>=2.31.0
+rdflib>=7.0.0
+python-dotenv>=1.0.0
+
+# LLM dependencies (required for Method 2/3 and comparisons)
+openai>=1.0.0
+
+# Optional: for generic LLM matcher examples
+# anthropic>=0.7.0
+

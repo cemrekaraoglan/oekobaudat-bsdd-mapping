@@ -1,0 +1,3407 @@
+@prefix obd: <https://oekobaudat.de/class/> .
+@prefix oekocat: <https://oekobaudat.de/category/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+obd:3_und_5_Schichtplatten a owl:Class ;
+    rdfs:label "3- und 5-Schichtplatten"@de,
+        "3- and 5-layer boards"@en ;
+    rdfs:comment "Holz/Holzwerkstoffe/3- und 5-Schichtplatten"@de,
+        "Wood/Wood-based materials/3- and 5-layer boards"@en ;
+    rdfs:subClassOf obd:Holzwerkstoffe ;
+    obd:okobaudatCategory oekocat:3.2.01 .
+
+obd:Abwasserrohre a owl:Class ;
+    rdfs:label "Abwasserrohre"@de,
+        "Wastewater pipes"@en ;
+    rdfs:comment "Kunststoffe/Rohre/Abwasserrohre"@de,
+        "Plastics/Pipes/Wastewater pipes"@en ;
+    rdfs:subClassOf obd:Rohre ;
+    obd:okobaudatCategory oekocat:6.1.02 .
+
+obd:Acetyliertes_Holz a owl:Class ;
+    rdfs:label "Acetyliertes Holz"@de,
+        "Acetylated Wood"@en ;
+    rdfs:comment "Holz/Modifiziertes Holz/Acetyliertes Holz"@de,
+        "Wood/Modified wood/Acetylated Wood"@en ;
+    rdfs:subClassOf obd:Modifiziertes_Holz ;
+    obd:okobaudatCategory oekocat:3.5.01 .
+
+obd:Acrylat a owl:Class ;
+    rdfs:label "Acrylat"@de,
+        "Acrylate"@en ;
+    rdfs:comment "Kunststoffe/Dichtmassen/Acrylat"@de,
+        "Plastics/Sealants/Acrylate"@en ;
+    rdfs:subClassOf obd:Dichtmassen ;
+    obd:okobaudatCategory oekocat:6.7.06 .
+
+obd:Aluminium_thermisch_getrennt a owl:Class ;
+    rdfs:label "Aluminium thermisch getrennt"@de,
+        "Thermally broken aluminum"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Rahmen / Profile/Aluminium thermisch getrennt"@de,
+        "Components of windows and curtain walls/Frame/Profile/Thermally broken aluminum"@en ;
+    rdfs:subClassOf obd:Rahmen_Profile ;
+    obd:okobaudatCategory oekocat:7.1.06 .
+
+obd:Aluminiumbeschläge a owl:Class ;
+    rdfs:label "Aluminiumbeschläge"@de,
+        "Aluminum fittings"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Beschläge/Aluminiumbeschläge"@de,
+        "Components of windows and curtain walls/Hardware/Aluminum fittings"@en ;
+    rdfs:subClassOf obd:Beschläge ;
+    obd:okobaudatCategory oekocat:7.4.02 .
+
+obd:Aluminiumbleche a owl:Class ;
+    rdfs:label "Aluminiumbleche"@de,
+        "Aluminum sheets"@en ;
+    rdfs:comment "Metalle/Aluminium/Aluminiumbleche"@de,
+        "Metals/aluminum/Aluminum sheets"@en ;
+    rdfs:subClassOf obd:Aluminium ;
+    obd:okobaudatCategory oekocat:4.3.01 .
+
+obd:Aluminiumfolie a owl:Class ;
+    rdfs:label "Aluminiumfolie"@de,
+        "Aluminum foil"@en ;
+    rdfs:comment "Metalle/Aluminium/Aluminiumfolie"@de,
+        "Metals/aluminum/Aluminum foil"@en ;
+    rdfs:subClassOf obd:Aluminium ;
+    obd:okobaudatCategory oekocat:4.3.04 .
+
+obd:Aluminiumprofil a owl:Class ;
+    rdfs:label "Aluminiumprofil"@de,
+        "Aluminum profile"@en ;
+    rdfs:comment "Metalle/Aluminium/Aluminiumprofil"@de,
+        "Metals/aluminum/Aluminum profile"@en ;
+    rdfs:subClassOf obd:Aluminium ;
+    obd:okobaudatCategory oekocat:4.3.02 .
+
+obd:Anodisieren_von_Aluminium a owl:Class ;
+    rdfs:label "Anodisieren von Aluminium"@de,
+        "Anodizing of aluminum"@en ;
+    rdfs:comment "Metalle/Oberflächenbehandlung und Beschichtung von Metallen/Anodisieren von Aluminium"@de,
+        "Metals/Surface treatment and coating of metals/Anodizing of aluminum"@en ;
+    rdfs:subClassOf obd:Oberflächenbehandlung_und_Beschichtung_von_Metallen ;
+    obd:okobaudatCategory oekocat:4.7.01 .
+
+obd:Anorganische_Pigmente a owl:Class ;
+    rdfs:label "Anorganische Pigmente"@de,
+        "Inorganic pigments"@en ;
+    rdfs:comment "Mineralische Baustoffe/Pigmente/Anorganische Pigmente"@de,
+        "Mineral Building Materials/Pigments/Inorganic pigments"@en ;
+    rdfs:subClassOf obd:Pigmente ;
+    obd:okobaudatCategory oekocat:1.7.01 .
+
+obd:Anputzdichtleisten a owl:Class ;
+    rdfs:label "Anputzdichtleisten"@de,
+        "Plastering edge strips"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Dichtungskomponenten / -materialien/Anputzdichtleisten"@de,
+        "Components of windows and curtain walls/Sealing components/-materials/Plastering edge strips"@en ;
+    rdfs:subClassOf obd:Dichtungskomponenten_materialien ;
+    obd:okobaudatCategory oekocat:7.3.07 .
+
+obd:Armaturen a owl:Class ;
+    rdfs:label "Armaturen"@de,
+        "Fittings"@en ;
+    rdfs:comment "Gebäudetechnik/Sanitär/Armaturen"@de,
+        "Building Services/Sanitary/Fittings"@en ;
+    rdfs:subClassOf obd:Sanitär ;
+    obd:okobaudatCategory oekocat:8.3.02 .
+
+obd:Asphaltbinder a owl:Class ;
+    rdfs:label "Asphaltbinder"@de,
+        "Asphalt binder"@en ;
+    rdfs:comment "Mineralische Baustoffe/Asphalt/Asphaltbinder"@de,
+        "Mineral Building Materials/Asphalt/Asphalt binder"@en ;
+    rdfs:subClassOf obd:Asphalt ;
+    obd:okobaudatCategory oekocat:1.5.03 .
+
+obd:Aussenwände a owl:Class ;
+    rdfs:label "Aussenwände"@de,
+        "Exterior walls"@en ;
+    rdfs:comment "Komposite/Systembauteile/Aussenwände"@de,
+        "Composite/System components/Exterior walls"@en ;
+    rdfs:subClassOf obd:Systembauteile ;
+    obd:okobaudatCategory oekocat:10.1.03 .
+
+obd:BaggerAushub a owl:Class ;
+    rdfs:label "Bagger/Aushub"@de,
+        "Excavator/excavation"@en ;
+    rdfs:comment "Sonstige/Baustellenprozesse/Bagger/Aushub"@de,
+        "Others/Construction processes/Excavator/Excavation"@en ;
+    rdfs:subClassOf obd:Baustellenprozesse ;
+    obd:okobaudatCategory oekocat:9.1.01 .
+
+obd:Bahn a owl:Class ;
+    rdfs:label "Bahn"@de,
+        "Membrane"@en ;
+    rdfs:comment "Sonstige/Güter - Transporte[t km]/Bahn"@de,
+        "Sonstige/Personen - Transporte[Personen km]/Bahn"@de,
+        "Others/Goods transport [t km]/Membrane"@en,
+        "Others/Passenger transport [passenger km]/Membrane"@en ;
+    rdfs:subClassOf obd:Güter_Transportet_km,
+        obd:Personen_TransportePersonen_km ;
+    obd:okobaudatCategory oekocat:9.3.02,
+        oekocat:9.4.02 .
+
+obd:Balkenschichtholz_Duo_Triobalken a owl:Class ;
+    rdfs:label "Balkenschichtholz (Duo-Triobalken)"@de,
+        "Glulam (Duo-Trio beams)"@en ;
+    rdfs:comment "Holz/Vollholz/Balkenschichtholz (Duo-Triobalken)"@de,
+        "Wood/Solid Wood/Glulam (Duo-Trio beams)"@en ;
+    rdfs:subClassOf obd:Vollholz ;
+    obd:okobaudatCategory oekocat:3.1.03 .
+
+obd:Batteriespeicher a owl:Class ;
+    rdfs:label "Batteriespeicher"@de,
+        "Battery storage"@en ;
+    rdfs:comment "Gebäudetechnik/Elektro/Batteriespeicher"@de,
+        "Building Services/Electrical/Battery storage"@en ;
+    rdfs:subClassOf obd:Elektro ;
+    obd:okobaudatCategory oekocat:8.4.05 .
+
+obd:Bau_Schnittholz a owl:Class ;
+    rdfs:label "Bau-Schnittholz"@de,
+        "Construction sawn timber"@en ;
+    rdfs:comment "Holz/Vollholz/Bau-Schnittholz"@de,
+        "Wood/Solid Wood/Construction sawn timber"@en ;
+    rdfs:subClassOf obd:Vollholz ;
+    obd:okobaudatCategory oekocat:3.1.01 .
+
+obd:Baumwolle_konventionell a owl:Class ;
+    rdfs:label "Baumwolle konventionell"@de,
+        "Conventional cotton"@en ;
+    rdfs:comment "Dämmstoffe/Baumwolle/Baumwolle konventionell"@de,
+        "Insulation Materials/Cotton/Conventional cotton"@en ;
+    rdfs:subClassOf obd:Baumwolle ;
+    obd:okobaudatCategory oekocat:2.14.01 .
+
+obd:Baumwolle_ökologisch a owl:Class ;
+    rdfs:label "Baumwolle ökologisch"@de,
+        "Ecological cotton"@en ;
+    rdfs:comment "Dämmstoffe/Baumwolle/Baumwolle ökologisch"@de,
+        "Insulation Materials/Cotton/Ecological cotton"@en ;
+    rdfs:subClassOf obd:Baumwolle ;
+    obd:okobaudatCategory oekocat:2.14.02 .
+
+obd:Baupappen a owl:Class ;
+    rdfs:label "Baupappen"@de,
+        "Building boards"@en ;
+    rdfs:comment "Kunststoffe/Folien und Vliese/Baupappen"@de,
+        "Plastics/Films and nonwovens/Building boards"@en ;
+    rdfs:subClassOf obd:Folien_und_Vliese ;
+    obd:okobaudatCategory oekocat:6.6.05 .
+
+obd:Bauschutt a owl:Class ;
+    rdfs:label "Bauschutt"@de,
+        "Construction debris"@en ;
+    rdfs:comment "End of Life/Generisch/Bauschutt"@de,
+        "End of Life/Generic/Construction debris"@en ;
+    rdfs:subClassOf obd:Generisch ;
+    obd:okobaudatCategory oekocat:100.1.01 .
+
+obd:Bauschuttaufbereitung a owl:Class ;
+    rdfs:label "Bauschuttaufbereitung"@de,
+        "Construction waste processing"@en ;
+    rdfs:comment "Sonstige/Abfallaufbereitung und -entsorgung (EoL)/Bauschuttaufbereitung"@de,
+        "Others/Waste treatment and disposal (EoL)/Construction waste processing"@en ;
+    rdfs:subClassOf obd:Abfallaufbereitung_und_entsorgung_EoL ;
+    obd:okobaudatCategory oekocat:9.5.01 .
+
+obd:Bauschuttdeponierung a owl:Class ;
+    rdfs:label "Bauschuttdeponierung"@de,
+        "Construction waste disposal"@en ;
+    rdfs:comment "Sonstige/Abfallaufbereitung und -entsorgung (EoL)/Bauschuttdeponierung"@de,
+        "Others/Waste treatment and disposal (EoL)/Construction waste disposal"@en ;
+    rdfs:subClassOf obd:Abfallaufbereitung_und_entsorgung_EoL ;
+    obd:okobaudatCategory oekocat:9.5.02 .
+
+obd:Befestigungen a owl:Class ;
+    rdfs:label "Befestigungen"@de,
+        "Fasteners"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Beschläge/Befestigungen"@de,
+        "Components of windows and curtain walls/Hardware/Fasteners"@en ;
+    rdfs:subClassOf obd:Beschläge ;
+    obd:okobaudatCategory oekocat:7.4.06 .
+
+obd:Befestigungsmittel a owl:Class ;
+    rdfs:label "Befestigungsmittel"@de,
+        "Fasteners"@en ;
+    rdfs:comment "Metalle/Edelstahl/Befestigungsmittel"@de,
+        "Metalle/Stahl und Eisen/Befestigungsmittel"@de,
+        "Metals/Stainless steel/Fasteners"@en,
+        "Metals/Steel and iron/Fasteners"@en ;
+    rdfs:subClassOf obd:Edelstahl,
+        obd:Stahl_und_Eisen ;
+    obd:okobaudatCategory oekocat:4.1.06,
+        oekocat:4.2.04 .
+
+obd:Beleuchtung a owl:Class ;
+    rdfs:label "Beleuchtung"@de,
+        "Lighting"@en ;
+    rdfs:comment "Gebäudetechnik/Elektro/Beleuchtung"@de,
+        "Building Services/Electrical/Lighting"@en ;
+    rdfs:subClassOf obd:Elektro ;
+    obd:okobaudatCategory oekocat:8.4.04 .
+
+obd:Beton a owl:Class ;
+    rdfs:label "Beton"@de,
+        "Concrete"@en ;
+    rdfs:comment "Mineralische Baustoffe/Mörtel und Beton/Beton"@de,
+        "Mineral Building Materials/Mortar and Concrete/Concrete"@en ;
+    rdfs:subClassOf obd:Mörtel_und_Beton ;
+    obd:okobaudatCategory oekocat:1.4.01 .
+
+obd:Betonfertigteile_und_Betonwaren a owl:Class ;
+    rdfs:label "Betonfertigteile und Betonwaren"@de,
+        "Precast concrete elements and concrete products"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Betonfertigteile und Betonwaren"@de,
+        "Mineral Building Materials/Stones and Elements/Precast concrete elements and concrete products"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.05 .
+
+obd:Betonieren a owl:Class ;
+    rdfs:label "Betonieren"@de,
+        "Concrete Pouring"@en ;
+    rdfs:comment "Sonstige/Baustellenprozesse/Betonieren"@de,
+        "Others/Construction processes/Concrete Pouring"@en ;
+    rdfs:subClassOf obd:Baustellenprozesse ;
+    obd:okobaudatCategory oekocat:9.1.02 .
+
+obd:Betonstabstahl a owl:Class ;
+    rdfs:label "Betonstabstahl"@de,
+        "Reinforcing steel"@en ;
+    rdfs:comment "Metalle/Stahl und Eisen/Betonstabstahl"@de,
+        "Metals/Steel and iron/Reinforcing steel"@en ;
+    rdfs:subClassOf obd:Stahl_und_Eisen ;
+    obd:okobaudatCategory oekocat:4.1.01 .
+
+obd:Betonstahlmatten a owl:Class ;
+    rdfs:label "Betonstahlmatten"@de,
+        "Reinforcing steel mats"@en ;
+    rdfs:comment "Metalle/Stahl und Eisen/Betonstahlmatten"@de,
+        "Metals/Steel and iron/Reinforcing steel mats"@en ;
+    rdfs:subClassOf obd:Stahl_und_Eisen ;
+    obd:okobaudatCategory oekocat:4.1.02 .
+
+obd:Betonzusatzmittel a owl:Class ;
+    rdfs:label "Betonzusatzmittel"@de,
+        "Concrete admixtures"@en ;
+    rdfs:comment "Mineralische Baustoffe/Mörtel und Beton/Betonzusatzmittel"@de,
+        "Mineral Building Materials/Mortar and Concrete/Concrete admixtures"@en ;
+    rdfs:subClassOf obd:Mörtel_und_Beton ;
+    obd:okobaudatCategory oekocat:1.4.06 .
+
+obd:Bewehrung a owl:Class ;
+    rdfs:label "Bewehrung"@de,
+        "Reinforcement"@en ;
+    rdfs:comment "Komposite/Systembauteile/Bewehrung"@de,
+        "Composite/System components/Reinforcement"@en ;
+    rdfs:subClassOf obd:Systembauteile ;
+    obd:okobaudatCategory oekocat:10.1.07 .
+
+obd:Bims a owl:Class ;
+    rdfs:label "Bims"@de,
+        "Pumice"@en ;
+    rdfs:comment "Mineralische Baustoffe/Zuschläge/Bims"@de,
+        "Mineral Building Materials/Aggregates/Pumice"@en ;
+    rdfs:subClassOf obd:Zuschläge ;
+    obd:okobaudatCategory oekocat:1.2.03 .
+
+obd:Binnenschiff a owl:Class ;
+    rdfs:label "Binnenschiff"@de,
+        "Inland vessel"@en ;
+    rdfs:comment "Sonstige/Güter - Transporte[t km]/Binnenschiff"@de,
+        "Others/Goods transport [t km]/Inland vessel"@en ;
+    rdfs:subClassOf obd:Güter_Transportet_km ;
+    obd:okobaudatCategory oekocat:9.3.03 .
+
+obd:Biogas a owl:Class ;
+    rdfs:label "Biogas"@de,
+        "Biogas"@en ;
+    rdfs:comment "Sonstige/Energieträger - Bereitstellung frei Verbraucher/Biogas"@de,
+        "Others/Energy carriers - supply free consumers/Biogas"@en ;
+    rdfs:subClassOf obd:Energieträger_Bereitstellung_frei_Verbraucher ;
+    obd:okobaudatCategory oekocat:9.2.08 .
+
+obd:Bitumen a owl:Class ;
+    rdfs:label "Bitumen"@de,
+        "Bitumen"@en ;
+    rdfs:comment "Kunststoffe/Dichtmassen/Bitumen"@de,
+        "Plastics/Sealants/Bitumen"@en ;
+    rdfs:subClassOf obd:Dichtmassen ;
+    obd:okobaudatCategory oekocat:6.7.04 .
+
+obd:Bitumen_Dachbahnen a owl:Class ;
+    rdfs:label "Bitumen-Dachbahnen"@de,
+        "Bitumen roofing membranes"@en ;
+    rdfs:comment "Kunststoffe/Dachbahnen/Bitumen-Dachbahnen"@de,
+        "Plastics/Roofing membranes/Bitumen roofing membranes"@en ;
+    rdfs:subClassOf obd:Dachbahnen ;
+    obd:okobaudatCategory oekocat:6.3.01 .
+
+obd:Bitumenbeschichtungen a owl:Class ;
+    rdfs:label "Bitumenbeschichtungen"@de,
+        "Bitumen coatings"@en ;
+    rdfs:comment "Beschichtungen/Bituminöse Anstriche/Bitumenbeschichtungen"@de,
+        "Coatings/Bituminous coatings/Bitumen coatings"@en ;
+    rdfs:subClassOf obd:Bituminöse_Anstriche ;
+    obd:okobaudatCategory oekocat:5.3.01 .
+
+obd:Bleibleche a owl:Class ;
+    rdfs:label "Bleibleche"@de,
+        "Lead sheets"@en ;
+    rdfs:comment "Metalle/Blei/Bleibleche"@de,
+        "Metals/Lead/Lead sheets"@en ;
+    rdfs:subClassOf obd:Blei ;
+    obd:okobaudatCategory oekocat:4.6.01 .
+
+obd:Blähglas a owl:Class ;
+    rdfs:label "Blähglas"@de,
+        "Expanded glass"@en ;
+    rdfs:comment "Mineralische Baustoffe/Zuschläge/Blähglas"@de,
+        "Mineral Building Materials/Aggregates/Expanded glass"@en ;
+    rdfs:subClassOf obd:Zuschläge ;
+    obd:okobaudatCategory oekocat:1.2.06 .
+
+obd:Blähschiefer a owl:Class ;
+    rdfs:label "Blähschiefer"@de,
+        "Expanded slate"@en ;
+    rdfs:comment "Mineralische Baustoffe/Zuschläge/Blähschiefer"@de,
+        "Mineral Building Materials/Aggregates/Expanded slate"@en ;
+    rdfs:subClassOf obd:Zuschläge ;
+    obd:okobaudatCategory oekocat:1.2.05 .
+
+obd:Blähton a owl:Class ;
+    rdfs:label "Blähton"@de,
+        "Expanded clay"@en ;
+    rdfs:comment "Mineralische Baustoffe/Zuschläge/Blähton"@de,
+        "Mineral Building Materials/Aggregates/Expanded clay"@en ;
+    rdfs:subClassOf obd:Zuschläge ;
+    obd:okobaudatCategory oekocat:1.2.04 .
+
+obd:Bodenbeschichtungen a owl:Class ;
+    rdfs:label "Bodenbeschichtungen"@de,
+        "Floor coatings"@en ;
+    rdfs:comment "Beschichtungen/Bodenbeschichtungen"@de,
+        "Coatings/Floor coatings"@en ;
+    rdfs:subClassOf obd:Beschichtungen ;
+    obd:okobaudatCategory oekocat:5.2 .
+
+obd:Brandschutzplatten a owl:Class ;
+    rdfs:label "Brandschutzplatten"@de,
+        "fire protection boards"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Brandschutzplatten"@de,
+        "Mineral Building Materials/Stones and Elements/fire protection boards"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.18 .
+
+obd:Brettschichtholz_BSH a owl:Class ;
+    rdfs:label "Brettschichtholz (BSH)"@de,
+        "Glued laminated timber (GLT)"@en ;
+    rdfs:comment "Holz/Vollholz/Brettschichtholz (BSH)"@de,
+        "Wood/Solid Wood/Glued laminated timber (GLT)"@en ;
+    rdfs:subClassOf obd:Vollholz ;
+    obd:okobaudatCategory oekocat:3.1.04 .
+
+obd:Brettschichtholzplatte a owl:Class ;
+    rdfs:label "Brettschichtholzplatte"@de,
+        "Glued laminated timber panel"@en ;
+    rdfs:comment "Holz/Vollholz/Brettschichtholzplatte"@de,
+        "Wood/Solid Wood/Glued laminated timber panel"@en ;
+    rdfs:subClassOf obd:Vollholz ;
+    obd:okobaudatCategory oekocat:3.1.05 .
+
+obd:Bronzebeschläge a owl:Class ;
+    rdfs:label "Bronzebeschläge"@de,
+        "Bronze fittings"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Beschläge/Bronzebeschläge"@de,
+        "Components of windows and curtain walls/Hardware/Bronze fittings"@en ;
+    rdfs:subClassOf obd:Beschläge ;
+    obd:okobaudatCategory oekocat:7.4.03 .
+
+obd:Böden a owl:Class ;
+    rdfs:label "Böden"@de,
+        "Floors"@en ;
+    rdfs:comment "Komposite/Systembauteile/Böden"@de,
+        "Composite/System components/Floors"@en ;
+    rdfs:subClassOf obd:Systembauteile ;
+    obd:okobaudatCategory oekocat:10.1.06 .
+
+obd:Calciumsilikat a owl:Class ;
+    rdfs:label "Calciumsilikat"@de,
+        "Calcium silicate"@en ;
+    rdfs:comment "Dämmstoffe/Calciumsilikat / Calcium-Silikathydrat/Calciumsilikat"@de,
+        "Insulation Materials/Calcium silicate/Calcium silicate hydrate/Calcium silicate"@en ;
+    rdfs:subClassOf obd:Calciumsilikat_Calcium_Silikathydrat ;
+    obd:okobaudatCategory oekocat:2.20.02 .
+
+obd:Dachaufbauten a owl:Class ;
+    rdfs:label "Dachaufbauten"@de,
+        "Roof structures"@en ;
+    rdfs:comment "Komposite/Systembauteile/Dachaufbauten"@de,
+        "Composite/System components/Roof structures"@en ;
+    rdfs:subClassOf obd:Systembauteile ;
+    obd:okobaudatCategory oekocat:10.1.09 .
+
+obd:Dachsteine a owl:Class ;
+    rdfs:label "Dachsteine"@de,
+        "Roofing tiles"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Dachsteine"@de,
+        "Mineral Building Materials/Stones and Elements/Roofing tiles"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.11 .
+
+obd:Dachziegel a owl:Class ;
+    rdfs:label "Dachziegel"@de,
+        "Roof tile"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Dachziegel"@de,
+        "Mineral Building Materials/Stones and Elements/Roof tile"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.10 .
+
+obd:Dampfbremse_Dampfsperre a owl:Class ;
+    rdfs:label "Dampfbremse / Dampfsperre"@de,
+        "Vapor barrier / Vapor retarder"@en ;
+    rdfs:comment "Kunststoffe/Folien und Vliese/Dampfbremse / Dampfsperre"@de,
+        "Plastics/Films and nonwovens/Vapor barrier/Vapor barrier"@en ;
+    rdfs:subClassOf obd:Folien_und_Vliese ;
+    obd:okobaudatCategory oekocat:6.6.02 .
+
+obd:Decken a owl:Class ;
+    rdfs:label "Decken"@de,
+        "Ceilings"@en ;
+    rdfs:comment "Komposite/Systembauteile/Decken"@de,
+        "Composite/System components/Ceilings"@en ;
+    rdfs:subClassOf obd:Systembauteile ;
+    obd:okobaudatCategory oekocat:10.1.05 .
+
+obd:Deckenplatten a owl:Class ;
+    rdfs:label "Deckenplatten"@de,
+        "Ceiling Panels"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Deckenplatten"@de,
+        "Mineral Building Materials/Stones and Elements/Ceiling Panels"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.15 .
+
+obd:Dichtfolien a owl:Class ;
+    rdfs:label "Dichtfolien"@de,
+        "Waterproofing membranes"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Dichtungskomponenten / -materialien/Dichtfolien"@de,
+        "Components of windows and curtain walls/Sealing components/-materials/Waterproofing membranes"@en ;
+    rdfs:subClassOf obd:Dichtungskomponenten_materialien ;
+    obd:okobaudatCategory oekocat:7.3.06 .
+
+obd:Dichtprofile a owl:Class ;
+    rdfs:label "Dichtprofile"@de,
+        "Sealing profiles"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Dichtungskomponenten / -materialien/Dichtprofile"@de,
+        "Components of windows and curtain walls/Sealing components/-materials/Sealing profiles"@en ;
+    rdfs:subClassOf obd:Dichtungskomponenten_materialien ;
+    obd:okobaudatCategory oekocat:7.3.01 .
+
+obd:Dispersion a owl:Class ;
+    rdfs:label "Dispersion"@de,
+        "Dispersion"@en ;
+    rdfs:comment "Beschichtungen/Fassadenfarben/Dispersion"@de,
+        "Coatings/Facade paints/Dispersion"@en ;
+    rdfs:subClassOf obd:Fassadenfarben ;
+    obd:okobaudatCategory oekocat:5.4.01 .
+
+obd:Dispersionsklebstoffe a owl:Class ;
+    rdfs:label "Dispersionsklebstoffe"@de,
+        "Dispersion adhesives"@en ;
+    rdfs:comment "Beschichtungen/Innenbeschichtungen/Dispersionsklebstoffe"@de,
+        "Coatings/Interior Coatings/Dispersion adhesives"@en ;
+    rdfs:subClassOf obd:Innenbeschichtungen ;
+    obd:okobaudatCategory oekocat:5.5.03 .
+
+obd:Dusch_und_Badewannen a owl:Class ;
+    rdfs:label "Dusch- und Badewannen"@de,
+        "Showers and bathtubs"@en ;
+    rdfs:comment "Gebäudetechnik/Sanitär/Dusch- und Badewannen"@de,
+        "Building Services/Sanitary/Showers and bathtubs"@en ;
+    rdfs:subClassOf obd:Sanitär ;
+    obd:okobaudatCategory oekocat:8.3.03 .
+
+obd:Dübel_für_Bahnen a owl:Class ;
+    rdfs:label "Dübel für Bahnen"@de,
+        "Dowels for membranes"@en ;
+    rdfs:comment "Kunststoffe/Dachbahnen/Dübel für Bahnen"@de,
+        "Plastics/Roofing membranes/Dowels for membranes"@en ;
+    rdfs:subClassOf obd:Dachbahnen ;
+    obd:okobaudatCategory oekocat:6.3.07 .
+
+obd:Dübelsysteme_für_Platten a owl:Class ;
+    rdfs:label "Dübelsysteme für Platten"@de,
+        "Dowel systems for panels"@en ;
+    rdfs:comment "Kunststoffe/Kunststoffprofile elastisch/Dübelsysteme für Platten"@de,
+        "Plastics/Elastic plastic profiles/Dowel systems for panels"@en ;
+    rdfs:subClassOf obd:Kunststoffprofile_elastisch ;
+    obd:okobaudatCategory oekocat:6.5.03 .
+
+obd:ECB_Dachbahnen_Ethylen_Copolymer_Bitumen a owl:Class ;
+    rdfs:label "ECB-Dachbahnen (Ethylen-Copolymer-Bitumen)"@de,
+        "ECB roofing membranes (Ethylene Copolymer Bitumen)"@en ;
+    rdfs:comment "Kunststoffe/Dachbahnen/ECB-Dachbahnen (Ethylen-Copolymer-Bitumen)"@de,
+        "Plastics/Roofing membranes/ECB roofing membranes (Ethylene Copolymer Bitumen)"@en ;
+    rdfs:subClassOf obd:Dachbahnen ;
+    obd:okobaudatCategory oekocat:6.3.08 .
+
+obd:EPS_grau a owl:Class ;
+    rdfs:label "EPS grau"@de,
+        "Grey EPS"@en ;
+    rdfs:comment "Dämmstoffe/Expandiertes Polystyrol (EPS)/EPS grau"@de,
+        "Insulation Materials/expanded polystyrene (EPS)/Grey EPS"@en ;
+    rdfs:subClassOf obd:Expandiertes_Polystyrol_EPS ;
+    obd:okobaudatCategory oekocat:2.2.02 .
+
+obd:EPS_grau_weiß a owl:Class ;
+    rdfs:label "EPS grau-weiß"@de,
+        "EPS gray-white"@en ;
+    rdfs:comment "Dämmstoffe/Expandiertes Polystyrol (EPS)/EPS grau-weiß"@de,
+        "Insulation Materials/expanded polystyrene (EPS)/EPS gray-white"@en ;
+    rdfs:subClassOf obd:Expandiertes_Polystyrol_EPS ;
+    obd:okobaudatCategory oekocat:2.2.03 .
+
+obd:EPS_weiß a owl:Class ;
+    rdfs:label "EPS weiß"@de,
+        "EPS white"@en ;
+    rdfs:comment "Dämmstoffe/Expandiertes Polystyrol (EPS)/EPS weiß"@de,
+        "Insulation Materials/expanded polystyrene (EPS)/EPS white"@en ;
+    rdfs:subClassOf obd:Expandiertes_Polystyrol_EPS ;
+    obd:okobaudatCategory oekocat:2.2.01 .
+
+obd:EVA_Dachbahnen_Etylen_Vinylacetat a owl:Class ;
+    rdfs:label "EVA-Dachbahnen (Etylen-Vinylacetat)"@de,
+        "EVA roofing membranes (Ethylene-Vinyl Acetate)"@en ;
+    rdfs:comment "Kunststoffe/Dachbahnen/EVA-Dachbahnen (Etylen-Vinylacetat)"@de,
+        "Plastics/Roofing membranes/EVA roofing membranes (Ethylene-Vinyl Acetate)"@en ;
+    rdfs:subClassOf obd:Dachbahnen ;
+    obd:okobaudatCategory oekocat:6.3.04 .
+
+obd:Edelstahl_Trinkwasserrohre a owl:Class ;
+    rdfs:label "Edelstahl Trinkwasserrohre"@de,
+        "Stainless Steel Drinking Water Pipes"@en ;
+    rdfs:comment "Metalle/Edelstahl/Edelstahl Trinkwasserrohre"@de,
+        "Metals/Stainless steel/Stainless Steel Drinking Water Pipes"@en ;
+    rdfs:subClassOf obd:Edelstahl ;
+    obd:okobaudatCategory oekocat:4.2.03 .
+
+obd:Edelstahlbeschläge a owl:Class ;
+    rdfs:label "Edelstahlbeschläge"@de,
+        "Stainless steel fittings"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Beschläge/Edelstahlbeschläge"@de,
+        "Components of windows and curtain walls/Hardware/Stainless steel fittings"@en ;
+    rdfs:subClassOf obd:Beschläge ;
+    obd:okobaudatCategory oekocat:7.4.05 .
+
+obd:Edelstahlbleche a owl:Class ;
+    rdfs:label "Edelstahlbleche"@de,
+        "Stainless steel sheets"@en ;
+    rdfs:comment "Metalle/Edelstahl/Edelstahlbleche"@de,
+        "Metals/Stainless steel/Stainless steel sheets"@en ;
+    rdfs:subClassOf obd:Edelstahl ;
+    obd:okobaudatCategory oekocat:4.2.01 .
+
+obd:Edelstahlprofile a owl:Class ;
+    rdfs:label "Edelstahlprofile"@de,
+        "Stainless steel profiles"@en ;
+    rdfs:comment "Metalle/Edelstahl/Edelstahlprofile"@de,
+        "Metals/Stainless steel/Stainless steel profiles"@en ;
+    rdfs:subClassOf obd:Edelstahl ;
+    obd:okobaudatCategory oekocat:4.2.02 .
+
+obd:Elastomer_Dachbahnen a owl:Class ;
+    rdfs:label "Elastomer-Dachbahnen"@de,
+        "Elastomeric roofing membranes"@en ;
+    rdfs:comment "Kunststoffe/Dachbahnen/Elastomer-Dachbahnen"@de,
+        "Plastics/Roofing membranes/Elastomeric roofing membranes"@en ;
+    rdfs:subClassOf obd:Dachbahnen ;
+    obd:okobaudatCategory oekocat:6.3.03 .
+
+obd:Elastomer_Fugenbänder a owl:Class ;
+    rdfs:label "Elastomer-Fugenbänder"@de,
+        "Elastomeric sealing tapes"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Dichtungskomponenten / -materialien/Elastomer-Fugenbänder"@de,
+        "Components of windows and curtain walls/Sealing components/-materials/Elastomeric sealing tapes"@en ;
+    rdfs:subClassOf obd:Dichtungskomponenten_materialien ;
+    obd:okobaudatCategory oekocat:7.3.05 .
+
+obd:Elemente_aus_Holzwerkstoffen a owl:Class ;
+    rdfs:label "Elemente aus Holzwerkstoffen"@de,
+        "Wood-based panel elements"@en ;
+    rdfs:comment "Holz/Holzwerkstoffe/Elemente aus Holzwerkstoffen"@de,
+        "Wood/Wood-based materials/Wood-based panel elements"@en ;
+    rdfs:subClassOf obd:Holzwerkstoffe ;
+    obd:okobaudatCategory oekocat:3.2.10 .
+
+obd:EoL_Aluminium a owl:Class ;
+    rdfs:label "EoL Aluminium"@de,
+        "EoL aluminum"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/End-of-life-Prozesse/EoL Aluminium"@de,
+        "Components of windows and curtain walls/End-of-life processes/EoL aluminum"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:7.5.02 .
+
+obd:EoL_Armierungen a owl:Class ;
+    rdfs:label "EoL Armierungen"@de,
+        "EoL reinforcements"@en ;
+    rdfs:comment "Mineralische Baustoffe/End-of-life-Prozesse/EoL Armierungen"@de,
+        "Mineral Building Materials/End-of-life processes/EoL reinforcements"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:1.6.02 .
+
+obd:EoL_Beförderungstechnik a owl:Class ;
+    rdfs:label "EoL Beförderungstechnik"@de,
+        "EoL transport technology"@en ;
+    rdfs:comment "Gebäudetechnik/End-of-life-Prozesse/EoL Beförderungstechnik"@de,
+        "Building Services/End-of-life processes/EoL transport technology"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:8.7.05 .
+
+obd:EoL_Bronze a owl:Class ;
+    rdfs:label "EoL Bronze"@de,
+        "EoL Bronze"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/End-of-life-Prozesse/EoL Bronze"@de,
+        "Components of windows and curtain walls/End-of-life processes/EoL Bronze"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:7.5.03 .
+
+obd:EoL_Dübelsystem_für_Planen a owl:Class ;
+    rdfs:label "EoL Dübelsystem für Planen"@de,
+        "EoL dowel system for tarpaulins"@en ;
+    rdfs:comment "Kunststoffe/End-of-life-Prozesse Kunststoffe/EoL Dübelsystem für Planen"@de,
+        "Plastics/End-of-life processes for plastics/EoL dowel system for tarpaulins"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse_Kunststoffe ;
+    obd:okobaudatCategory oekocat:6.8.03 .
+
+obd:EoL_Dübelsystem_für_Platten a owl:Class ;
+    rdfs:label "EoL Dübelsystem für Platten"@de,
+        "EoL dowel system for panels"@en ;
+    rdfs:comment "Kunststoffe/End-of-life-Prozesse Kunststoffe/EoL Dübelsystem für Platten"@de,
+        "Plastics/End-of-life processes for plastics/EoL dowel system for panels"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse_Kunststoffe ;
+    obd:okobaudatCategory oekocat:6.8.02 .
+
+obd:EoL_EPS a owl:Class ;
+    rdfs:label "EoL EPS"@de,
+        "EoL EPS"@en ;
+    rdfs:comment "Dämmstoffe/End-of-life-Prozesse/EoL EPS"@de,
+        "Insulation Materials/End-of-life processes/EoL EPS"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:2.22.06 .
+
+obd:EoL_EVA_Dachbahnen a owl:Class ;
+    rdfs:label "EoL EVA-Dachbahnen"@de,
+        "EoL EVA roofing membranes"@en ;
+    rdfs:comment "Kunststoffe/End-of-life-Prozesse Kunststoffe/EoL EVA-Dachbahnen"@de,
+        "Plastics/End-of-life processes for plastics/EoL EVA roofing membranes"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse_Kunststoffe ;
+    obd:okobaudatCategory oekocat:6.8.05 .
+
+obd:EoL_Edelstahl a owl:Class ;
+    rdfs:label "EoL Edelstahl"@de,
+        "EoL stainless steel"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/End-of-life-Prozesse/EoL Edelstahl"@de,
+        "Components of windows and curtain walls/End-of-life processes/EoL stainless steel"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:7.5.05 .
+
+obd:EoL_Elastomer_Dachbahnen a owl:Class ;
+    rdfs:label "EoL Elastomer-Dachbahnen"@de,
+        "EoL elastomer roofing membranes"@en ;
+    rdfs:comment "Kunststoffe/End-of-life-Prozesse Kunststoffe/EoL Elastomer-Dachbahnen"@de,
+        "Plastics/End-of-life processes for plastics/EoL elastomer roofing membranes"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse_Kunststoffe ;
+    obd:okobaudatCategory oekocat:6.8.04 .
+
+obd:EoL_Elektro a owl:Class ;
+    rdfs:label "EoL Elektro"@de,
+        "EoL Electro"@en ;
+    rdfs:comment "Gebäudetechnik/End-of-life-Prozesse/EoL Elektro"@de,
+        "Building Services/End-of-life processes/EoL Electro"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:8.7.04 .
+
+obd:EoL_Fenster a owl:Class ;
+    rdfs:label "EoL Fenster"@de,
+        "EoL windows"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/End-of-life-Prozesse/EoL Fenster"@de,
+        "Components of windows and curtain walls/End-of-life processes/EoL windows"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:7.5.07 .
+
+obd:EoL_Glaswolle a owl:Class ;
+    rdfs:label "EoL Glaswolle"@de,
+        "EoL glass wool"@en ;
+    rdfs:comment "Dämmstoffe/End-of-life-Prozesse/EoL Glaswolle"@de,
+        "Insulation Materials/End-of-life processes/EoL glass wool"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:2.22.02 .
+
+obd:EoL_Grundierung a owl:Class ;
+    rdfs:label "EoL Grundierung"@de,
+        "EoL primer"@en ;
+    rdfs:comment "Beschichtungen/End-of-life-Prozesse/EoL Grundierung"@de,
+        "Coatings/End-of-life processes/EoL primer"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:5.7.01 .
+
+obd:EoL_Holzfaserdämmplatten a owl:Class ;
+    rdfs:label "EoL Holzfaserdämmplatten"@de,
+        "EoL wood fiber insulation boards"@en ;
+    rdfs:comment "Dämmstoffe/End-of-life-Prozesse/EoL Holzfaserdämmplatten"@de,
+        "Insulation Materials/End-of-life processes/EoL wood fiber insulation boards"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:2.22.01 .
+
+obd:EoL_Holzfaserplatte a owl:Class ;
+    rdfs:label "EoL Holzfaserplatte"@de,
+        "EoL wood fiber board"@en ;
+    rdfs:comment "Holz/End-of-life-Prozesse/EoL Holzfaserplatte"@de,
+        "Wood/End-of-life processes/EoL wood fiber board"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:3.4.04 .
+
+obd:EoL_Holzwolle a owl:Class ;
+    rdfs:label "EoL Holzwolle"@de,
+        "EoL wood wool"@en ;
+    rdfs:comment "Dämmstoffe/End-of-life-Prozesse/EoL Holzwolle"@de,
+        "Insulation Materials/End-of-life processes/EoL wood wool"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:2.22.07 .
+
+obd:EoL_Laminat a owl:Class ;
+    rdfs:label "EoL Laminat"@de,
+        "EoL laminate"@en ;
+    rdfs:comment "Holz/End-of-life-Prozesse/EoL Laminat"@de,
+        "Wood/End-of-life processes/EoL laminate"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:3.4.05 .
+
+obd:EoL_Lüftungen_und_Klimatechnik a owl:Class ;
+    rdfs:label "EoL Lüftungen und Klimatechnik"@de,
+        "EoL ventilation and climate technology"@en ;
+    rdfs:comment "Gebäudetechnik/End-of-life-Prozesse/EoL Lüftungen und Klimatechnik"@de,
+        "Building Services/End-of-life processes/EoL ventilation and climate technology"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:8.7.02 .
+
+obd:EoL_Messing a owl:Class ;
+    rdfs:label "EoL Messing"@de,
+        "EoL brass"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/End-of-life-Prozesse/EoL Messing"@de,
+        "Components of windows and curtain walls/End-of-life processes/EoL brass"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:7.5.04 .
+
+obd:EoL_Mineralwolle a owl:Class ;
+    rdfs:label "EoL Mineralwolle"@de,
+        "EoL mineral wool"@en ;
+    rdfs:comment "Dämmstoffe/End-of-life-Prozesse/EoL Mineralwolle"@de,
+        "Insulation Materials/End-of-life processes/EoL mineral wool"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:2.22.03 .
+
+obd:EoL_OSB a owl:Class ;
+    rdfs:label "EoL OSB"@de,
+        "EoL OSB"@en ;
+    rdfs:comment "Holz/End-of-life-Prozesse/EoL OSB"@de,
+        "Wood/End-of-life processes/EoL OSB"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:3.4.02 .
+
+obd:EoL_Putz a owl:Class ;
+    rdfs:label "EoL Putz"@de,
+        "EoL plaster"@en ;
+    rdfs:comment "Mineralische Baustoffe/End-of-life-Prozesse/EoL Putz"@de,
+        "Mineral Building Materials/End-of-life processes/EoL plaster"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:1.6.01 .
+
+obd:EoL_Sanitär a owl:Class ;
+    rdfs:label "EoL Sanitär"@de,
+        "EoL sanitary"@en ;
+    rdfs:comment "Gebäudetechnik/End-of-life-Prozesse/EoL Sanitär"@de,
+        "Building Services/End-of-life processes/EoL sanitary"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:8.7.03 .
+
+obd:EoL_Schichtplatten a owl:Class ;
+    rdfs:label "EoL Schichtplatten"@de,
+        "EoL layer boards"@en ;
+    rdfs:comment "Holz/End-of-life-Prozesse/EoL Schichtplatten"@de,
+        "Wood/End-of-life processes/EoL layer boards"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:3.4.06 .
+
+obd:EoL_Spanplatte a owl:Class ;
+    rdfs:label "EoL Spanplatte"@de,
+        "EoL particle board"@en ;
+    rdfs:comment "Holz/End-of-life-Prozesse/EoL Spanplatte"@de,
+        "Wood/End-of-life processes/EoL particle board"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:3.4.01 .
+
+obd:EoL_Stahl a owl:Class ;
+    rdfs:label "EoL Stahl"@de,
+        "EoL steel"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/End-of-life-Prozesse/EoL Stahl"@de,
+        "Components of windows and curtain walls/End-of-life processes/EoL steel"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:7.5.01 .
+
+obd:EoL_WDVS a owl:Class ;
+    rdfs:label "EoL WDVS"@de,
+        "EoL ETICS"@en ;
+    rdfs:comment "Dämmstoffe/End-of-life-Prozesse/EoL WDVS"@de,
+        "Insulation Materials/End-of-life processes/EoL ETICS"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:2.22.05 .
+
+obd:EoL_WDVS_Dübel a owl:Class ;
+    rdfs:label "EoL WDVS-Dübel"@de,
+        "EoL ETICS dowels"@en ;
+    rdfs:comment "Dämmstoffe/End-of-life-Prozesse/EoL WDVS-Dübel"@de,
+        "Insulation Materials/End-of-life processes/EoL ETICS dowels"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:2.22.04 .
+
+obd:EoL_Wärmeerzeuger a owl:Class ;
+    rdfs:label "EoL Wärmeerzeuger"@de,
+        "EoL heat generator"@en ;
+    rdfs:comment "Gebäudetechnik/End-of-life-Prozesse/EoL Wärmeerzeuger"@de,
+        "Building Services/End-of-life processes/EoL heat generator"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:8.7.01 .
+
+obd:EoL_Zink a owl:Class ;
+    rdfs:label "EoL Zink"@de,
+        "EoL zinc"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/End-of-life-Prozesse/EoL Zink"@de,
+        "Components of windows and curtain walls/End-of-life processes/EoL zinc"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse ;
+    obd:okobaudatCategory oekocat:7.5.06 .
+
+obd:EoL_allgemein a owl:Class ;
+    rdfs:label "EoL allgemein"@de,
+        "EoL general"@en ;
+    rdfs:comment "Holz/End-of-life-Prozesse/EoL allgemein"@de,
+        "Kunststoffe/End-of-life-Prozesse Kunststoffe/EoL allgemein"@de,
+        "Plastics/End-of-life processes for plastics/EoL general"@en,
+        "Wood/End-of-life processes/EoL general"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse,
+        obd:End_of_life_Prozesse_Kunststoffe ;
+    obd:okobaudatCategory oekocat:3.4.03,
+        oekocat:6.8.01 .
+
+obd:EoL_von_Aluminium a owl:Class ;
+    rdfs:label "EoL von Aluminium"@de,
+        "EoL of aluminum"@en ;
+    rdfs:comment "Metalle/End-of-life-Prozesse von Metallen/EoL von Aluminium"@de,
+        "Metals/End-of-life processes for metals/EoL of aluminum"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse_von_Metallen ;
+    obd:okobaudatCategory oekocat:4.8.01 .
+
+obd:EoL_von_Edelstahl a owl:Class ;
+    rdfs:label "EoL von Edelstahl"@de,
+        "EoL stainless steel"@en ;
+    rdfs:comment "Metalle/End-of-life-Prozesse von Metallen/EoL von Edelstahl"@de,
+        "Metals/End-of-life processes for metals/EoL stainless steel"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse_von_Metallen ;
+    obd:okobaudatCategory oekocat:4.8.02 .
+
+obd:EoL_von_Kupferblech_Bronze_legiert a owl:Class ;
+    rdfs:label "EoL von Kupferblech (Bronze legiert)"@de,
+        "EoL copper sheet (bronze alloy)"@en ;
+    rdfs:comment "Metalle/End-of-life-Prozesse von Metallen/EoL von Kupferblech (Bronze legiert)"@de,
+        "Metals/End-of-life processes for metals/EoL copper sheet (bronze alloy)"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse_von_Metallen ;
+    obd:okobaudatCategory oekocat:4.8.04 .
+
+obd:EoL_von_Kupferblech_Gold_legiert a owl:Class ;
+    rdfs:label "EoL von Kupferblech (Gold legiert)"@de,
+        "EoL copper sheet (gold alloyed)"@en ;
+    rdfs:comment "Metalle/End-of-life-Prozesse von Metallen/EoL von Kupferblech (Gold legiert)"@de,
+        "Metals/End-of-life processes for metals/EoL copper sheet (gold alloyed)"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse_von_Metallen ;
+    obd:okobaudatCategory oekocat:4.8.05 .
+
+obd:EoL_von_Kupferblechen a owl:Class ;
+    rdfs:label "EoL von Kupferblechen"@de,
+        "EoL of copper sheets"@en ;
+    rdfs:comment "Metalle/End-of-life-Prozesse von Metallen/EoL von Kupferblechen"@de,
+        "Metals/End-of-life processes for metals/EoL of copper sheets"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse_von_Metallen ;
+    obd:okobaudatCategory oekocat:4.8.03 .
+
+obd:EoL_von_Kupferrohr a owl:Class ;
+    rdfs:label "EoL von Kupferrohr"@de,
+        "End-of-Life (EoL) of copper pipe"@en ;
+    rdfs:comment "Metalle/End-of-life-Prozesse von Metallen/EoL von Kupferrohr"@de,
+        "Metals/End-of-life processes for metals/End-of-Life (EoL) of copper pipe"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse_von_Metallen ;
+    obd:okobaudatCategory oekocat:4.8.06 .
+
+obd:EoL_von_Sandwichelemente a owl:Class ;
+    rdfs:label "EoL von Sandwichelemente"@de,
+        "EoL of sandwich panels"@en ;
+    rdfs:comment "Metalle/End-of-life-Prozesse von Metallen/EoL von Sandwichelemente"@de,
+        "Metals/End-of-life processes for metals/EoL of sandwich panels"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse_von_Metallen ;
+    obd:okobaudatCategory oekocat:4.8.07 .
+
+obd:EoL_von_Stahlblechen a owl:Class ;
+    rdfs:label "EoL von Stahlblechen"@de,
+        "EoL of steel sheets"@en ;
+    rdfs:comment "Metalle/End-of-life-Prozesse von Metallen/EoL von Stahlblechen"@de,
+        "Metals/End-of-life processes for metals/EoL of steel sheets"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse_von_Metallen ;
+    obd:okobaudatCategory oekocat:4.8.08 .
+
+obd:EoL_von_Stahlprofilen a owl:Class ;
+    rdfs:label "EoL von Stahlprofilen"@de,
+        "EoL of steel profiles"@en ;
+    rdfs:comment "Metalle/End-of-life-Prozesse von Metallen/EoL von Stahlprofilen"@de,
+        "Metals/End-of-life processes for metals/EoL of steel profiles"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse_von_Metallen ;
+    obd:okobaudatCategory oekocat:4.8.09 .
+
+obd:EoL_von_Zinkblechen a owl:Class ;
+    rdfs:label "EoL von Zinkblechen"@de,
+        "EoL zinc sheets"@en ;
+    rdfs:comment "Metalle/End-of-life-Prozesse von Metallen/EoL von Zinkblechen"@de,
+        "Metals/End-of-life processes for metals/EoL zinc sheets"@en ;
+    rdfs:subClassOf obd:End_of_life_Prozesse_von_Metallen ;
+    obd:okobaudatCategory oekocat:4.8.10 .
+
+obd:Erdgas a owl:Class ;
+    rdfs:label "Erdgas"@de,
+        "Natural gas"@en ;
+    rdfs:comment "Sonstige/Energieträger - Bereitstellung frei Verbraucher/Erdgas"@de,
+        "Others/Energy carriers - supply free consumers/Natural gas"@en ;
+    rdfs:subClassOf obd:Energieträger_Bereitstellung_frei_Verbraucher ;
+    obd:okobaudatCategory oekocat:9.2.01 .
+
+obd:Estrich_trocken a owl:Class ;
+    rdfs:label "Estrich trocken"@de,
+        "Dry screed"@en ;
+    rdfs:comment "Mineralische Baustoffe/Mörtel und Beton/Estrich trocken"@de,
+        "Mineral Building Materials/Mortar and Concrete/Dry screed"@en ;
+    rdfs:subClassOf obd:Mörtel_und_Beton ;
+    obd:okobaudatCategory oekocat:1.4.03 .
+
+obd:Fahrstuhl a owl:Class ;
+    rdfs:label "Fahrstuhl"@de,
+        "Elevator"@en ;
+    rdfs:comment "Gebäudetechnik/Beförderung/Fahrstuhl"@de,
+        "Building Services/Transportation/Elevator"@en ;
+    rdfs:subClassOf obd:Beförderung ;
+    obd:okobaudatCategory oekocat:8.5.01 .
+
+obd:Fahrtreppe a owl:Class ;
+    rdfs:label "Fahrtreppe"@de,
+        "Escalator"@en ;
+    rdfs:comment "Gebäudetechnik/Beförderung/Fahrtreppe"@de,
+        "Building Services/Transportation/Escalator"@en ;
+    rdfs:subClassOf obd:Beförderung ;
+    obd:okobaudatCategory oekocat:8.5.02 .
+
+obd:Faserzement a owl:Class ;
+    rdfs:label "Faserzement"@de,
+        "Fiber cement"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Faserzement"@de,
+        "Mineral Building Materials/Stones and Elements/Fiber cement"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.12 .
+
+obd:Fenstergriffe a owl:Class ;
+    rdfs:label "Fenstergriffe"@de,
+        "Window handles"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Beschläge/Fenstergriffe"@de,
+        "Components of windows and curtain walls/Hardware/Window handles"@en ;
+    rdfs:subClassOf obd:Beschläge ;
+    obd:okobaudatCategory oekocat:7.4.07 .
+
+obd:Fernwärme a owl:Class ;
+    rdfs:label "Fernwärme"@de,
+        "District heating"@en ;
+    rdfs:comment "Sonstige/Energieträger - Bereitstellung frei Verbraucher/Fernwärme"@de,
+        "Others/Energy carriers - supply free consumers/District heating"@en ;
+    rdfs:subClassOf obd:Energieträger_Bereitstellung_frei_Verbraucher ;
+    obd:okobaudatCategory oekocat:9.2.06 .
+
+obd:Feuer_Rauchschutzsysteme a owl:Class ;
+    rdfs:label "Feuer-/Rauchschutzsysteme"@de,
+        "Fire/smoke protection systems"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Zubehör für Fenster, Fassaden, Türen und Tore/Feuer-/Rauchschutzsysteme"@de,
+        "Components of windows and curtain walls/accessories for windows, facades, doors, and gates/Fire-/Smoke protection systems"@en ;
+    rdfs:subClassOf obd:Zubehör_für_Fenster_Fassaden_Türen_und_Tore ;
+    obd:okobaudatCategory oekocat:7.11.03 .
+
+obd:Fingerschutzsysteme a owl:Class ;
+    rdfs:label "Fingerschutzsysteme"@de,
+        "Finger protection systems"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Zubehör für Fenster, Fassaden, Türen und Tore/Fingerschutzsysteme"@de,
+        "Components of windows and curtain walls/accessories for windows, facades, doors, and gates/Finger protection systems"@en ;
+    rdfs:subClassOf obd:Zubehör_für_Fenster_Fassaden_Türen_und_Tore ;
+    obd:okobaudatCategory oekocat:7.11.02 .
+
+obd:Fliesen_und_Platten a owl:Class ;
+    rdfs:label "Fliesen und Platten"@de,
+        "Tiles and slabs"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Fliesen und Platten"@de,
+        "Mineral Building Materials/Stones and Elements/Tiles and slabs"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.07 .
+
+obd:Flugzeug a owl:Class ;
+    rdfs:label "Flugzeug"@de,
+        "Aircraft"@en ;
+    rdfs:comment "Sonstige/Personen - Transporte[Personen km]/Flugzeug"@de,
+        "Others/Passenger transport [passenger km]/Aircraft"@en ;
+    rdfs:subClassOf obd:Personen_TransportePersonen_km ;
+    obd:okobaudatCategory oekocat:9.4.03 .
+
+obd:Flüssiggas a owl:Class ;
+    rdfs:label "Flüssiggas"@de,
+        "Liquefied gas"@en ;
+    rdfs:comment "Sonstige/Energieträger - Bereitstellung frei Verbraucher/Flüssiggas"@de,
+        "Others/Energy carriers - supply free consumers/Liquefied gas"@en ;
+    rdfs:subClassOf obd:Energieträger_Bereitstellung_frei_Verbraucher ;
+    obd:okobaudatCategory oekocat:9.2.02 .
+
+obd:Folien_zur_Abdichtung a owl:Class ;
+    rdfs:label "Folien zur Abdichtung"@de,
+        "Membranes for sealing"@en ;
+    rdfs:comment "Kunststoffe/Folien und Vliese/Folien zur Abdichtung"@de,
+        "Plastics/Films and nonwovens/Membranes for sealing"@en ;
+    rdfs:subClassOf obd:Folien_und_Vliese ;
+    obd:okobaudatCategory oekocat:6.6.03 .
+
+obd:Folienkissen a owl:Class ;
+    rdfs:label "Folienkissen"@de,
+        "Foil cushion"@en ;
+    rdfs:comment "Kunststoffe/Folien und Vliese/Folienkissen"@de,
+        "Plastics/Films and nonwovens/Foil cushion"@en ;
+    rdfs:subClassOf obd:Folien_und_Vliese ;
+    obd:okobaudatCategory oekocat:6.6.06 .
+
+obd:Fugendichtungsbänder a owl:Class ;
+    rdfs:label "Fugendichtungsbänder"@de,
+        "Joint sealing tapes"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Dichtungskomponenten / -materialien/Fugendichtungsbänder"@de,
+        "Components of windows and curtain walls/Sealing components/-materials/Joint sealing tapes"@en ;
+    rdfs:subClassOf obd:Dichtungskomponenten_materialien ;
+    obd:okobaudatCategory oekocat:7.3.04 .
+
+obd:Funierschichtholz a owl:Class ;
+    rdfs:label "Funierschichtholz"@de,
+        "Plywood laminated timber"@en ;
+    rdfs:comment "Holz/Holzwerkstoffe/Funierschichtholz"@de,
+        "Wood/Wood-based materials/Plywood laminated timber"@en ;
+    rdfs:subClassOf obd:Holzwerkstoffe ;
+    obd:okobaudatCategory oekocat:3.2.03 .
+
+obd:Gips a owl:Class ;
+    rdfs:label "Gips"@de,
+        "Gypsum"@en ;
+    rdfs:comment "Mineralische Baustoffe/Bindemittel/Gips"@de,
+        "Mineral Building Materials/Binders/Gypsum"@en ;
+    rdfs:subClassOf obd:Bindemittel ;
+    obd:okobaudatCategory oekocat:1.1.03 .
+
+obd:Gipsplatten a owl:Class ;
+    rdfs:label "Gipsplatten"@de,
+        "Gypsum boards"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Gipsplatten"@de,
+        "Mineral Building Materials/Stones and Elements/Gypsum boards"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.13 .
+
+obd:Glasbausteine a owl:Class ;
+    rdfs:label "Glasbausteine"@de,
+        "Glass blocks"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Glasbausteine"@de,
+        "Mineral Building Materials/Stones and Elements/Glass blocks"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.16 .
+
+obd:Glaswolle a owl:Class ;
+    rdfs:label "Glaswolle"@de,
+        "Glass wool"@en ;
+    rdfs:comment "Dämmstoffe/Mineralwolle/Glaswolle"@de,
+        "Insulation Materials/Mineral Wool/Glass wool"@en ;
+    rdfs:subClassOf obd:Mineralwolle ;
+    obd:okobaudatCategory oekocat:2.1.02 .
+
+obd:Granulat a owl:Class ;
+    rdfs:label "Granulat"@de,
+        "Granulate"@en ;
+    rdfs:comment "Dämmstoffe/Blähperlit/Granulat"@de,
+        "Dämmstoffe/Schaumglas/Granulat"@de,
+        "Insulation Materials/Expanded perlite/Granulate"@en,
+        "Insulation Materials/Foam glass/Granulate"@en ;
+    rdfs:subClassOf obd:Blähperlit,
+        obd:Schaumglas ;
+    obd:okobaudatCategory oekocat:2.6.02,
+        oekocat:2.8.02 .
+
+obd:Grundierungen_Farben_und_Putze a owl:Class ;
+    rdfs:label "Grundierungen Farben und Putze"@de,
+        "Primers, paints, and plasters"@en ;
+    rdfs:comment "Beschichtungen/Grundierungen/Grundierungen Farben und Putze"@de,
+        "Coatings/Primers/Primers, paints, and plasters"@en ;
+    rdfs:subClassOf obd:Grundierungen ;
+    obd:okobaudatCategory oekocat:5.1.01 .
+
+obd:Gummi_Kautschuk_Bodenbeläge a owl:Class ;
+    rdfs:label "Gummi-/Kautschuk-Bodenbeläge"@de,
+        "Rubber flooring"@en ;
+    rdfs:comment "Kunststoffe/Bodenbeläge/Gummi-/Kautschuk-Bodenbeläge"@de,
+        "Plastics/Floor coverings/Rubber/Rubber floor coverings"@en ;
+    rdfs:subClassOf obd:Bodenbeläge ;
+    obd:okobaudatCategory oekocat:6.2.02 .
+
+obd:Guss_und_Schmiedeteile_aus_Stahl_und_Eisen a owl:Class ;
+    rdfs:label "Guss- und Schmiedeteile aus Stahl und Eisen"@de,
+        "Cast and forged parts made of steel and iron"@en ;
+    rdfs:comment "Metalle/Stahl und Eisen/Guss- und Schmiedeteile aus Stahl und Eisen"@de,
+        "Metals/Steel and iron/Cast and forged parts made of steel and iron"@en ;
+    rdfs:subClassOf obd:Stahl_und_Eisen ;
+    obd:okobaudatCategory oekocat:4.1.05 .
+
+obd:Gussassphalt a owl:Class ;
+    rdfs:label "Gussassphalt"@de,
+        "Cast asphalt"@en ;
+    rdfs:comment "Mineralische Baustoffe/Asphalt/Gussassphalt"@de,
+        "Mineral Building Materials/Asphalt/Cast asphalt"@en ;
+    rdfs:subClassOf obd:Asphalt ;
+    obd:okobaudatCategory oekocat:1.5.02 .
+
+obd:Gussteile_aus_Aluminium a owl:Class ;
+    rdfs:label "Gussteile aus Aluminium"@de,
+        "Cast aluminum parts"@en ;
+    rdfs:comment "Metalle/Aluminium/Gussteile aus Aluminium"@de,
+        "Metals/aluminum/Cast aluminum parts"@en ;
+    rdfs:subClassOf obd:Aluminium ;
+    obd:okobaudatCategory oekocat:4.3.03 .
+
+obd:Harz_Komposit_Fassadenplatten a owl:Class ;
+    rdfs:label "Harz-Komposit Fassadenplatten"@de,
+        "Resin-composite facade panels"@en ;
+    rdfs:comment "Kunststoffe/Kunststoffprofile elastisch/Harz-Komposit Fassadenplatten"@de,
+        "Plastics/Elastic plastic profiles/Resin-composite facade panels"@en ;
+    rdfs:subClassOf obd:Kunststoffprofile_elastisch ;
+    obd:okobaudatCategory oekocat:6.5.01 .
+
+obd:Hausmüll a owl:Class ;
+    rdfs:label "Hausmüll"@de,
+        "Household waste"@en ;
+    rdfs:comment "End of Life/Generisch/Hausmüll"@de,
+        "End of Life/Generic/Household waste"@en ;
+    rdfs:subClassOf obd:Generisch ;
+    obd:okobaudatCategory oekocat:100.1.02 .
+
+obd:Heizöl a owl:Class ;
+    rdfs:label "Heizöl"@de,
+        "Heating oil"@en ;
+    rdfs:comment "Sonstige/Energieträger - Bereitstellung frei Verbraucher/Heizöl"@de,
+        "Others/Energy carriers - supply free consumers/Heating oil"@en ;
+    rdfs:subClassOf obd:Energieträger_Bereitstellung_frei_Verbraucher ;
+    obd:okobaudatCategory oekocat:9.2.03 .
+
+obd:Holz_Aluminium a owl:Class ;
+    rdfs:label "Holz-Aluminium"@de,
+        "Wood-aluminum"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Rahmen / Profile/Holz-Aluminium"@de,
+        "Components of windows and curtain walls/Frame/Profile/Wood-aluminum"@en ;
+    rdfs:subClassOf obd:Rahmen_Profile ;
+    obd:okobaudatCategory oekocat:7.1.04 .
+
+obd:Holz_Metallfenster a owl:Class ;
+    rdfs:label "Holz-Metallfenster"@de,
+        "Wood-metal windows"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Fenster/Holz-Metallfenster"@de,
+        "Components of windows and curtain walls/Windows/Wood-metal windows"@en ;
+    rdfs:subClassOf obd:Fenster ;
+    obd:okobaudatCategory oekocat:7.8.02 .
+
+obd:Holz_Pellets a owl:Class ;
+    rdfs:label "Holz-Pellets"@de,
+        "Wood pellets"@en ;
+    rdfs:comment "Sonstige/Energieträger - Bereitstellung frei Verbraucher/Holz-Pellets"@de,
+        "Others/Energy carriers - supply free consumers/Wood pellets"@en ;
+    rdfs:subClassOf obd:Energieträger_Bereitstellung_frei_Verbraucher ;
+    obd:okobaudatCategory oekocat:9.2.04 .
+
+obd:Holz_thermisch_getrennt a owl:Class ;
+    rdfs:label "Holz thermisch getrennt"@de,
+        "thermally separated wood"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Rahmen / Profile/Holz thermisch getrennt"@de,
+        "Components of windows and curtain walls/Frame/Profile/thermally separated wood"@en ;
+    rdfs:subClassOf obd:Rahmen_Profile ;
+    obd:okobaudatCategory oekocat:7.1.02 .
+
+obd:Holzfaserdämmplatte a owl:Class ;
+    rdfs:label "Holzfaserdämmplatte"@de,
+        "Wood fiber insulation board"@en ;
+    rdfs:comment "Dämmstoffe/Holzfasern/Holzfaserdämmplatte"@de,
+        "Insulation Materials/Wood fibers/Wood fiber insulation board"@en ;
+    rdfs:subClassOf obd:Holzfasern ;
+    obd:okobaudatCategory oekocat:2.10.01 .
+
+obd:Holzfasern_und_Holzspäne_lose a owl:Class ;
+    rdfs:label "Holzfasern und Holzspäne, lose"@de,
+        "Wood fibers and wood chips, loose"@en ;
+    rdfs:comment "Dämmstoffe/Holzfasern/Holzfasern und Holzspäne, lose"@de,
+        "Insulation Materials/Wood fibers/Wood fibers and wood chips, loose"@en ;
+    rdfs:subClassOf obd:Holzfasern ;
+    obd:okobaudatCategory oekocat:2.10.02 .
+
+obd:Holzfaserplatten a owl:Class ;
+    rdfs:label "Holzfaserplatten"@de,
+        "Wood fiber boards"@en ;
+    rdfs:comment "Holz/Holzwerkstoffe/Holzfaserplatten"@de,
+        "Wood/Wood-based materials/Wood fiber boards"@en ;
+    rdfs:subClassOf obd:Holzwerkstoffe ;
+    obd:okobaudatCategory oekocat:3.2.07 .
+
+obd:Holzfenster a owl:Class ;
+    rdfs:label "Holzfenster"@de,
+        "Wooden windows"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Fenster/Holzfenster"@de,
+        "Components of windows and curtain walls/Windows/Wooden windows"@en ;
+    rdfs:subClassOf obd:Fenster ;
+    obd:okobaudatCategory oekocat:7.8.01 .
+
+obd:Holzwerkstoff a owl:Class ;
+    rdfs:label "Holzwerkstoff"@de,
+        "Wood-based material"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Rahmen / Profile/Holzwerkstoff"@de,
+        "Components of windows and curtain walls/Frame/Profile/Wood-based material"@en ;
+    rdfs:subClassOf obd:Rahmen_Profile ;
+    obd:okobaudatCategory oekocat:7.1.03 .
+
+obd:Holzwolleleichtbauplatten a owl:Class ;
+    rdfs:label "Holzwolleleichtbauplatten"@de,
+        "Wood wool lightweight construction boards"@en ;
+    rdfs:comment "Dämmstoffe/Holzwolleplatten/Holzwolleleichtbauplatten"@de,
+        "Insulation Materials/Wood wool boards/Wood wool lightweight construction boards"@en ;
+    rdfs:subClassOf obd:Holzwolleplatten ;
+    obd:okobaudatCategory oekocat:2.7.01 .
+
+obd:Holzzementplatten a owl:Class ;
+    rdfs:label "Holzzementplatten"@de,
+        "Wood-cement boards"@en ;
+    rdfs:comment "Holz/Holzwerkstoffe/Holzzementplatten"@de,
+        "Wood/Wood-based materials/Wood-cement boards"@en ;
+    rdfs:subClassOf obd:Holzwerkstoffe ;
+    obd:okobaudatCategory oekocat:3.2.08 .
+
+obd:Hydrophobe_Platten a owl:Class ;
+    rdfs:label "Hydrophobe Platten"@de,
+        "Hydrophobic panels"@en ;
+    rdfs:comment "Dämmstoffe/Siliziumdioxid-basiert/Hydrophobe Platten"@de,
+        "Insulation Materials/Silicon dioxide-based/Hydrophobic panels"@en ;
+    rdfs:subClassOf obd:Siliziumdioxid_basiert ;
+    obd:okobaudatCategory oekocat:2.24.02 .
+
+obd:Imprägnierte_Dichtungsbänder_aus_Schaumkunststoff a owl:Class ;
+    rdfs:label "Imprägnierte Dichtungsbänder aus Schaumkunststoff"@de,
+        "Impregnated sealing tapes made of foam plastic"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Dichtungskomponenten / -materialien/Imprägnierte Dichtungsbänder aus Schaumkunststoff"@de,
+        "Components of windows and curtain walls/Sealing components/-materials/Impregnated sealing tapes made of foam plastic"@en ;
+    rdfs:subClassOf obd:Dichtungskomponenten_materialien ;
+    obd:okobaudatCategory oekocat:7.3.03 .
+
+obd:Innen_und_Außenbeschichtungen a owl:Class ;
+    rdfs:label "Innen- und Außenbeschichtungen"@de,
+        "Interior and exterior coatings"@en ;
+    rdfs:comment "Beschichtungen/Brandschutz/Innen- und Außenbeschichtungen"@de,
+        "Coatings/Fire Protection/Interior and exterior coatings"@en ;
+    rdfs:subClassOf obd:Brandschutz ;
+    obd:okobaudatCategory oekocat:5.9.01 .
+
+obd:Innenfarben a owl:Class ;
+    rdfs:label "Innenfarben"@de,
+        "Interior paints"@en ;
+    rdfs:comment "Beschichtungen/Innenbeschichtungen/Innenfarben"@de,
+        "Coatings/Interior Coatings/Interior paints"@en ;
+    rdfs:subClassOf obd:Innenbeschichtungen ;
+    obd:okobaudatCategory oekocat:5.5.02 .
+
+obd:Innenwände a owl:Class ;
+    rdfs:label "Innenwände"@de,
+        "Interior walls"@en ;
+    rdfs:comment "Komposite/Systembauteile/Innenwände"@de,
+        "Composite/System components/Interior walls"@en ;
+    rdfs:subClassOf obd:Systembauteile ;
+    obd:okobaudatCategory oekocat:10.1.04 .
+
+obd:Kabel a owl:Class ;
+    rdfs:label "Kabel"@de,
+        "Cable"@en ;
+    rdfs:comment "Gebäudetechnik/Elektro/Kabel"@de,
+        "Building Services/Electrical/Cable"@en ;
+    rdfs:subClassOf obd:Elektro ;
+    obd:okobaudatCategory oekocat:8.4.01 .
+
+obd:Kalk a owl:Class ;
+    rdfs:label "Kalk"@de,
+        "lime"@en ;
+    rdfs:comment "Mineralische Baustoffe/Bindemittel/Kalk"@de,
+        "Mineral Building Materials/Binders/lime"@en ;
+    rdfs:subClassOf obd:Bindemittel ;
+    obd:okobaudatCategory oekocat:1.1.02 .
+
+obd:Kalksandstein a owl:Class ;
+    rdfs:label "Kalksandstein"@de,
+        "Lime sand brick"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Kalksandstein"@de,
+        "Mineral Building Materials/Stones and Elements/Lime sand brick"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.01 .
+
+obd:Kleber_und_Klebemörtel a owl:Class ;
+    rdfs:label "Kleber und Klebemörtel"@de,
+        "Adhesives and adhesive mortars"@en ;
+    rdfs:comment "Mineralische Baustoffe/Mörtel und Beton/Kleber und Klebemörtel"@de,
+        "Mineral Building Materials/Mortar and Concrete/Adhesives and adhesive mortars"@en ;
+    rdfs:subClassOf obd:Mörtel_und_Beton ;
+    obd:okobaudatCategory oekocat:1.4.05 .
+
+obd:KlimatisierungKältemaschinen a owl:Class ;
+    rdfs:label "Klimatisierung/Kältemaschinen"@de,
+        "Air conditioning/refrigeration machines"@en ;
+    rdfs:comment "Gebäudetechnik/Klimatisierung und Lüftung/Klimatisierung/Kältemaschinen"@de,
+        "Building Services/Air conditioning and ventilation/Air conditioning/Chillers"@en ;
+    rdfs:subClassOf obd:Klimatisierung_und_Lüftung ;
+    obd:okobaudatCategory oekocat:8.2.02 .
+
+obd:Konstruktionsvollholz a owl:Class ;
+    rdfs:label "Konstruktionsvollholz"@de,
+        "Structural solid wood"@en ;
+    rdfs:comment "Holz/Vollholz/Konstruktionsvollholz"@de,
+        "Wood/Solid Wood/Structural solid wood"@en ;
+    rdfs:subClassOf obd:Vollholz ;
+    obd:okobaudatCategory oekocat:3.1.02 .
+
+obd:Kork a owl:Class ;
+    rdfs:label "Kork"@de,
+        "Cork"@en ;
+    rdfs:comment "Holz/Holzböden/Kork"@de,
+        "Wood/Wooden floors/Cork"@en ;
+    rdfs:subClassOf obd:Holzböden ;
+    obd:okobaudatCategory oekocat:3.3.03 .
+
+obd:Kraftwerksnebenprodukte a owl:Class ;
+    rdfs:label "Kraftwerksnebenprodukte"@de,
+        "Power plant by-products"@en ;
+    rdfs:comment "Mineralische Baustoffe/Zuschläge/Kraftwerksnebenprodukte"@de,
+        "Mineral Building Materials/Aggregates/Power plant by-products"@en ;
+    rdfs:subClassOf obd:Zuschläge ;
+    obd:okobaudatCategory oekocat:1.2.08 .
+
+obd:Kunststein a owl:Class ;
+    rdfs:label "Kunststein"@de,
+        "Artificial stone"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Kunststein"@de,
+        "Mineral Building Materials/Stones and Elements/Artificial stone"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.20 .
+
+obd:Kunststoff a owl:Class ;
+    rdfs:label "Kunststoff"@de,
+        "Plastic"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Türen und Tore/Kunststoff"@de,
+        "Components of windows and curtain walls/Doors and gates/Plastic"@en ;
+    rdfs:subClassOf obd:Türen_und_Tore ;
+    obd:okobaudatCategory oekocat:7.6.04 .
+
+obd:Kunststoffbeschläge a owl:Class ;
+    rdfs:label "Kunststoffbeschläge"@de,
+        "Plastic fittings"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Beschläge/Kunststoffbeschläge"@de,
+        "Components of windows and curtain walls/Hardware/Plastic fittings"@en ;
+    rdfs:subClassOf obd:Beschläge ;
+    obd:okobaudatCategory oekocat:7.4.09 .
+
+obd:Kunststofffenster a owl:Class ;
+    rdfs:label "Kunststofffenster"@de,
+        "Plastic window"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Fenster/Kunststofffenster"@de,
+        "Components of windows and curtain walls/Windows/Plastic window"@en ;
+    rdfs:subClassOf obd:Fenster ;
+    obd:okobaudatCategory oekocat:7.8.04 .
+
+obd:Kunststoffprofile_hart a owl:Class ;
+    rdfs:label "Kunststoffprofile hart"@de,
+        "Rigid plastic profiles"@en ;
+    rdfs:comment "Kunststoffe/Profile/Kunststoffprofile hart"@de,
+        "Plastics/Profile/Rigid plastic profiles"@en ;
+    rdfs:subClassOf obd:Profile ;
+    obd:okobaudatCategory oekocat:6.4.01 .
+
+obd:Kupferbleche a owl:Class ;
+    rdfs:label "Kupferbleche"@de,
+        "Copper sheets"@en ;
+    rdfs:comment "Metalle/Kupfer/Kupferbleche"@de,
+        "Metals/Copper/Copper sheets"@en ;
+    rdfs:subClassOf obd:Kupfer ;
+    obd:okobaudatCategory oekocat:4.4.01 .
+
+obd:Kupferprofile a owl:Class ;
+    rdfs:label "Kupferprofile"@de,
+        "Copper profiles"@en ;
+    rdfs:comment "Metalle/Kupfer/Kupferprofile"@de,
+        "Metals/Copper/Copper profiles"@en ;
+    rdfs:subClassOf obd:Kupfer ;
+    obd:okobaudatCategory oekocat:4.4.03 .
+
+obd:Kupferrohre a owl:Class ;
+    rdfs:label "Kupferrohre"@de,
+        "Copper Pipes"@en ;
+    rdfs:comment "Metalle/Kupfer/Kupferrohre"@de,
+        "Metals/Copper/Copper Pipes"@en ;
+    rdfs:subClassOf obd:Kupfer ;
+    obd:okobaudatCategory oekocat:4.4.02 .
+
+obd:Kältemittel a owl:Class ;
+    rdfs:label "Kältemittel"@de,
+        "Refrigerant"@en ;
+    rdfs:comment "Gebäudetechnik/Klimatisierung und Lüftung/Kältemittel"@de,
+        "Building Services/Air conditioning and ventilation/Refrigerant"@en ;
+    rdfs:subClassOf obd:Klimatisierung_und_Lüftung ;
+    obd:okobaudatCategory oekocat:8.2.04 .
+
+obd:LKW a owl:Class ;
+    rdfs:label "LKW"@de,
+        "Truck"@en ;
+    rdfs:comment "Sonstige/Güter - Transporte[t km]/LKW"@de,
+        "Others/Goods transport [t km]/Truck"@en ;
+    rdfs:subClassOf obd:Güter_Transportet_km ;
+    obd:okobaudatCategory oekocat:9.3.01 .
+
+obd:Lacksysteme_Holzfassade a owl:Class ;
+    rdfs:label "Lacksysteme Holzfassade"@de,
+        "Coating systems for wooden facades"@en ;
+    rdfs:comment "Beschichtungen/Lacke und Lasuren/Lacksysteme Holzfassade"@de,
+        "Coatings/Paints and varnishes/Coating systems for wooden facades"@en ;
+    rdfs:subClassOf obd:Lacke_und_Lasuren ;
+    obd:okobaudatCategory oekocat:5.6.02 .
+
+obd:Lacksysteme_Holzfenster a owl:Class ;
+    rdfs:label "Lacksysteme Holzfenster"@de,
+        "coating systems for wooden windows"@en ;
+    rdfs:comment "Beschichtungen/Lacke und Lasuren/Lacksysteme Holzfenster"@de,
+        "Coatings/Paints and varnishes/coating systems for wooden windows"@en ;
+    rdfs:subClassOf obd:Lacke_und_Lasuren ;
+    obd:okobaudatCategory oekocat:5.6.01 .
+
+obd:Lacksysteme_Metall a owl:Class ;
+    rdfs:label "Lacksysteme Metall"@de,
+        "Coating systems for metal"@en ;
+    rdfs:comment "Beschichtungen/Lacke und Lasuren/Lacksysteme Metall"@de,
+        "Coatings/Paints and varnishes/Coating systems for metal"@en ;
+    rdfs:subClassOf obd:Lacke_und_Lasuren ;
+    obd:okobaudatCategory oekocat:5.6.04 .
+
+obd:Laminat a owl:Class ;
+    rdfs:label "Laminat"@de,
+        "Laminate"@en ;
+    rdfs:comment "Holz/Holzböden/Laminat"@de,
+        "Wood/Wooden floors/Laminate"@en ;
+    rdfs:subClassOf obd:Holzböden ;
+    obd:okobaudatCategory oekocat:3.3.01 .
+
+obd:Laminated_Veneer_Lumber_LVL a owl:Class ;
+    rdfs:label "Laminated Veneer Lumber (LVL)"@de,
+        "Laminated Veneer Lumber (LVL)"@en ;
+    rdfs:comment "Holz/Holzwerkstoffe/Laminated Veneer Lumber (LVL)"@de,
+        "Wood/Wood-based materials/Laminated Veneer Lumber (LVL)"@en ;
+    rdfs:subClassOf obd:Holzwerkstoffe ;
+    obd:okobaudatCategory oekocat:3.2.05 .
+
+obd:Lehm a owl:Class ;
+    rdfs:label "Lehm"@de,
+        "Clay"@en ;
+    rdfs:comment "Mineralische Baustoffe/Bindemittel/Lehm"@de,
+        "Mineral Building Materials/Binders/Clay"@en ;
+    rdfs:subClassOf obd:Bindemittel ;
+    obd:okobaudatCategory oekocat:1.1.04 .
+
+obd:Lehmsteine a owl:Class ;
+    rdfs:label "Lehmsteine"@de,
+        "Clay bricks"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Lehmsteine"@de,
+        "Mineral Building Materials/Stones and Elements/Clay bricks"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.17 .
+
+obd:Leichtbeton a owl:Class ;
+    rdfs:label "Leichtbeton"@de,
+        "Lightweight concrete"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Leichtbeton"@de,
+        "Mineral Building Materials/Stones and Elements/Lightweight concrete"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.04 .
+
+obd:Linoleum_Bodenbeläge a owl:Class ;
+    rdfs:label "Linoleum-Bodenbeläge"@de,
+        "Linoleum floor coverings"@en ;
+    rdfs:comment "Kunststoffe/Bodenbeläge/Linoleum-Bodenbeläge"@de,
+        "Plastics/Floor coverings/Linoleum floor coverings"@en ;
+    rdfs:subClassOf obd:Bodenbeläge ;
+    obd:okobaudatCategory oekocat:6.2.04 .
+
+obd:Lüftungsanlagen a owl:Class ;
+    rdfs:label "Lüftungsanlagen"@de,
+        "Ventilation systems"@en ;
+    rdfs:comment "Gebäudetechnik/Klimatisierung und Lüftung/Lüftungsanlagen"@de,
+        "Building Services/Air conditioning and ventilation/Ventilation systems"@en ;
+    rdfs:subClassOf obd:Klimatisierung_und_Lüftung ;
+    obd:okobaudatCategory oekocat:8.2.01 .
+
+obd:Mauermörtel a owl:Class ;
+    rdfs:label "Mauermörtel"@de,
+        "Masonry mortar"@en ;
+    rdfs:comment "Mineralische Baustoffe/Mörtel und Beton/Mauermörtel"@de,
+        "Mineral Building Materials/Mortar and Concrete/Masonry mortar"@en ;
+    rdfs:subClassOf obd:Mörtel_und_Beton ;
+    obd:okobaudatCategory oekocat:1.4.02 .
+
+obd:Mehrschichtig_modulare_Bodenbeläge a owl:Class ;
+    rdfs:label "Mehrschichtig modulare Bodenbeläge"@de,
+        "Multi-layer modular floor coverings"@en ;
+    rdfs:comment "Holz/Holzböden/Mehrschichtig modulare Bodenbeläge"@de,
+        "Kunststoffe/Bodenbeläge/Mehrschichtig modulare Bodenbeläge"@de,
+        "Plastics/Floor coverings/Multi-layer modular floor coverings"@en,
+        "Wood/Wooden floors/Multi-layer modular floor coverings"@en ;
+    rdfs:subClassOf obd:Bodenbeläge,
+        obd:Holzböden ;
+    obd:okobaudatCategory oekocat:3.3.04,
+        oekocat:6.2.06 .
+
+obd:Messingbeschläge a owl:Class ;
+    rdfs:label "Messingbeschläge"@de,
+        "Brass Fittings"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Beschläge/Messingbeschläge"@de,
+        "Components of windows and curtain walls/Hardware/Brass Fittings"@en ;
+    rdfs:subClassOf obd:Beschläge ;
+    obd:okobaudatCategory oekocat:7.4.04 .
+
+obd:Metallfenster a owl:Class ;
+    rdfs:label "Metallfenster"@de,
+        "Metal windows"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Fenster/Metallfenster"@de,
+        "Components of windows and curtain walls/Windows/Metal windows"@en ;
+    rdfs:subClassOf obd:Fenster ;
+    obd:okobaudatCategory oekocat:7.8.03 .
+
+obd:Mineralisch a owl:Class ;
+    rdfs:label "Mineralisch"@de,
+        "Mineral"@en ;
+    rdfs:comment "Dämmstoffe/Ortschaum/Mineralisch"@de,
+        "Insulation Materials/In-situ foam/Mineral"@en ;
+    rdfs:subClassOf obd:Ortschaum ;
+    obd:okobaudatCategory oekocat:2.26.01 .
+
+obd:Müllverbrennung a owl:Class ;
+    rdfs:label "Müllverbrennung"@de,
+        "Waste incineration"@en ;
+    rdfs:comment "Sonstige/Abfallaufbereitung und -entsorgung (EoL)/Müllverbrennung"@de,
+        "Others/Waste treatment and disposal (EoL)/Waste incineration"@en ;
+    rdfs:subClassOf obd:Abfallaufbereitung_und_entsorgung_EoL ;
+    obd:okobaudatCategory oekocat:9.5.04 .
+
+obd:Nass_Lackieren_von_Metallen a owl:Class ;
+    rdfs:label "(Nass-) Lackieren von Metallen"@de,
+        "(Wet) Painting of Metals"@en ;
+    rdfs:comment "Metalle/Oberflächenbehandlung und Beschichtung von Metallen/(Nass-) Lackieren von Metallen"@de,
+        "Metals/Surface treatment and coating of metals/(Wet) Painting of Metals"@en ;
+    rdfs:subClassOf obd:Oberflächenbehandlung_und_Beschichtung_von_Metallen ;
+    obd:okobaudatCategory oekocat:4.7.02 .
+
+obd:Naturstein a owl:Class ;
+    rdfs:label "Naturstein"@de,
+        "Natural stone"@en ;
+    rdfs:comment "Mineralische Baustoffe/Zuschläge/Naturstein"@de,
+        "Mineral Building Materials/Aggregates/Natural stone"@en ;
+    rdfs:subClassOf obd:Zuschläge ;
+    obd:okobaudatCategory oekocat:1.2.02 .
+
+obd:Naturwerkstein a owl:Class ;
+    rdfs:label "Naturwerkstein"@de,
+        "Natural stone"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Naturwerkstein"@de,
+        "Mineral Building Materials/Stones and Elements/Natural stone"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.08 .
+
+obd:Nutzung_Armaturen a owl:Class ;
+    rdfs:label "Nutzung Armaturen"@de,
+        "Utility fittings"@en ;
+    rdfs:comment "Gebäudetechnik/Nutzung/Nutzung Armaturen"@de,
+        "Building Services/Usage/Utility fittings"@en ;
+    rdfs:subClassOf obd:Nutzung ;
+    obd:okobaudatCategory oekocat:8.6.03 .
+
+obd:Nutzung_Beförderungstechnik a owl:Class ;
+    rdfs:label "Nutzung Beförderungstechnik"@de,
+        "Transport technology"@en ;
+    rdfs:comment "Gebäudetechnik/Nutzung/Nutzung Beförderungstechnik"@de,
+        "Building Services/Usage/Transport technology"@en ;
+    rdfs:subClassOf obd:Nutzung ;
+    obd:okobaudatCategory oekocat:8.6.05 .
+
+obd:Nutzung_Beleuchtung a owl:Class ;
+    rdfs:label "Nutzung Beleuchtung"@de,
+        "Usage lighting"@en ;
+    rdfs:comment "Gebäudetechnik/Nutzung/Nutzung Beleuchtung"@de,
+        "Building Services/Usage/Usage lighting"@en ;
+    rdfs:subClassOf obd:Nutzung ;
+    obd:okobaudatCategory oekocat:8.6.04 .
+
+obd:Nutzung_Lüftung_und_Klimatechnik a owl:Class ;
+    rdfs:label "Nutzung Lüftung und Klimatechnik"@de,
+        "Utilization of ventilation and air conditioning technology"@en ;
+    rdfs:comment "Gebäudetechnik/Nutzung/Nutzung Lüftung und Klimatechnik"@de,
+        "Building Services/Usage/Utilization of ventilation and air conditioning technology"@en ;
+    rdfs:subClassOf obd:Nutzung ;
+    obd:okobaudatCategory oekocat:8.6.02 .
+
+obd:Nutzung_Wärmeerzeuger a owl:Class ;
+    rdfs:label "Nutzung Wärmeerzeuger"@de,
+        "use of heat generators"@en ;
+    rdfs:comment "Gebäudetechnik/Nutzung/Nutzung Wärmeerzeuger"@de,
+        "Building Services/Usage/use of heat generators"@en ;
+    rdfs:subClassOf obd:Nutzung ;
+    obd:okobaudatCategory oekocat:8.6.01 .
+
+obd:Nutzung_Wärmeerzeuger_EnEV a owl:Class ;
+    rdfs:label "Nutzung Wärmeerzeuger (EnEV)"@de,
+        "Use of heat generators (EnEV)"@en ;
+    rdfs:comment "Gebäudetechnik/Nutzung/Nutzung Wärmeerzeuger (EnEV)"@de,
+        "Building Services/Usage/Use of heat generators (EnEV)"@en ;
+    rdfs:subClassOf obd:Nutzung ;
+    obd:okobaudatCategory oekocat:8.6.06 .
+
+obd:OSB_Platte a owl:Class ;
+    rdfs:label "OSB-Platte"@de,
+        "OSB board"@en ;
+    rdfs:comment "Holz/Holzwerkstoffe/OSB-Platte"@de,
+        "Wood/Wood-based materials/OSB board"@en ;
+    rdfs:subClassOf obd:Holzwerkstoffe ;
+    obd:okobaudatCategory oekocat:3.2.04 .
+
+obd:Oberlichter a owl:Class ;
+    rdfs:label "Oberlichter"@de,
+        "Skylights"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Tageslichtsysteme und Rauch- / Wärmeabzugsanlagen /Oberlichter"@de,
+        "Components of windows and curtain walls/Daylight systems and smoke/Heat extraction systems/Skylights"@en ;
+    rdfs:subClassOf obd:Tageslichtsysteme_und_Rauch_Wärmeabzugsanlagen_ ;
+    obd:okobaudatCategory oekocat:7.10.01 .
+
+obd:Opake_Füllungen a owl:Class ;
+    rdfs:label "Opake Füllungen"@de,
+        "Opaque fillers"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Füllungen/Opake Füllungen"@de,
+        "Components of windows and curtain walls/Fillings/Opaque fillers"@en ;
+    rdfs:subClassOf obd:Füllungen ;
+    obd:okobaudatCategory oekocat:7.2.02 .
+
+obd:Organisch a owl:Class ;
+    rdfs:label "Organisch"@de,
+        "Organic"@en ;
+    rdfs:comment "Dämmstoffe/Ortschaum/Organisch"@de,
+        "Insulation Materials/In-situ foam/Organic"@en ;
+    rdfs:subClassOf obd:Ortschaum ;
+    obd:okobaudatCategory oekocat:2.26.02 .
+
+obd:PF_Platten a owl:Class ;
+    rdfs:label "PF-Platten"@de,
+        "PF boards"@en ;
+    rdfs:comment "Dämmstoffe/Phenolharz-Hartschaum (PF)/PF-Platten"@de,
+        "Insulation Materials/Phenolic foam (PF)/PF boards"@en ;
+    rdfs:subClassOf obd:Phenolharz_Hartschaum_PF ;
+    obd:okobaudatCategory oekocat:2.5.01 .
+
+obd:PIB_Dachbahnen_Polyisobutylen a owl:Class ;
+    rdfs:label "PIB-Dachbahnen (Polyisobutylen)"@de,
+        "PIB roofing membranes (Polyisobutylene)"@en ;
+    rdfs:comment "Kunststoffe/Dachbahnen/PIB-Dachbahnen (Polyisobutylen)"@de,
+        "Plastics/Roofing membranes/PIB roofing membranes (Polyisobutylene)"@en ;
+    rdfs:subClassOf obd:Dachbahnen ;
+    obd:okobaudatCategory oekocat:6.3.09 .
+
+obd:PIR_Hartschaum a owl:Class ;
+    rdfs:label "PIR-Hartschaum"@de,
+        "PIR rigid foam"@en ;
+    rdfs:comment "Dämmstoffe/Polyurethan-Hartschaum (PU)/PIR-Hartschaum"@de,
+        "Insulation Materials/Polyurethane rigid foam (PU)/PIR rigid foam"@en ;
+    rdfs:subClassOf obd:Polyurethan_Hartschaum_PU ;
+    obd:okobaudatCategory oekocat:2.4.04 .
+
+obd:PKW a owl:Class ;
+    rdfs:label "PKW"@de,
+        "Passenger car"@en ;
+    rdfs:comment "Sonstige/Personen - Transporte[Personen km]/PKW"@de,
+        "Others/Passenger transport [passenger km]/Passenger car"@en ;
+    rdfs:subClassOf obd:Personen_TransportePersonen_km ;
+    obd:okobaudatCategory oekocat:9.4.01 .
+
+obd:PUR a owl:Class ;
+    rdfs:label "PUR"@de,
+        "PUR"@en ;
+    rdfs:comment "Kunststoffe/Dichtmassen/PUR"@de,
+        "Plastics/Sealants/PUR"@en ;
+    rdfs:subClassOf obd:Dichtmassen ;
+    obd:okobaudatCategory oekocat:6.7.03 .
+
+obd:PU_Blockschaum a owl:Class ;
+    rdfs:label "PU Blockschaum"@de,
+        "PU block foam"@en ;
+    rdfs:comment "Dämmstoffe/Polyurethan-Hartschaum (PU)/PU Blockschaum"@de,
+        "Insulation Materials/Polyurethane rigid foam (PU)/PU block foam"@en ;
+    rdfs:subClassOf obd:Polyurethan_Hartschaum_PU ;
+    obd:okobaudatCategory oekocat:2.4.03 .
+
+obd:PU_mit_Aluminium a owl:Class ;
+    rdfs:label "PU mit Aluminium"@de,
+        "PU with aluminum"@en ;
+    rdfs:comment "Dämmstoffe/Polyurethan-Hartschaum (PU)/PU mit Aluminium"@de,
+        "Insulation Materials/Polyurethane rigid foam (PU)/PU with aluminum"@en ;
+    rdfs:subClassOf obd:Polyurethan_Hartschaum_PU ;
+    obd:okobaudatCategory oekocat:2.4.01 .
+
+obd:PU_mit_Mineralvlies a owl:Class ;
+    rdfs:label "PU mit Mineralvlies"@de,
+        "PU with mineral fleece"@en ;
+    rdfs:comment "Dämmstoffe/Polyurethan-Hartschaum (PU)/PU mit Mineralvlies"@de,
+        "Insulation Materials/Polyurethane rigid foam (PU)/PU with mineral fleece"@en ;
+    rdfs:subClassOf obd:Polyurethan_Hartschaum_PU ;
+    obd:okobaudatCategory oekocat:2.4.02 .
+
+obd:PVC a owl:Class ;
+    rdfs:label "PVC"@de,
+        "PVC"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Rahmen / Profile/PVC"@de,
+        "Kunststoffe/Dichtmassen/PVC"@de,
+        "Components of windows and curtain walls/Frame/Profile/PVC"@en,
+        "Plastics/Sealants/PVC"@en ;
+    rdfs:subClassOf obd:Dichtmassen,
+        obd:Rahmen_Profile ;
+    obd:okobaudatCategory oekocat:6.7.05,
+        oekocat:7.1.09 .
+
+obd:PVC_Bodenbeläge a owl:Class ;
+    rdfs:label "PVC-Bodenbeläge"@de,
+        "PVC Floor Coverings"@en ;
+    rdfs:comment "Kunststoffe/Bodenbeläge/PVC-Bodenbeläge"@de,
+        "Plastics/Floor coverings/PVC Floor Coverings"@en ;
+    rdfs:subClassOf obd:Bodenbeläge ;
+    obd:okobaudatCategory oekocat:6.2.01 .
+
+obd:PVC_Dachbahnen a owl:Class ;
+    rdfs:label "PVC-Dachbahnen"@de,
+        "PVC roofing membranes"@en ;
+    rdfs:comment "Kunststoffe/Dachbahnen/PVC-Dachbahnen"@de,
+        "Plastics/Roofing membranes/PVC roofing membranes"@en ;
+    rdfs:subClassOf obd:Dachbahnen ;
+    obd:okobaudatCategory oekocat:6.3.02 .
+
+obd:Parkett a owl:Class ;
+    rdfs:label "Parkett"@de,
+        "Parquet"@en ;
+    rdfs:comment "Holz/Holzböden/Parkett"@de,
+        "Wood/Wooden floors/Parquet"@en ;
+    rdfs:subClassOf obd:Holzböden ;
+    obd:okobaudatCategory oekocat:3.3.02 .
+
+obd:Parkettlack a owl:Class ;
+    rdfs:label "Parkettlack"@de,
+        "Parquet varnish"@en ;
+    rdfs:comment "Beschichtungen/Lacke und Lasuren/Parkettlack"@de,
+        "Coatings/Paints and varnishes/Parquet varnish"@en ;
+    rdfs:subClassOf obd:Lacke_und_Lasuren ;
+    obd:okobaudatCategory oekocat:5.6.03 .
+
+obd:Perlite a owl:Class ;
+    rdfs:label "Perlite"@de,
+        "Perlite"@en ;
+    rdfs:comment "Mineralische Baustoffe/Zuschläge/Perlite"@de,
+        "Mineral Building Materials/Aggregates/Perlite"@en ;
+    rdfs:subClassOf obd:Zuschläge ;
+    obd:okobaudatCategory oekocat:1.2.07 .
+
+obd:Pflanzenölkraftstoff a owl:Class ;
+    rdfs:label "Pflanzenölkraftstoff"@de,
+        "Plant oil fuel"@en ;
+    rdfs:comment "Sonstige/Energieträger - Bereitstellung frei Verbraucher/Pflanzenölkraftstoff"@de,
+        "Others/Energy carriers - supply free consumers/Plant oil fuel"@en ;
+    rdfs:subClassOf obd:Energieträger_Bereitstellung_frei_Verbraucher ;
+    obd:okobaudatCategory oekocat:9.2.09 .
+
+obd:Platten a owl:Class ;
+    rdfs:label "Platten"@de,
+        "Panels"@en ;
+    rdfs:comment "Dämmstoffe/Blähperlit/Platten"@de,
+        "Dämmstoffe/Schaumglas/Platten"@de,
+        "Insulation Materials/Expanded perlite/Panels"@en,
+        "Insulation Materials/Foam glass/Panels"@en ;
+    rdfs:subClassOf obd:Blähperlit,
+        obd:Schaumglas ;
+    obd:okobaudatCategory oekocat:2.6.01,
+        oekocat:2.8.01 .
+
+obd:Polysulfid a owl:Class ;
+    rdfs:label "Polysulfid"@de,
+        "Polysulfide"@en ;
+    rdfs:comment "Kunststoffe/Dichtmassen/Polysulfid"@de,
+        "Plastics/Sealants/Polysulfide"@en ;
+    rdfs:subClassOf obd:Dichtmassen ;
+    obd:okobaudatCategory oekocat:6.7.07 .
+
+obd:Porenbeton a owl:Class ;
+    rdfs:label "Porenbeton"@de,
+        "Aerated concrete"@en ;
+    rdfs:comment "Dämmstoffe/Calciumsilikat / Calcium-Silikathydrat/Porenbeton"@de,
+        "Mineralische Baustoffe/Steine und Elemente/Porenbeton"@de,
+        "Insulation Materials/Calcium silicate/Calcium silicate hydrate/Aerated concrete"@en,
+        "Mineral Building Materials/Stones and Elements/Aerated concrete"@en ;
+    rdfs:subClassOf obd:Calciumsilikat_Calcium_Silikathydrat,
+        obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.03,
+        oekocat:2.20.01 .
+
+obd:Pulverbeschichten a owl:Class ;
+    rdfs:label "Pulverbeschichten"@de,
+        "Powder coating"@en ;
+    rdfs:comment "Metalle/Oberflächenbehandlung und Beschichtung von Metallen/Pulverbeschichten"@de,
+        "Metals/Surface treatment and coating of metals/Powder coating"@en ;
+    rdfs:subClassOf obd:Oberflächenbehandlung_und_Beschichtung_von_Metallen ;
+    obd:okobaudatCategory oekocat:4.7.03 .
+
+obd:Putz_und_Putzmörtel a owl:Class ;
+    rdfs:label "Putz und Putzmörtel"@de,
+        "Plaster and plaster mortar"@en ;
+    rdfs:comment "Mineralische Baustoffe/Mörtel und Beton/Putz und Putzmörtel"@de,
+        "Mineral Building Materials/Mortar and Concrete/Plaster and plaster mortar"@en ;
+    rdfs:subClassOf obd:Mörtel_und_Beton ;
+    obd:okobaudatCategory oekocat:1.4.04 .
+
+obd:Puzzolan a owl:Class ;
+    rdfs:label "Puzzolan"@de,
+        "Pozzolan"@en ;
+    rdfs:comment "Mineralische Baustoffe/Zuschläge/Puzzolan"@de,
+        "Mineral Building Materials/Aggregates/Pozzolan"@en ;
+    rdfs:subClassOf obd:Zuschläge ;
+    obd:okobaudatCategory oekocat:1.2.09 .
+
+obd:Rauch_Wärmeabzugsanlagen a owl:Class ;
+    rdfs:label "Rauch-/Wärmeabzugsanlagen"@de,
+        "Smoke and heat extraction systems"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Tageslichtsysteme und Rauch- / Wärmeabzugsanlagen /Rauch-/Wärmeabzugsanlagen"@de,
+        "Components of windows and curtain walls/Daylight systems and smoke/Heat extraction systems/Smoke-/Heat extraction systems"@en ;
+    rdfs:subClassOf obd:Tageslichtsysteme_und_Rauch_Wärmeabzugsanlagen_ ;
+    obd:okobaudatCategory oekocat:7.10.02 .
+
+obd:Reaktionsharze_auf_Epoxidharzbasis a owl:Class ;
+    rdfs:label "Reaktionsharze auf Epoxidharzbasis"@de,
+        "Epoxy-based reactive resins"@en ;
+    rdfs:comment "Beschichtungen/Reaktionsharze/Reaktionsharze auf Epoxidharzbasis"@de,
+        "Coatings/Reactive resins/Epoxy-based reactive resins"@en ;
+    rdfs:subClassOf obd:Reaktionsharze ;
+    obd:okobaudatCategory oekocat:5.8.01 .
+
+obd:Reaktionsharze_auf_Methacrylatbasis a owl:Class ;
+    rdfs:label "Reaktionsharze auf Methacrylatbasis"@de,
+        "Methacrylate-based reactive resins"@en ;
+    rdfs:comment "Beschichtungen/Reaktionsharze/Reaktionsharze auf Methacrylatbasis"@de,
+        "Coatings/Reactive resins/Methacrylate-based reactive resins"@en ;
+    rdfs:subClassOf obd:Reaktionsharze ;
+    obd:okobaudatCategory oekocat:5.8.03 .
+
+obd:Reaktionsharze_auf_PU_Basis a owl:Class ;
+    rdfs:label "Reaktionsharze auf PU-Basis"@de,
+        "PU-based reactive resins"@en ;
+    rdfs:comment "Beschichtungen/Reaktionsharze/Reaktionsharze auf PU-Basis"@de,
+        "Coatings/Reactive resins/PU-based reactive resins"@en ;
+    rdfs:subClassOf obd:Reaktionsharze ;
+    obd:okobaudatCategory oekocat:5.8.02 .
+
+obd:Regeldeponie a owl:Class ;
+    rdfs:label "Regeldeponie"@de,
+        "Regular landfill"@en ;
+    rdfs:comment "Sonstige/Abfallaufbereitung und -entsorgung (EoL)/Regeldeponie"@de,
+        "Others/Waste treatment and disposal (EoL)/Regular landfill"@en ;
+    rdfs:subClassOf obd:Abfallaufbereitung_und_entsorgung_EoL ;
+    obd:okobaudatCategory oekocat:9.5.03 .
+
+obd:Regelung_und_Hydraulik a owl:Class ;
+    rdfs:label "Regelung und Hydraulik"@de,
+        "Regulation and hydraulics"@en ;
+    rdfs:comment "Gebäudetechnik/Heizung/Regelung und Hydraulik"@de,
+        "Building Services/Heating/Regulation and hydraulics"@en ;
+    rdfs:subClassOf obd:Heizung ;
+    obd:okobaudatCategory oekocat:8.1.05 .
+
+obd:Regen_Grauwasserrohre a owl:Class ;
+    rdfs:label "Regen-/Grauwasserrohre"@de,
+        "Rainwater/greywater pipes"@en ;
+    rdfs:comment "Kunststoffe/Rohre/Regen-/Grauwasserrohre"@de,
+        "Plastics/Pipes/Rain-/Greywater pipes"@en ;
+    rdfs:subClassOf obd:Rohre ;
+    obd:okobaudatCategory oekocat:6.1.03 .
+
+obd:Sand_und_Kies a owl:Class ;
+    rdfs:label "Sand und Kies"@de,
+        "Sand and gravel"@en ;
+    rdfs:comment "Mineralische Baustoffe/Zuschläge/Sand und Kies"@de,
+        "Mineral Building Materials/Aggregates/Sand and gravel"@en ;
+    rdfs:subClassOf obd:Zuschläge ;
+    obd:okobaudatCategory oekocat:1.2.01 .
+
+obd:Sanitärkeramik a owl:Class ;
+    rdfs:label "Sanitärkeramik"@de,
+        "Sanitary ceramics"@en ;
+    rdfs:comment "Gebäudetechnik/Sanitär/Sanitärkeramik"@de,
+        "Building Services/Sanitary/Sanitary ceramics"@en ;
+    rdfs:subClassOf obd:Sanitär ;
+    obd:okobaudatCategory oekocat:8.3.01 .
+
+obd:Schafswolle a owl:Class ;
+    rdfs:label "Schafswolle"@de,
+        "Sheep wool"@en ;
+    rdfs:comment "Dämmstoffe/Schafswolle"@de,
+        "Insulation Materials/Sheep wool"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.15 .
+
+obd:Schalter_und_Steckdosen a owl:Class ;
+    rdfs:label "Schalter und Steckdosen"@de,
+        "Switches and Sockets"@en ;
+    rdfs:comment "Gebäudetechnik/Elektro/Schalter und Steckdosen"@de,
+        "Building Services/Electrical/Switches and Sockets"@en ;
+    rdfs:subClassOf obd:Elektro ;
+    obd:okobaudatCategory oekocat:8.4.02 .
+
+obd:Schalung a owl:Class ;
+    rdfs:label "Schalung"@de,
+        "Formwork"@en ;
+    rdfs:comment "Sonstige/Baustellenprozesse/Schalung"@de,
+        "Others/Construction processes/Formwork"@en ;
+    rdfs:subClassOf obd:Baustellenprozesse ;
+    obd:okobaudatCategory oekocat:9.1.03 .
+
+obd:Schaum a owl:Class ;
+    rdfs:label "Schaum"@de,
+        "Foam"@en ;
+    rdfs:comment "Dämmstoffe/Kautschuk/Schaum"@de,
+        "Dämmstoffe/Melaminharz/Schaum"@de,
+        "Dämmstoffe/Polyethylen/Schaum"@de,
+        "Insulation Materials/Melamine resin/Foam"@en,
+        "Insulation Materials/Polyethylene/Foam"@en,
+        "Insulation Materials/Rubber/Foam"@en ;
+    rdfs:subClassOf obd:Kautschuk,
+        obd:Melaminharz,
+        obd:Polyethylen ;
+    obd:okobaudatCategory oekocat:2.17.01,
+        oekocat:2.18.01,
+        oekocat:2.19.01 .
+
+obd:Schaumbeton_Dämmplatten a owl:Class ;
+    rdfs:label "Schaumbeton Dämmplatten"@de,
+        "Foam Concrete Insulation Boards"@en ;
+    rdfs:comment "Dämmstoffe/Schaumbeton/Schaumbeton Dämmplatten"@de,
+        "Insulation Materials/Foam concrete/Foam Concrete Insulation Boards"@en ;
+    rdfs:subClassOf obd:Schaumbeton ;
+    obd:okobaudatCategory oekocat:2.27.01 .
+
+obd:Schiefer a owl:Class ;
+    rdfs:label "Schiefer"@de,
+        "Slate"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Schiefer"@de,
+        "Mineral Building Materials/Stones and Elements/Slate"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.09 .
+
+obd:Schmiede_und_Gussteile_aus_Kupfer_und_Messing a owl:Class ;
+    rdfs:label "Schmiede- und Gussteile aus Kupfer und Messing"@de,
+        "Forged and cast parts made of copper and brass"@en ;
+    rdfs:comment "Metalle/Kupfer/Schmiede- und Gussteile aus Kupfer und Messing"@de,
+        "Metals/Copper/Forged and cast parts made of copper and brass"@en ;
+    rdfs:subClassOf obd:Kupfer ;
+    obd:okobaudatCategory oekocat:4.4.04 .
+
+obd:Schutzsysteme_zur_Kabel_und_Rohrabschottung a owl:Class ;
+    rdfs:label "Schutzsysteme zur Kabel- und Rohrabschottung"@de,
+        "Cable and pipe sealing systems"@en ;
+    rdfs:comment "Gebäudetechnik/Brandschutz/Schutzsysteme zur Kabel- und Rohrabschottung"@de,
+        "Building Services/Fire Protection/Cable and pipe sealing systems"@en ;
+    rdfs:subClassOf obd:Brandschutz ;
+    obd:okobaudatCategory oekocat:8.8.01 .
+
+obd:Schweißen a owl:Class ;
+    rdfs:label "Schweißen"@de,
+        "Welding"@en ;
+    rdfs:comment "Sonstige/Baustellenprozesse/Schweißen"@de,
+        "Others/Construction processes/Welding"@en ;
+    rdfs:subClassOf obd:Baustellenprozesse ;
+    obd:okobaudatCategory oekocat:9.1.04 .
+
+obd:Seeschiff a owl:Class ;
+    rdfs:label "Seeschiff"@de,
+        "Sea vessel"@en ;
+    rdfs:comment "Sonstige/Güter - Transporte[t km]/Seeschiff"@de,
+        "Others/Goods transport [t km]/Sea vessel"@en ;
+    rdfs:subClassOf obd:Güter_Transportet_km ;
+    obd:okobaudatCategory oekocat:9.3.04 .
+
+obd:Sicherungs_und_Schaltschränke a owl:Class ;
+    rdfs:label "Sicherungs- und Schaltschränke"@de,
+        "Control and distribution cabinets"@en ;
+    rdfs:comment "Gebäudetechnik/Elektro/Sicherungs- und Schaltschränke"@de,
+        "Building Services/Electrical/Control and distribution cabinets"@en ;
+    rdfs:subClassOf obd:Elektro ;
+    obd:okobaudatCategory oekocat:8.4.03 .
+
+obd:Silikat_Dispersion a owl:Class ;
+    rdfs:label "Silikat-Dispersion"@de,
+        "Silicate dispersion"@en ;
+    rdfs:comment "Beschichtungen/Fassadenfarben/Silikat-Dispersion"@de,
+        "Coatings/Facade paints/Silicate dispersion"@en ;
+    rdfs:subClassOf obd:Fassadenfarben ;
+    obd:okobaudatCategory oekocat:5.4.02 .
+
+obd:Silikon a owl:Class ;
+    rdfs:label "Silikon"@de,
+        "Silicone"@en ;
+    rdfs:comment "Kunststoffe/Dichtmassen/Silikon"@de,
+        "Plastics/Sealants/Silicone"@en ;
+    rdfs:subClassOf obd:Dichtmassen ;
+    obd:okobaudatCategory oekocat:6.7.02 .
+
+obd:Silikonharz a owl:Class ;
+    rdfs:label "Silikonharz"@de,
+        "Silicone resin"@en ;
+    rdfs:comment "Beschichtungen/Fassadenfarben/Silikonharz"@de,
+        "Coatings/Facade paints/Silicone resin"@en ;
+    rdfs:subClassOf obd:Fassadenfarben ;
+    obd:okobaudatCategory oekocat:5.4.03 .
+
+obd:Solar_Kunststoffdachbahnen a owl:Class ;
+    rdfs:label "Solar-Kunststoffdachbahnen"@de,
+        "Solar plastic roofing membranes"@en ;
+    rdfs:comment "Kunststoffe/Dachbahnen/Solar-Kunststoffdachbahnen"@de,
+        "Plastics/Roofing membranes/Solar plastic roofing membranes"@en ;
+    rdfs:subClassOf obd:Dachbahnen ;
+    obd:okobaudatCategory oekocat:6.3.06 .
+
+obd:Sonnenschutzsysteme a owl:Class ;
+    rdfs:label "Sonnenschutzsysteme"@de,
+        "Sun protection systems"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Zubehör für Fenster, Fassaden, Türen und Tore/Sonnenschutzsysteme"@de,
+        "Components of windows and curtain walls/accessories for windows, facades, doors, and gates/Sun protection systems"@en ;
+    rdfs:subClassOf obd:Zubehör_für_Fenster_Fassaden_Türen_und_Tore ;
+    obd:okobaudatCategory oekocat:7.11.01 .
+
+obd:Sonstige_Fassaden a owl:Class ;
+    rdfs:label "Sonstige Fassaden"@de,
+        "Other facades"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Fassaden/Sonstige Fassaden"@de,
+        "Components of windows and curtain walls/Facades/Other facades"@en ;
+    rdfs:subClassOf obd:Fassaden ;
+    obd:okobaudatCategory oekocat:7.9.03 .
+
+obd:Sonstige_Fenster a owl:Class ;
+    rdfs:label "Sonstige Fenster"@de,
+        "other windows"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Fenster/Sonstige Fenster"@de,
+        "Components of windows and curtain walls/Windows/other windows"@en ;
+    rdfs:subClassOf obd:Fenster ;
+    obd:okobaudatCategory oekocat:7.8.05 .
+
+obd:Sonstige_Tageslichtsysteme a owl:Class ;
+    rdfs:label "Sonstige Tageslichtsysteme"@de,
+        "Other daylight systems"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Tageslichtsysteme und Rauch- / Wärmeabzugsanlagen /Sonstige Tageslichtsysteme"@de,
+        "Components of windows and curtain walls/Daylight systems and smoke/Heat extraction systems/Other daylight systems"@en ;
+    rdfs:subClassOf obd:Tageslichtsysteme_und_Rauch_Wärmeabzugsanlagen_ ;
+    obd:okobaudatCategory oekocat:7.10.03 .
+
+obd:Spanplatten a owl:Class ;
+    rdfs:label "Spanplatten"@de,
+        "Particle boards"@en ;
+    rdfs:comment "Holz/Holzwerkstoffe/Spanplatten"@de,
+        "Wood/Wood-based materials/Particle boards"@en ;
+    rdfs:subClassOf obd:Holzwerkstoffe ;
+    obd:okobaudatCategory oekocat:3.2.06 .
+
+obd:Speicher a owl:Class ;
+    rdfs:label "Speicher"@de,
+        "Storage"@en ;
+    rdfs:comment "Gebäudetechnik/Heizung/Speicher"@de,
+        "Building Services/Heating/Storage"@en ;
+    rdfs:subClassOf obd:Heizung ;
+    obd:okobaudatCategory oekocat:8.1.03 .
+
+obd:Sperrholz a owl:Class ;
+    rdfs:label "Sperrholz"@de,
+        "Plywood"@en ;
+    rdfs:comment "Holz/Holzwerkstoffe/Sperrholz"@de,
+        "Wood/Wood-based materials/Plywood"@en ;
+    rdfs:subClassOf obd:Holzwerkstoffe ;
+    obd:okobaudatCategory oekocat:3.2.02 .
+
+obd:Splittmastixasphalt a owl:Class ;
+    rdfs:label "Splittmastixasphalt"@de,
+        "Gravel mastic asphalt"@en ;
+    rdfs:comment "Mineralische Baustoffe/Asphalt/Splittmastixasphalt"@de,
+        "Mineral Building Materials/Asphalt/Gravel mastic asphalt"@en ;
+    rdfs:subClassOf obd:Asphalt ;
+    obd:okobaudatCategory oekocat:1.5.01 .
+
+obd:Spritzbare_Dichtstoffe a owl:Class ;
+    rdfs:label "Spritzbare Dichtstoffe"@de,
+        "Sprayable sealants"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Dichtungskomponenten / -materialien/Spritzbare Dichtstoffe"@de,
+        "Components of windows and curtain walls/Sealing components/-materials/Sprayable sealants"@en ;
+    rdfs:subClassOf obd:Dichtungskomponenten_materialien ;
+    obd:okobaudatCategory oekocat:7.3.02 .
+
+obd:Stahl a owl:Class ;
+    rdfs:label "Stahl"@de,
+        "Steel"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Rahmen / Profile/Stahl"@de,
+        "Komponenten von Fenstern und Vorhangfassaden/Türen und Tore/Stahl"@de,
+        "Components of windows and curtain walls/Doors and gates/Steel"@en,
+        "Components of windows and curtain walls/Frame/Profile/Steel"@en ;
+    rdfs:subClassOf obd:Rahmen_Profile,
+        obd:Türen_und_Tore ;
+    obd:okobaudatCategory oekocat:7.1.07,
+        oekocat:7.6.01 .
+
+obd:Stahl_verzinkt a owl:Class ;
+    rdfs:label "Stahl verzinkt"@de,
+        "Galvanized steel"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Rahmen / Profile/Stahl verzinkt"@de,
+        "Components of windows and curtain walls/Frame/Profile/Galvanized steel"@en ;
+    rdfs:subClassOf obd:Rahmen_Profile ;
+    obd:okobaudatCategory oekocat:7.1.08 .
+
+obd:Stahlbeschläge a owl:Class ;
+    rdfs:label "Stahlbeschläge"@de,
+        "Steel fittings"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Beschläge/Stahlbeschläge"@de,
+        "Components of windows and curtain walls/Hardware/Steel fittings"@en ;
+    rdfs:subClassOf obd:Beschläge ;
+    obd:okobaudatCategory oekocat:7.4.01 .
+
+obd:Stahlbleche a owl:Class ;
+    rdfs:label "Stahlbleche"@de,
+        "Steel sheets"@en ;
+    rdfs:comment "Metalle/Stahl und Eisen/Stahlbleche"@de,
+        "Metals/Steel and iron/Steel sheets"@en ;
+    rdfs:subClassOf obd:Stahl_und_Eisen ;
+    obd:okobaudatCategory oekocat:4.1.04 .
+
+obd:Stahlprofile a owl:Class ;
+    rdfs:label "Stahlprofile"@de,
+        "Steel profiles"@en ;
+    rdfs:comment "Metalle/Stahl und Eisen/Stahlprofile"@de,
+        "Metals/Steel and iron/Steel profiles"@en ;
+    rdfs:subClassOf obd:Stahl_und_Eisen ;
+    obd:okobaudatCategory oekocat:4.1.03 .
+
+obd:Steinwolle a owl:Class ;
+    rdfs:label "Steinwolle"@de,
+        "Stone wool"@en ;
+    rdfs:comment "Dämmstoffe/Mineralwolle/Steinwolle"@de,
+        "Insulation Materials/Mineral Wool/Stone wool"@en ;
+    rdfs:subClassOf obd:Mineralwolle ;
+    obd:okobaudatCategory oekocat:2.1.03 .
+
+obd:Steinzeug a owl:Class ;
+    rdfs:label "Steinzeug"@de,
+        "Stoneware"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Steinzeug"@de,
+        "Mineral Building Materials/Stones and Elements/Stoneware"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.06 .
+
+obd:Strohballen a owl:Class ;
+    rdfs:label "Strohballen"@de,
+        "Straw bales"@en ;
+    rdfs:comment "Dämmstoffe/Stroh/Strohballen"@de,
+        "Insulation Materials/straw/Straw bales"@en ;
+    rdfs:subClassOf obd:Stroh ;
+    obd:okobaudatCategory oekocat:2.23.01 .
+
+obd:Strohfasern a owl:Class ;
+    rdfs:label "Strohfasern"@de,
+        "Straw fibers"@en ;
+    rdfs:comment "Dämmstoffe/Stroh/Strohfasern"@de,
+        "Insulation Materials/straw/Straw fibers"@en ;
+    rdfs:subClassOf obd:Stroh ;
+    obd:okobaudatCategory oekocat:2.23.03 .
+
+obd:Strohplatten a owl:Class ;
+    rdfs:label "Strohplatten"@de,
+        "Straw boards"@en ;
+    rdfs:comment "Dämmstoffe/Stroh/Strohplatten"@de,
+        "Insulation Materials/straw/Straw boards"@en ;
+    rdfs:subClassOf obd:Stroh ;
+    obd:okobaudatCategory oekocat:2.23.02 .
+
+obd:Strom a owl:Class ;
+    rdfs:label "Strom"@de,
+        "Electricity"@en ;
+    rdfs:comment "Sonstige/Energieträger - Bereitstellung frei Verbraucher/Strom"@de,
+        "Others/Energy carriers - supply free consumers/Electricity"@en ;
+    rdfs:subClassOf obd:Energieträger_Bereitstellung_frei_Verbraucher ;
+    obd:okobaudatCategory oekocat:9.2.05 .
+
+obd:Substrate a owl:Class ;
+    rdfs:label "Substrate"@de,
+        "Substrates"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Substrate"@de,
+        "Mineral Building Materials/Stones and Elements/Substrates"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.19 .
+
+obd:Synth_Thermoplast_Polyolefin a owl:Class ;
+    rdfs:label "Synth. Thermoplast / Polyolefin"@de,
+        "Synthetic Thermoplast / Polyolefin"@en ;
+    rdfs:comment "Kunststoffe/Bodenbeläge/Synth. Thermoplast / Polyolefin"@de,
+        "Plastics/Floor coverings/Synthetic thermoplast/Polyolefin"@en ;
+    rdfs:subClassOf obd:Bodenbeläge ;
+    obd:okobaudatCategory oekocat:6.2.03 .
+
+obd:TPO_Dachbahnen_FPO a owl:Class ;
+    rdfs:label "TPO-Dachbahnen (FPO)"@de,
+        "TPO roofing membranes (FPO)"@en ;
+    rdfs:comment "Kunststoffe/Dachbahnen/TPO-Dachbahnen (FPO)"@de,
+        "Plastics/Roofing membranes/TPO roofing membranes (FPO)"@en ;
+    rdfs:subClassOf obd:Dachbahnen ;
+    obd:okobaudatCategory oekocat:6.3.05 .
+
+obd:Technische_Textilien a owl:Class ;
+    rdfs:label "Technische Textilien"@de,
+        "Technical textiles"@en ;
+    rdfs:comment "Kunststoffe/Folien und Vliese/Technische Textilien"@de,
+        "Plastics/Films and nonwovens/Technical textiles"@en ;
+    rdfs:subClassOf obd:Folien_und_Vliese ;
+    obd:okobaudatCategory oekocat:6.6.07 .
+
+obd:Textile_Bodenbeläge a owl:Class ;
+    rdfs:label "Textile Bodenbeläge"@de,
+        "Textile floor coverings"@en ;
+    rdfs:comment "Kunststoffe/Bodenbeläge/Textile Bodenbeläge"@de,
+        "Plastics/Floor coverings/Textile floor coverings"@en ;
+    rdfs:subClassOf obd:Bodenbeläge ;
+    obd:okobaudatCategory oekocat:6.2.05 .
+
+obd:Thermisch_behandeltes_Holz a owl:Class ;
+    rdfs:label "Thermisch behandeltes Holz"@de,
+        "Thermally treated wood"@en ;
+    rdfs:comment "Holz/Modifiziertes Holz/Thermisch behandeltes Holz"@de,
+        "Wood/Modified wood/Thermally treated wood"@en ;
+    rdfs:subClassOf obd:Modifiziertes_Holz ;
+    obd:okobaudatCategory oekocat:3.5.02 .
+
+obd:Tragende_Wärmedämmelemente a owl:Class ;
+    rdfs:label "Tragende Wärmedämmelemente"@de,
+        "Load-bearing thermal insulation elements"@en ;
+    rdfs:comment "Dämmstoffe/Dämmelemente/Tragende Wärmedämmelemente"@de,
+        "Insulation Materials/Insulation elements/Load-bearing thermal insulation elements"@en ;
+    rdfs:subClassOf obd:Dämmelemente ;
+    obd:okobaudatCategory oekocat:2.25.01 .
+
+obd:Tragschichten a owl:Class ;
+    rdfs:label "Tragschichten"@de,
+        "Load-bearing layers"@en ;
+    rdfs:comment "Mineralische Baustoffe/Asphalt/Tragschichten"@de,
+        "Mineral Building Materials/Asphalt/Load-bearing layers"@en ;
+    rdfs:subClassOf obd:Asphalt ;
+    obd:okobaudatCategory oekocat:1.5.04 .
+
+obd:Transparente_Füllungen a owl:Class ;
+    rdfs:label "Transparente Füllungen"@de,
+        "Transparent fillings"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Füllungen/Transparente Füllungen"@de,
+        "Components of windows and curtain walls/Fillings/Transparent fillings"@en ;
+    rdfs:subClassOf obd:Füllungen ;
+    obd:okobaudatCategory oekocat:7.2.01 .
+
+obd:Transparente_Platten a owl:Class ;
+    rdfs:label "Transparente Platten"@de,
+        "Transparent panels"@en ;
+    rdfs:comment "Kunststoffe/Kunststoffprofile elastisch/Transparente Platten"@de,
+        "Plastics/Elastic plastic profiles/Transparent panels"@en ;
+    rdfs:subClassOf obd:Kunststoffprofile_elastisch ;
+    obd:okobaudatCategory oekocat:6.5.02 .
+
+obd:Trinkwasser a owl:Class ;
+    rdfs:label "Trinkwasser"@de,
+        "Drinking water"@en ;
+    rdfs:comment "Sonstige/Energieträger - Bereitstellung frei Verbraucher/Trinkwasser"@de,
+        "Others/Energy carriers - supply free consumers/Drinking water"@en ;
+    rdfs:subClassOf obd:Energieträger_Bereitstellung_frei_Verbraucher ;
+    obd:okobaudatCategory oekocat:9.2.07 .
+
+obd:Trinkwasserrohre a owl:Class ;
+    rdfs:label "Trinkwasserrohre"@de,
+        "Drinking water pipes"@en ;
+    rdfs:comment "Kunststoffe/Rohre/Trinkwasserrohre"@de,
+        "Plastics/Pipes/Drinking water pipes"@en ;
+    rdfs:subClassOf obd:Rohre ;
+    obd:okobaudatCategory oekocat:6.1.01 .
+
+obd:Trockenestrich a owl:Class ;
+    rdfs:label "Trockenestrich"@de,
+        "Dry screed"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Trockenestrich"@de,
+        "Mineral Building Materials/Stones and Elements/Dry screed"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.14 .
+
+obd:Trockenschüttung a owl:Class ;
+    rdfs:label "Trockenschüttung"@de,
+        "Dry bulk material"@en ;
+    rdfs:comment "Mineralische Baustoffe/Zuschläge/Trockenschüttung"@de,
+        "Mineral Building Materials/Aggregates/Dry bulk material"@en ;
+    rdfs:subClassOf obd:Zuschläge ;
+    obd:okobaudatCategory oekocat:1.2.10 .
+
+obd:Unterspannbahn a owl:Class ;
+    rdfs:label "Unterspannbahn"@de,
+        "Underlay membrane"@en ;
+    rdfs:comment "Kunststoffe/Folien und Vliese/Unterspannbahn"@de,
+        "Plastics/Films and nonwovens/Underlay membrane"@en ;
+    rdfs:subClassOf obd:Folien_und_Vliese ;
+    obd:okobaudatCategory oekocat:6.6.01 .
+
+obd:Vakuumisolationspaneele a owl:Class ;
+    rdfs:label "Vakuumisolationspaneele"@de,
+        "Vacuum insulation panels"@en ;
+    rdfs:comment "Dämmstoffe/Siliziumdioxid-basiert/Vakuumisolationspaneele"@de,
+        "Insulation Materials/Silicon dioxide-based/Vacuum insulation panels"@en ;
+    rdfs:subClassOf obd:Siliziumdioxid_basiert ;
+    obd:okobaudatCategory oekocat:2.24.01 .
+
+obd:Verzinken_von_Stahl a owl:Class ;
+    rdfs:label "Verzinken von Stahl"@de,
+        "Galvanizing of steel"@en ;
+    rdfs:comment "Metalle/Oberflächenbehandlung und Beschichtung von Metallen/Verzinken von Stahl"@de,
+        "Metals/Surface treatment and coating of metals/Galvanizing of steel"@en ;
+    rdfs:subClassOf obd:Oberflächenbehandlung_und_Beschichtung_von_Metallen ;
+    obd:okobaudatCategory oekocat:4.7.04 .
+
+obd:Vlies a owl:Class ;
+    rdfs:label "Vlies"@de,
+        "Nonwoven"@en ;
+    rdfs:comment "Dämmstoffe/Flachsfaser/Vlies"@de,
+        "Dämmstoffe/Hanffaser/Vlies"@de,
+        "Insulation Materials/Flax fiber/Nonwoven"@en,
+        "Insulation Materials/Hemp fiber/Nonwoven"@en ;
+    rdfs:subClassOf obd:Flachsfaser,
+        obd:Hanffaser ;
+    obd:okobaudatCategory oekocat:2.12.01,
+        oekocat:2.13.01 .
+
+obd:Vliese a owl:Class ;
+    rdfs:label "Vliese"@de,
+        "Non-woven fabrics"@en ;
+    rdfs:comment "Kunststoffe/Folien und Vliese/Vliese"@de,
+        "Plastics/Films and nonwovens/Non-woven fabrics"@en ;
+    rdfs:subClassOf obd:Folien_und_Vliese ;
+    obd:okobaudatCategory oekocat:6.6.04 .
+
+obd:Vorhangfassade_Element_Fassaden a owl:Class ;
+    rdfs:label "Vorhangfassade - Element-Fassaden"@de,
+        "Curtain wall - element facades"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Fassaden/Vorhangfassade - Element-Fassaden"@de,
+        "Components of windows and curtain walls/Facades/Curtain wall - element facades"@en ;
+    rdfs:subClassOf obd:Fassaden ;
+    obd:okobaudatCategory oekocat:7.9.02 .
+
+obd:Vorhangfassade_Pfosten_Riegel_Fassaden a owl:Class ;
+    rdfs:label "Vorhangfassade - Pfosten-Riegel-Fassaden"@de,
+        "Curtain wall - post-and-beam facades"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Fassaden/Vorhangfassade - Pfosten-Riegel-Fassaden"@de,
+        "Components of windows and curtain walls/Facades/Curtain wall - post-and-beam facades"@en ;
+    rdfs:subClassOf obd:Fassaden ;
+    obd:okobaudatCategory oekocat:7.9.01 .
+
+obd:WDVS_Dübel a owl:Class ;
+    rdfs:label "WDVS-Dübel"@de,
+        "ETICS dowels"@en ;
+    rdfs:comment "Dämmstoffe/Wärmedämmverbundsystem/WDVS-Dübel"@de,
+        "Insulation Materials/Thermal insulation composite system/ETICS dowels"@en ;
+    rdfs:subClassOf obd:Wärmedämmverbundsystem ;
+    obd:okobaudatCategory oekocat:2.21.02 .
+
+obd:WDVS_komplett a owl:Class ;
+    rdfs:label "WDVS komplett"@de,
+        "Complete ETICS"@en ;
+    rdfs:comment "Dämmstoffe/Wärmedämmverbundsystem/WDVS komplett"@de,
+        "Insulation Materials/Thermal insulation composite system/Complete ETICS"@en ;
+    rdfs:subClassOf obd:Wärmedämmverbundsystem ;
+    obd:okobaudatCategory oekocat:2.21.03 .
+
+obd:Wand_und_Deckenbeläge a owl:Class ;
+    rdfs:label "Wand- und Deckenbeläge"@de,
+        "Wall and ceiling coverings"@en ;
+    rdfs:comment "Beschichtungen/Innenbeschichtungen/Wand- und Deckenbeläge"@de,
+        "Coatings/Interior Coatings/Wall and ceiling coverings"@en ;
+    rdfs:subClassOf obd:Innenbeschichtungen ;
+    obd:okobaudatCategory oekocat:5.5.01 .
+
+obd:Wood_Plastic_Composites a owl:Class ;
+    rdfs:label "Wood-Plastic-Composites"@de,
+        "Wood-Plastic Composites"@en ;
+    rdfs:comment "Holz/Holzwerkstoffe/Wood-Plastic-Composites"@de,
+        "Wood/Wood-based materials/Wood-Plastic Composites"@en ;
+    rdfs:subClassOf obd:Holzwerkstoffe ;
+    obd:okobaudatCategory oekocat:3.2.09 .
+
+obd:Wärmeabführung a owl:Class ;
+    rdfs:label "Wärmeabführung"@de,
+        "Heat dissipation"@en ;
+    rdfs:comment "Gebäudetechnik/Klimatisierung und Lüftung/Wärmeabführung"@de,
+        "Building Services/Air conditioning and ventilation/Heat dissipation"@en ;
+    rdfs:subClassOf obd:Klimatisierung_und_Lüftung ;
+    obd:okobaudatCategory oekocat:8.2.05 .
+
+obd:Wärmeerzeuger a owl:Class ;
+    rdfs:label "Wärmeerzeuger"@de,
+        "Heat generator"@en ;
+    rdfs:comment "Gebäudetechnik/Heizung/Wärmeerzeuger"@de,
+        "Building Services/Heating/Heat generator"@en ;
+    rdfs:subClassOf obd:Heizung ;
+    obd:okobaudatCategory oekocat:8.1.01 .
+
+obd:Wärmeverteilung_und_Abgabe a owl:Class ;
+    rdfs:label "Wärmeverteilung und Abgabe"@de,
+        "Heat distribution and release"@en ;
+    rdfs:comment "Gebäudetechnik/Heizung/Wärmeverteilung und Abgabe"@de,
+        "Building Services/Heating/Heat distribution and release"@en ;
+    rdfs:subClassOf obd:Heizung ;
+    obd:okobaudatCategory oekocat:8.1.02 .
+
+obd:Wärmeübertragung a owl:Class ;
+    rdfs:label "Wärmeübertragung"@de,
+        "Heat transfer"@en ;
+    rdfs:comment "Gebäudetechnik/Heizung/Wärmeübertragung"@de,
+        "Building Services/Heating/Heat transfer"@en ;
+    rdfs:subClassOf obd:Heizung ;
+    obd:okobaudatCategory oekocat:8.1.04 .
+
+obd:XPS_weiß a owl:Class ;
+    rdfs:label "XPS weiß"@de,
+        "XPS white"@en ;
+    rdfs:comment "Dämmstoffe/Extrudiertes Polystyrol (XPS)/XPS weiß"@de,
+        "Insulation Materials/Extruded Polystyrene (XPS)/XPS white"@en ;
+    rdfs:subClassOf obd:Extrudiertes_Polystyrol_XPS ;
+    obd:okobaudatCategory oekocat:2.3.01 .
+
+obd:Zellulose_Einblas_Dämmstoff a owl:Class ;
+    rdfs:label "Zellulose-Einblas-Dämmstoff"@de,
+        "Cellulose blown insulation"@en ;
+    rdfs:comment "Dämmstoffe/Zellulosefaser/Zellulose-Einblas-Dämmstoff"@de,
+        "Insulation Materials/Cellulose fiber/Cellulose blown insulation"@en ;
+    rdfs:subClassOf obd:Zellulosefaser ;
+    obd:okobaudatCategory oekocat:2.11.01 .
+
+obd:Zelluloseplatten a owl:Class ;
+    rdfs:label "Zelluloseplatten"@de,
+        "Cellulose boards"@en ;
+    rdfs:comment "Dämmstoffe/Zellulosefaser/Zelluloseplatten"@de,
+        "Insulation Materials/Cellulose fiber/Cellulose boards"@en ;
+    rdfs:subClassOf obd:Zellulosefaser ;
+    obd:okobaudatCategory oekocat:2.11.02 .
+
+obd:Zement a owl:Class ;
+    rdfs:label "Zement"@de,
+        "Cement"@en ;
+    rdfs:comment "Mineralische Baustoffe/Bindemittel/Zement"@de,
+        "Mineral Building Materials/Binders/Cement"@en ;
+    rdfs:subClassOf obd:Bindemittel ;
+    obd:okobaudatCategory oekocat:1.1.01 .
+
+obd:Ziegel a owl:Class ;
+    rdfs:label "Ziegel"@de,
+        "Brick"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente/Ziegel"@de,
+        "Mineral Building Materials/Stones and Elements/Brick"@en ;
+    rdfs:subClassOf obd:Steine_und_Elemente ;
+    obd:okobaudatCategory oekocat:1.3.02 .
+
+obd:Zinkbeschläge a owl:Class ;
+    rdfs:label "Zinkbeschläge"@de,
+        "Zinc fittings"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Beschläge/Zinkbeschläge"@de,
+        "Components of windows and curtain walls/Hardware/Zinc fittings"@en ;
+    rdfs:subClassOf obd:Beschläge ;
+    obd:okobaudatCategory oekocat:7.4.08 .
+
+obd:Zinkbleche a owl:Class ;
+    rdfs:label "Zinkbleche"@de,
+        "Zinc sheets"@en ;
+    rdfs:comment "Metalle/Zink/Zinkbleche"@de,
+        "Metals/Zinc/Zinc sheets"@en ;
+    rdfs:subClassOf obd:Zink ;
+    obd:okobaudatCategory oekocat:4.5.01 .
+
+obd:Zubehör a owl:Class ;
+    rdfs:label "Zubehör"@de,
+        "Accessories"@en ;
+    rdfs:comment "Gebäudetechnik/Klimatisierung und Lüftung/Zubehör"@de,
+        "Building Services/Air conditioning and ventilation/Accessories"@en ;
+    rdfs:subClassOf obd:Klimatisierung_und_Lüftung ;
+    obd:okobaudatCategory oekocat:8.2.03 .
+
+obd:elektrisch a owl:Class ;
+    rdfs:label "elektrisch"@de,
+        "Electric"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Antriebssysteme/elektrisch"@de,
+        "Components of windows and curtain walls/Drive systems/Electric"@en ;
+    rdfs:subClassOf obd:Antriebssysteme ;
+    obd:okobaudatCategory oekocat:7.7.02 .
+
+obd:harter_PUR_Integralschaumstoff a owl:Class ;
+    rdfs:label "harter PUR-Integralschaumstoff"@de,
+        "Rigid PUR integral foam"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Rahmen / Profile/harter PUR-Integralschaumstoff"@de,
+        "Components of windows and curtain walls/Frame/Profile/Rigid PUR integral foam"@en ;
+    rdfs:subClassOf obd:Rahmen_Profile ;
+    obd:okobaudatCategory oekocat:7.1.10 .
+
+obd:mechanisch a owl:Class ;
+    rdfs:label "mechanisch"@de,
+        "mechanical"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Antriebssysteme/mechanisch"@de,
+        "Components of windows and curtain walls/Drive systems/mechanical"@en ;
+    rdfs:subClassOf obd:Antriebssysteme ;
+    obd:okobaudatCategory oekocat:7.7.01 .
+
+obd:okobaudatCategory a owl:ObjectProperty ;
+    rdfs:label "ÖKOBAUDAT Kategorie-Referenz"@de,
+        "ÖKOBAUDAT category reference"@en ;
+    rdfs:comment "Links an OWL class to its Ökobaudat category ID"@en .
+
+obd:Bituminöse_Anstriche a owl:Class ;
+    rdfs:label "Bituminöse Anstriche"@de,
+        "Bituminous coatings"@en ;
+    rdfs:comment "Beschichtungen/Bituminöse Anstriche"@de,
+        "Coatings/Bituminous coatings"@en ;
+    rdfs:subClassOf obd:Beschichtungen ;
+    obd:okobaudatCategory oekocat:5.3 .
+
+obd:Blei a owl:Class ;
+    rdfs:label "Blei"@de,
+        "Lead"@en ;
+    rdfs:comment "Metalle/Blei"@de,
+        "Metals/Lead"@en ;
+    rdfs:subClassOf obd:Metalle ;
+    obd:okobaudatCategory oekocat:4.6 .
+
+obd:Dämmelemente a owl:Class ;
+    rdfs:label "Dämmelemente"@de,
+        "Insulation elements"@en ;
+    rdfs:comment "Dämmstoffe/Dämmelemente"@de,
+        "Insulation Materials/Insulation elements"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.25 .
+
+obd:End_of_Life a owl:Class ;
+    rdfs:label "End of Life"@de,
+        "End of Life"@en ;
+    rdfs:comment "End of Life"@de,
+        "End of Life"@en ;
+    obd:okobaudatCategory oekocat:100 .
+
+obd:Expandierter_Kork a owl:Class ;
+    rdfs:label "Expandierter Kork"@de,
+        "Expanded cork"@en ;
+    rdfs:comment "Dämmstoffe/Expandierter Kork"@de,
+        "Dämmstoffe/Expandierter Kork/Expandierter Kork"@de,
+        "Insulation Materials/Expanded cork"@en,
+        "Insulation Materials/Expanded cork/Expanded cork"@en ;
+    rdfs:subClassOf obd:Dämmstoffe,
+        obd:Expandierter_Kork ;
+    obd:okobaudatCategory oekocat:2.9,
+        oekocat:2.9.01 .
+
+obd:Extrudiertes_Polystyrol_XPS a owl:Class ;
+    rdfs:label "Extrudiertes Polystyrol (XPS)"@de,
+        "Extruded Polystyrene (XPS)"@en ;
+    rdfs:comment "Dämmstoffe/Extrudiertes Polystyrol (XPS)"@de,
+        "Insulation Materials/Extruded Polystyrene (XPS)"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.3 .
+
+obd:Flachsfaser a owl:Class ;
+    rdfs:label "Flachsfaser"@de,
+        "Flax fiber"@en ;
+    rdfs:comment "Dämmstoffe/Flachsfaser"@de,
+        "Insulation Materials/Flax fiber"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.12 .
+
+obd:Grundierungen a owl:Class ;
+    rdfs:label "Grundierungen"@de,
+        "Primers"@en ;
+    rdfs:comment "Beschichtungen/Grundierungen"@de,
+        "Coatings/Primers"@en ;
+    rdfs:subClassOf obd:Beschichtungen ;
+    obd:okobaudatCategory oekocat:5.1 .
+
+obd:Hanffaser a owl:Class ;
+    rdfs:label "Hanffaser"@de,
+        "Hemp fiber"@en ;
+    rdfs:comment "Dämmstoffe/Hanffaser"@de,
+        "Insulation Materials/Hemp fiber"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.13 .
+
+obd:Harnstoff_Formaldehydharz a owl:Class ;
+    rdfs:label "Harnstoff-Formaldehydharz"@de,
+        "Urea-formaldehyde resin"@en ;
+    rdfs:comment "Dämmstoffe/Harnstoff-Formaldehydharz"@de,
+        "Insulation Materials/Urea-formaldehyde resin"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.16 .
+
+obd:Holzwolleplatten a owl:Class ;
+    rdfs:label "Holzwolleplatten"@de,
+        "Wood wool boards"@en ;
+    rdfs:comment "Dämmstoffe/Holzwolleplatten"@de,
+        "Insulation Materials/Wood wool boards"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.7 .
+
+obd:Kautschuk a owl:Class ;
+    rdfs:label "Kautschuk"@de,
+        "Rubber"@en ;
+    rdfs:comment "Dämmstoffe/Kautschuk"@de,
+        "Kunststoffe/Dichtmassen/Kautschuk"@de,
+        "Insulation Materials/Rubber"@en,
+        "Plastics/Sealants/Rubber"@en ;
+    rdfs:subClassOf obd:Dichtmassen,
+        obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.19,
+        oekocat:6.7.01 .
+
+obd:Komposite a owl:Class ;
+    rdfs:label "Komposite"@de,
+        "Composite"@en ;
+    rdfs:comment "Komposite"@de,
+        "Composite"@en ;
+    obd:okobaudatCategory oekocat:10 .
+
+obd:Melaminharz a owl:Class ;
+    rdfs:label "Melaminharz"@de,
+        "Melamine resin"@en ;
+    rdfs:comment "Dämmstoffe/Melaminharz"@de,
+        "Insulation Materials/Melamine resin"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.17 .
+
+obd:Phenolharz_Hartschaum_PF a owl:Class ;
+    rdfs:label "Phenolharz-Hartschaum (PF)"@de,
+        "Phenolic foam (PF)"@en ;
+    rdfs:comment "Dämmstoffe/Phenolharz-Hartschaum (PF)"@de,
+        "Insulation Materials/Phenolic foam (PF)"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.5 .
+
+obd:Pigmente a owl:Class ;
+    rdfs:label "Pigmente"@de,
+        "Pigments"@en ;
+    rdfs:comment "Mineralische Baustoffe/Pigmente"@de,
+        "Mineral Building Materials/Pigments"@en ;
+    rdfs:subClassOf obd:Mineralische_Baustoffe ;
+    obd:okobaudatCategory oekocat:1.7 .
+
+obd:Polyethylen a owl:Class ;
+    rdfs:label "Polyethylen"@de,
+        "Polyethylene"@en ;
+    rdfs:comment "Dämmstoffe/Polyethylen"@de,
+        "Insulation Materials/Polyethylene"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.18 .
+
+obd:Schaumbeton a owl:Class ;
+    rdfs:label "Schaumbeton"@de,
+        "Foam concrete"@en ;
+    rdfs:comment "Dämmstoffe/Schaumbeton"@de,
+        "Insulation Materials/Foam concrete"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.27 .
+
+obd:Zink a owl:Class ;
+    rdfs:label "Zink"@de,
+        "Zinc"@en ;
+    rdfs:comment "Metalle/Zink"@de,
+        "Metals/Zinc"@en ;
+    rdfs:subClassOf obd:Metalle ;
+    obd:okobaudatCategory oekocat:4.5 .
+
+obd:Antriebssysteme a owl:Class ;
+    rdfs:label "Antriebssysteme"@de,
+        "Drive systems"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Antriebssysteme"@de,
+        "Components of windows and curtain walls/Drive systems"@en ;
+    rdfs:subClassOf obd:Komponenten_von_Fenstern_und_Vorhangfassaden ;
+    obd:okobaudatCategory oekocat:7.7 .
+
+obd:Baumwolle a owl:Class ;
+    rdfs:label "Baumwolle"@de,
+        "Cotton"@en ;
+    rdfs:comment "Dämmstoffe/Baumwolle"@de,
+        "Insulation Materials/Cotton"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.14 .
+
+obd:Beförderung a owl:Class ;
+    rdfs:label "Beförderung"@de,
+        "Transportation"@en ;
+    rdfs:comment "Gebäudetechnik/Beförderung"@de,
+        "Building Services/Transportation"@en ;
+    rdfs:subClassOf obd:Gebäudetechnik ;
+    obd:okobaudatCategory oekocat:8.5 .
+
+obd:Blähperlit a owl:Class ;
+    rdfs:label "Blähperlit"@de,
+        "Expanded perlite"@en ;
+    rdfs:comment "Dämmstoffe/Blähperlit"@de,
+        "Insulation Materials/Expanded perlite"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.8 .
+
+obd:Brandschutz a owl:Class ;
+    rdfs:label "Brandschutz"@de,
+        "Fire Protection"@en ;
+    rdfs:comment "Beschichtungen/Brandschutz"@de,
+        "Gebäudetechnik/Brandschutz"@de,
+        "Building Services/Fire Protection"@en,
+        "Coatings/Fire Protection"@en ;
+    rdfs:subClassOf obd:Beschichtungen,
+        obd:Gebäudetechnik ;
+    obd:okobaudatCategory oekocat:5.9,
+        oekocat:8.8 .
+
+obd:Calciumsilikat_Calcium_Silikathydrat a owl:Class ;
+    rdfs:label "Calciumsilikat / Calcium-Silikathydrat"@de,
+        "Calcium silicate / Calcium silicate hydrate"@en ;
+    rdfs:comment "Dämmstoffe/Calciumsilikat / Calcium-Silikathydrat"@de,
+        "Insulation Materials/Calcium silicate/Calcium silicate hydrate"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.20 .
+
+obd:Füllungen a owl:Class ;
+    rdfs:label "Füllungen"@de,
+        "Fillings"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Füllungen"@de,
+        "Components of windows and curtain walls/Fillings"@en ;
+    rdfs:subClassOf obd:Komponenten_von_Fenstern_und_Vorhangfassaden ;
+    obd:okobaudatCategory oekocat:7.2 .
+
+obd:Holzfasern a owl:Class ;
+    rdfs:label "Holzfasern"@de,
+        "Wood fibers"@en ;
+    rdfs:comment "Dämmstoffe/Holzfasern"@de,
+        "Insulation Materials/Wood fibers"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.10 .
+
+obd:Modifiziertes_Holz a owl:Class ;
+    rdfs:label "Modifiziertes Holz"@de,
+        "Modified wood"@en ;
+    rdfs:comment "Holz/Modifiziertes Holz"@de,
+        "Wood/Modified wood"@en ;
+    rdfs:subClassOf obd:Holz ;
+    obd:okobaudatCategory oekocat:3.5 .
+
+obd:Ortschaum a owl:Class ;
+    rdfs:label "Ortschaum"@de,
+        "In-situ foam"@en ;
+    rdfs:comment "Dämmstoffe/Harnstoff-Formaldehydharz/Ortschaum"@de,
+        "Dämmstoffe/Ortschaum"@de,
+        "Insulation Materials/In-situ foam"@en,
+        "Insulation Materials/Urea-formaldehyde resin/In-situ foam"@en ;
+    rdfs:subClassOf obd:Dämmstoffe,
+        obd:Harnstoff_Formaldehydharz ;
+    obd:okobaudatCategory oekocat:2.16.01,
+        oekocat:2.26 .
+
+obd:Profile a owl:Class ;
+    rdfs:label "Profile"@de,
+        "Profile"@en ;
+    rdfs:comment "Kunststoffe/Profile"@de,
+        "Plastics/Profile"@en ;
+    rdfs:subClassOf obd:Kunststoffe ;
+    obd:okobaudatCategory oekocat:6.4 .
+
+obd:Schaumglas a owl:Class ;
+    rdfs:label "Schaumglas"@de,
+        "Foam glass"@en ;
+    rdfs:comment "Dämmstoffe/Schaumglas"@de,
+        "Insulation Materials/Foam glass"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.6 .
+
+obd:Siliziumdioxid_basiert a owl:Class ;
+    rdfs:label "Siliziumdioxid-basiert"@de,
+        "Silicon dioxide-based"@en ;
+    rdfs:comment "Dämmstoffe/Siliziumdioxid-basiert"@de,
+        "Insulation Materials/Silicon dioxide-based"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.24 .
+
+obd:Zellulosefaser a owl:Class ;
+    rdfs:label "Zellulosefaser"@de,
+        "Cellulose fiber"@en ;
+    rdfs:comment "Dämmstoffe/Zellulosefaser"@de,
+        "Insulation Materials/Cellulose fiber"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.11 .
+
+obd:Expandiertes_Polystyrol_EPS a owl:Class ;
+    rdfs:label "Expandiertes Polystyrol (EPS)"@de,
+        "expanded polystyrene (EPS)"@en ;
+    rdfs:comment "Dämmstoffe/Expandiertes Polystyrol (EPS)"@de,
+        "Insulation Materials/expanded polystyrene (EPS)"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.2 .
+
+obd:Fassaden a owl:Class ;
+    rdfs:label "Fassaden"@de,
+        "Facades"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Fassaden"@de,
+        "Components of windows and curtain walls/Facades"@en ;
+    rdfs:subClassOf obd:Komponenten_von_Fenstern_und_Vorhangfassaden ;
+    obd:okobaudatCategory oekocat:7.9 .
+
+obd:Fassadenfarben a owl:Class ;
+    rdfs:label "Fassadenfarben"@de,
+        "Facade paints"@en ;
+    rdfs:comment "Beschichtungen/Fassadenfarben"@de,
+        "Coatings/Facade paints"@en ;
+    rdfs:subClassOf obd:Beschichtungen ;
+    obd:okobaudatCategory oekocat:5.4 .
+
+obd:Innenbeschichtungen a owl:Class ;
+    rdfs:label "Innenbeschichtungen"@de,
+        "Interior Coatings"@en ;
+    rdfs:comment "Beschichtungen/Innenbeschichtungen"@de,
+        "Coatings/Interior Coatings"@en ;
+    rdfs:subClassOf obd:Beschichtungen ;
+    obd:okobaudatCategory oekocat:5.5 .
+
+obd:Kunststoffprofile_elastisch a owl:Class ;
+    rdfs:label "Kunststoffprofile elastisch"@de,
+        "Elastic plastic profiles"@en ;
+    rdfs:comment "Kunststoffe/Kunststoffprofile elastisch"@de,
+        "Kunststoffe/Profile/Kunststoffprofile elastisch"@de,
+        "Plastics/Elastic plastic profiles"@en,
+        "Plastics/Profile/Elastic plastic profiles"@en ;
+    rdfs:subClassOf obd:Kunststoffe,
+        obd:Profile ;
+    obd:okobaudatCategory oekocat:6.4.02,
+        oekocat:6.5 .
+
+obd:Mineralwolle a owl:Class ;
+    rdfs:label "Mineralwolle"@de,
+        "Mineral Wool"@en ;
+    rdfs:comment "Dämmstoffe/Mineralwolle"@de,
+        "Dämmstoffe/Mineralwolle/Mineralwolle"@de,
+        "Insulation Materials/Mineral Wool"@en,
+        "Insulation Materials/Mineral Wool/Mineral Wool"@en ;
+    rdfs:subClassOf obd:Dämmstoffe,
+        obd:Mineralwolle ;
+    obd:okobaudatCategory oekocat:2.1,
+        oekocat:2.1.01 .
+
+obd:Personen_TransportePersonen_km a owl:Class ;
+    rdfs:label "Personen - Transporte[Personen km]"@de,
+        "Passenger transport [passenger km]"@en ;
+    rdfs:comment "Sonstige/Personen - Transporte[Personen km]"@de,
+        "Others/Passenger transport [passenger km]"@en ;
+    rdfs:subClassOf obd:Sonstige ;
+    obd:okobaudatCategory oekocat:9.4 .
+
+obd:Reaktionsharze a owl:Class ;
+    rdfs:label "Reaktionsharze"@de,
+        "Reactive resins"@en ;
+    rdfs:comment "Beschichtungen/Reaktionsharze"@de,
+        "Coatings/Reactive resins"@en ;
+    rdfs:subClassOf obd:Beschichtungen ;
+    obd:okobaudatCategory oekocat:5.8 .
+
+obd:Rohre a owl:Class ;
+    rdfs:label "Rohre"@de,
+        "Pipes"@en ;
+    rdfs:comment "Kunststoffe/Rohre"@de,
+        "Plastics/Pipes"@en ;
+    rdfs:subClassOf obd:Kunststoffe ;
+    obd:okobaudatCategory oekocat:6.1 .
+
+obd:Sanitär a owl:Class ;
+    rdfs:label "Sanitär"@de,
+        "Sanitary"@en ;
+    rdfs:comment "Gebäudetechnik/Sanitär"@de,
+        "Building Services/Sanitary"@en ;
+    rdfs:subClassOf obd:Gebäudetechnik ;
+    obd:okobaudatCategory oekocat:8.3 .
+
+obd:Stroh a owl:Class ;
+    rdfs:label "Stroh"@de,
+        "straw"@en ;
+    rdfs:comment "Dämmstoffe/Stroh"@de,
+        "Insulation Materials/straw"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.23 .
+
+obd:Tageslichtsysteme_und_Rauch_Wärmeabzugsanlagen_ a owl:Class ;
+    rdfs:label "Tageslichtsysteme und Rauch- / Wärmeabzugsanlagen "@de,
+        "Daylight systems and smoke/heat extraction systems"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Tageslichtsysteme und Rauch- / Wärmeabzugsanlagen "@de,
+        "Components of windows and curtain walls/Daylight systems and smoke/Heat extraction systems"@en ;
+    rdfs:subClassOf obd:Komponenten_von_Fenstern_und_Vorhangfassaden ;
+    obd:okobaudatCategory oekocat:7.10 .
+
+obd:Wärmedämmverbundsystem a owl:Class ;
+    rdfs:label "Wärmedämmverbundsystem"@de,
+        "Thermal insulation composite system"@en ;
+    rdfs:comment "Dämmstoffe/Wärmedämmverbundsystem"@de,
+        "Dämmstoffe/Wärmedämmverbundsystem/Wärmedämmverbundsystem"@de,
+        "Insulation Materials/Thermal insulation composite system"@en,
+        "Insulation Materials/Thermal insulation composite system/Thermal insulation composite system"@en ;
+    rdfs:subClassOf obd:Dämmstoffe,
+        obd:Wärmedämmverbundsystem ;
+    obd:okobaudatCategory oekocat:2.21,
+        oekocat:2.21.01 .
+
+obd:Zubehör_für_Fenster_Fassaden_Türen_und_Tore a owl:Class ;
+    rdfs:label "Zubehör für Fenster, Fassaden, Türen und Tore"@de,
+        "accessories for windows, facades, doors, and gates"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Zubehör für Fenster, Fassaden, Türen und Tore"@de,
+        "Components of windows and curtain walls/accessories for windows, facades, doors, and gates"@en ;
+    rdfs:subClassOf obd:Komponenten_von_Fenstern_und_Vorhangfassaden ;
+    obd:okobaudatCategory oekocat:7.11 .
+
+obd:Abfallaufbereitung_und_entsorgung_EoL a owl:Class ;
+    rdfs:label "Abfallaufbereitung und -entsorgung (EoL)"@de,
+        "Waste treatment and disposal (EoL)"@en ;
+    rdfs:comment "Sonstige/Abfallaufbereitung und -entsorgung (EoL)"@de,
+        "Others/Waste treatment and disposal (EoL)"@en ;
+    rdfs:subClassOf obd:Sonstige ;
+    obd:okobaudatCategory oekocat:9.5 .
+
+obd:Aluminium a owl:Class ;
+    rdfs:label "Aluminium"@de,
+        "aluminum"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Rahmen / Profile/Aluminium"@de,
+        "Komponenten von Fenstern und Vorhangfassaden/Türen und Tore/Aluminium"@de,
+        "Metalle/Aluminium"@de,
+        "Components of windows and curtain walls/Doors and gates/aluminum"@en,
+        "Components of windows and curtain walls/Frame/Profile/aluminum"@en,
+        "Metals/aluminum"@en ;
+    rdfs:subClassOf obd:Metalle,
+        obd:Rahmen_Profile,
+        obd:Türen_und_Tore ;
+    obd:okobaudatCategory oekocat:4.3,
+        oekocat:7.1.05,
+        oekocat:7.6.02 .
+
+obd:Asphalt a owl:Class ;
+    rdfs:label "Asphalt"@de,
+        "Asphalt"@en ;
+    rdfs:comment "Mineralische Baustoffe/Asphalt"@de,
+        "Mineral Building Materials/Asphalt"@en ;
+    rdfs:subClassOf obd:Mineralische_Baustoffe ;
+    obd:okobaudatCategory oekocat:1.5 .
+
+obd:Baustellenprozesse a owl:Class ;
+    rdfs:label "Baustellenprozesse"@de,
+        "Construction processes"@en ;
+    rdfs:comment "Sonstige/Baustellenprozesse"@de,
+        "Others/Construction processes"@en ;
+    rdfs:subClassOf obd:Sonstige ;
+    obd:okobaudatCategory oekocat:9.1 .
+
+obd:Bindemittel a owl:Class ;
+    rdfs:label "Bindemittel"@de,
+        "Binders"@en ;
+    rdfs:comment "Mineralische Baustoffe/Bindemittel"@de,
+        "Mineral Building Materials/Binders"@en ;
+    rdfs:subClassOf obd:Mineralische_Baustoffe ;
+    obd:okobaudatCategory oekocat:1.1 .
+
+obd:Edelstahl a owl:Class ;
+    rdfs:label "Edelstahl"@de,
+        "Stainless steel"@en ;
+    rdfs:comment "Metalle/Edelstahl"@de,
+        "Metals/Stainless steel"@en ;
+    rdfs:subClassOf obd:Metalle ;
+    obd:okobaudatCategory oekocat:4.2 .
+
+obd:Güter_Transportet_km a owl:Class ;
+    rdfs:label "Güter - Transporte[t km]"@de,
+        "Goods transport [t km]"@en ;
+    rdfs:comment "Sonstige/Güter - Transporte[t km]"@de,
+        "Others/Goods transport [t km]"@en ;
+    rdfs:subClassOf obd:Sonstige ;
+    obd:okobaudatCategory oekocat:9.3 .
+
+obd:Holzböden a owl:Class ;
+    rdfs:label "Holzböden"@de,
+        "Wooden floors"@en ;
+    rdfs:comment "Holz/Holzböden"@de,
+        "Wood/Wooden floors"@en ;
+    rdfs:subClassOf obd:Holz ;
+    obd:okobaudatCategory oekocat:3.3 .
+
+obd:Kupfer a owl:Class ;
+    rdfs:label "Kupfer"@de,
+        "Copper"@en ;
+    rdfs:comment "Metalle/Kupfer"@de,
+        "Metals/Copper"@en ;
+    rdfs:subClassOf obd:Metalle ;
+    obd:okobaudatCategory oekocat:4.4 .
+
+obd:Lacke_und_Lasuren a owl:Class ;
+    rdfs:label "Lacke und Lasuren"@de,
+        "Paints and varnishes"@en ;
+    rdfs:comment "Beschichtungen/Lacke und Lasuren"@de,
+        "Coatings/Paints and varnishes"@en ;
+    rdfs:subClassOf obd:Beschichtungen ;
+    obd:okobaudatCategory oekocat:5.6 .
+
+obd:Oberflächenbehandlung_und_Beschichtung_von_Metallen a owl:Class ;
+    rdfs:label "Oberflächenbehandlung und Beschichtung von Metallen"@de,
+        "Surface treatment and coating of metals"@en ;
+    rdfs:comment "Metalle/Oberflächenbehandlung und Beschichtung von Metallen"@de,
+        "Metals/Surface treatment and coating of metals"@en ;
+    rdfs:subClassOf obd:Metalle ;
+    obd:okobaudatCategory oekocat:4.7 .
+
+obd:Polyurethan_Hartschaum_PU a owl:Class ;
+    rdfs:label "Polyurethan-Hartschaum (PU)"@de,
+        "Polyurethane rigid foam (PU)"@en ;
+    rdfs:comment "Dämmstoffe/Polyurethan-Hartschaum (PU)"@de,
+        "Insulation Materials/Polyurethane rigid foam (PU)"@en ;
+    rdfs:subClassOf obd:Dämmstoffe ;
+    obd:okobaudatCategory oekocat:2.4 .
+
+obd:Türen_und_Tore a owl:Class ;
+    rdfs:label "Türen und Tore"@de,
+        "Doors and gates"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Türen und Tore"@de,
+        "Components of windows and curtain walls/Doors and gates"@en ;
+    rdfs:subClassOf obd:Komponenten_von_Fenstern_und_Vorhangfassaden ;
+    obd:okobaudatCategory oekocat:7.6 .
+
+obd:Elektro a owl:Class ;
+    rdfs:label "Elektro"@de,
+        "Electrical"@en ;
+    rdfs:comment "Gebäudetechnik/Elektro"@de,
+        "Building Services/Electrical"@en ;
+    rdfs:subClassOf obd:Gebäudetechnik ;
+    obd:okobaudatCategory oekocat:8.4 .
+
+obd:End_of_life_Prozesse_Kunststoffe a owl:Class ;
+    rdfs:label "End-of-life-Prozesse Kunststoffe"@de,
+        "End-of-life processes for plastics"@en ;
+    rdfs:comment "Kunststoffe/End-of-life-Prozesse Kunststoffe"@de,
+        "Plastics/End-of-life processes for plastics"@en ;
+    rdfs:subClassOf obd:Kunststoffe ;
+    obd:okobaudatCategory oekocat:6.8 .
+
+obd:Fenster a owl:Class ;
+    rdfs:label "Fenster"@de,
+        "Windows"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Fenster"@de,
+        "Components of windows and curtain walls/Windows"@en ;
+    rdfs:subClassOf obd:Komponenten_von_Fenstern_und_Vorhangfassaden ;
+    obd:okobaudatCategory oekocat:7.8 .
+
+obd:Heizung a owl:Class ;
+    rdfs:label "Heizung"@de,
+        "Heating"@en ;
+    rdfs:comment "Gebäudetechnik/Heizung"@de,
+        "Building Services/Heating"@en ;
+    rdfs:subClassOf obd:Gebäudetechnik ;
+    obd:okobaudatCategory oekocat:8.1 .
+
+obd:Holz a owl:Class ;
+    rdfs:label "Holz"@de,
+        "Wood"@en ;
+    rdfs:comment "End of Life/Generisch/Holz"@de,
+        "Holz"@de,
+        "Komponenten von Fenstern und Vorhangfassaden/Rahmen / Profile/Holz"@de,
+        "Komponenten von Fenstern und Vorhangfassaden/Türen und Tore/Holz"@de,
+        "Components of windows and curtain walls/Doors and gates/Wood"@en,
+        "Components of windows and curtain walls/Frame/Profile/Wood"@en,
+        "End of Life/Generic/Wood"@en,
+        "Wood"@en ;
+    rdfs:subClassOf obd:Generisch,
+        obd:Rahmen_Profile,
+        obd:Türen_und_Tore ;
+    obd:okobaudatCategory oekocat:100.1.03,
+        oekocat:3,
+        oekocat:7.1.01,
+        oekocat:7.6.03 .
+
+obd:Klimatisierung_und_Lüftung a owl:Class ;
+    rdfs:label "Klimatisierung und Lüftung"@de,
+        "Air conditioning and ventilation"@en ;
+    rdfs:comment "Gebäudetechnik/Klimatisierung und Lüftung"@de,
+        "Building Services/Air conditioning and ventilation"@en ;
+    rdfs:subClassOf obd:Gebäudetechnik ;
+    obd:okobaudatCategory oekocat:8.2 .
+
+obd:Sonstige a owl:Class ;
+    rdfs:label "Sonstige"@de,
+        "Others"@en ;
+    rdfs:comment "Sonstige"@de,
+        "Others"@en ;
+    obd:okobaudatCategory oekocat:9 .
+
+obd:Vollholz a owl:Class ;
+    rdfs:label "Vollholz"@de,
+        "Solid Wood"@en ;
+    rdfs:comment "Holz/Vollholz"@de,
+        "Wood/Solid Wood"@en ;
+    rdfs:subClassOf obd:Holz ;
+    obd:okobaudatCategory oekocat:3.1 .
+
+obd:Bodenbeläge a owl:Class ;
+    rdfs:label "Bodenbeläge"@de,
+        "Floor coverings"@en ;
+    rdfs:comment "Kunststoffe/Bodenbeläge"@de,
+        "Plastics/Floor coverings"@en ;
+    rdfs:subClassOf obd:Kunststoffe ;
+    obd:okobaudatCategory oekocat:6.2 .
+
+obd:Generisch a owl:Class ;
+    rdfs:label "Generisch"@de,
+        "Generic"@en ;
+    rdfs:comment "End of Life/Generisch"@de,
+        "End of Life/Generic"@en ;
+    rdfs:subClassOf obd:End_of_Life ;
+    obd:okobaudatCategory oekocat:100.1 .
+
+obd:Mörtel_und_Beton a owl:Class ;
+    rdfs:label "Mörtel und Beton"@de,
+        "Mortar and Concrete"@en ;
+    rdfs:comment "Mineralische Baustoffe/Mörtel und Beton"@de,
+        "Mineral Building Materials/Mortar and Concrete"@en ;
+    rdfs:subClassOf obd:Mineralische_Baustoffe ;
+    obd:okobaudatCategory oekocat:1.4 .
+
+obd:Nutzung a owl:Class ;
+    rdfs:label "Nutzung"@de,
+        "Usage"@en ;
+    rdfs:comment "Gebäudetechnik/Nutzung"@de,
+        "Building Services/Usage"@en ;
+    rdfs:subClassOf obd:Gebäudetechnik ;
+    obd:okobaudatCategory oekocat:8.6 .
+
+obd:Stahl_und_Eisen a owl:Class ;
+    rdfs:label "Stahl und Eisen"@de,
+        "Steel and iron"@en ;
+    rdfs:comment "Metalle/Stahl und Eisen"@de,
+        "Metals/Steel and iron"@en ;
+    rdfs:subClassOf obd:Metalle ;
+    obd:okobaudatCategory oekocat:4.1 .
+
+obd:Systembauteile a owl:Class ;
+    rdfs:label "Systembauteile"@de,
+        "System components"@en ;
+    rdfs:comment "Komposite/Systembauteile"@de,
+        "Composite/System components"@en ;
+    rdfs:subClassOf obd:Komposite ;
+    obd:okobaudatCategory oekocat:10.1 .
+
+obd:Dichtmassen a owl:Class ;
+    rdfs:label "Dichtmassen"@de,
+        "Sealants"@en ;
+    rdfs:comment "Kunststoffe/Dichtmassen"@de,
+        "Plastics/Sealants"@en ;
+    rdfs:subClassOf obd:Kunststoffe ;
+    obd:okobaudatCategory oekocat:6.7 .
+
+obd:Dichtungskomponenten_materialien a owl:Class ;
+    rdfs:label "Dichtungskomponenten / -materialien"@de,
+        "Sealing components / materials"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Dichtungskomponenten / -materialien"@de,
+        "Components of windows and curtain walls/Sealing components/-materials"@en ;
+    rdfs:subClassOf obd:Komponenten_von_Fenstern_und_Vorhangfassaden ;
+    obd:okobaudatCategory oekocat:7.3 .
+
+obd:Folien_und_Vliese a owl:Class ;
+    rdfs:label "Folien und Vliese"@de,
+        "Films and nonwovens"@en ;
+    rdfs:comment "Kunststoffe/Folien und Vliese"@de,
+        "Plastics/Films and nonwovens"@en ;
+    rdfs:subClassOf obd:Kunststoffe ;
+    obd:okobaudatCategory oekocat:6.6 .
+
+obd:Mineralische_Baustoffe a owl:Class ;
+    rdfs:label "Mineralische Baustoffe"@de,
+        "Mineral Building Materials"@en ;
+    rdfs:comment "Mineralische Baustoffe"@de,
+        "Mineral Building Materials"@en ;
+    obd:okobaudatCategory oekocat:1 .
+
+obd:Gebäudetechnik a owl:Class ;
+    rdfs:label "Gebäudetechnik"@de,
+        "Building Services"@en ;
+    rdfs:comment "End of Life/Generisch/Gebäudetechnik"@de,
+        "Gebäudetechnik"@de,
+        "Building Services"@en,
+        "End of Life/Generic/Building Services"@en ;
+    rdfs:subClassOf obd:Generisch ;
+    obd:okobaudatCategory oekocat:100.1.08,
+        oekocat:8 .
+
+obd:Kunststoffe a owl:Class ;
+    rdfs:label "Kunststoffe"@de,
+        "Plastics"@en ;
+    rdfs:comment "End of Life/Generisch/Kunststoffe"@de,
+        "Kunststoffe"@de,
+        "End of Life/Generic/Plastics"@en,
+        "Plastics"@en ;
+    rdfs:subClassOf obd:Generisch ;
+    obd:okobaudatCategory oekocat:100.1.06,
+        oekocat:6 .
+
+obd:Metalle a owl:Class ;
+    rdfs:label "Metalle"@de,
+        "Metals"@en ;
+    rdfs:comment "End of Life/Generisch/Metalle"@de,
+        "Metalle"@de,
+        "End of Life/Generic/Metals"@en,
+        "Metals"@en ;
+    rdfs:subClassOf obd:Generisch ;
+    obd:okobaudatCategory oekocat:100.1.04,
+        oekocat:4 .
+
+obd:Beschichtungen a owl:Class ;
+    rdfs:label "Beschichtungen"@de,
+        "Coatings"@en ;
+    rdfs:comment "Beschichtungen"@de,
+        "Coatings"@en ;
+    obd:okobaudatCategory oekocat:5 .
+
+obd:Beschläge a owl:Class ;
+    rdfs:label "Beschläge"@de,
+        "Hardware"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Beschläge"@de,
+        "Components of windows and curtain walls/Hardware"@en ;
+    rdfs:subClassOf obd:Komponenten_von_Fenstern_und_Vorhangfassaden ;
+    obd:okobaudatCategory oekocat:7.4 .
+
+obd:Dachbahnen a owl:Class ;
+    rdfs:label "Dachbahnen"@de,
+        "Roofing membranes"@en ;
+    rdfs:comment "Kunststoffe/Dachbahnen"@de,
+        "Plastics/Roofing membranes"@en ;
+    rdfs:subClassOf obd:Kunststoffe ;
+    obd:okobaudatCategory oekocat:6.3 .
+
+obd:Energieträger_Bereitstellung_frei_Verbraucher a owl:Class ;
+    rdfs:label "Energieträger - Bereitstellung frei Verbraucher"@de,
+        "Energy carriers - supply free consumers"@en ;
+    rdfs:comment "Sonstige/Energieträger - Bereitstellung frei Verbraucher"@de,
+        "Others/Energy carriers - supply free consumers"@en ;
+    rdfs:subClassOf obd:Sonstige ;
+    obd:okobaudatCategory oekocat:9.2 .
+
+obd:End_of_life_Prozesse_von_Metallen a owl:Class ;
+    rdfs:label "End-of-life-Prozesse von Metallen"@de,
+        "End-of-life processes for metals"@en ;
+    rdfs:comment "Metalle/End-of-life-Prozesse von Metallen"@de,
+        "Metals/End-of-life processes for metals"@en ;
+    rdfs:subClassOf obd:Metalle ;
+    obd:okobaudatCategory oekocat:4.8 .
+
+obd:Holzwerkstoffe a owl:Class ;
+    rdfs:label "Holzwerkstoffe"@de,
+        "Wood-based materials"@en ;
+    rdfs:comment "Holz/Holzwerkstoffe"@de,
+        "Wood/Wood-based materials"@en ;
+    rdfs:subClassOf obd:Holz ;
+    obd:okobaudatCategory oekocat:3.2 .
+
+obd:Rahmen_Profile a owl:Class ;
+    rdfs:label "Rahmen / Profile"@de,
+        "Frames / Profiles"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden/Rahmen / Profile"@de,
+        "Components of windows and curtain walls/Frame/Profile"@en ;
+    rdfs:subClassOf obd:Komponenten_von_Fenstern_und_Vorhangfassaden ;
+    obd:okobaudatCategory oekocat:7.1 .
+
+obd:Zuschläge a owl:Class ;
+    rdfs:label "Zuschläge"@de,
+        "Aggregates"@en ;
+    rdfs:comment "Mineralische Baustoffe/Zuschläge"@de,
+        "Mineral Building Materials/Aggregates"@en ;
+    rdfs:subClassOf obd:Mineralische_Baustoffe ;
+    obd:okobaudatCategory oekocat:1.2 .
+
+obd:Komponenten_von_Fenstern_und_Vorhangfassaden a owl:Class ;
+    rdfs:label "Komponenten von Fenstern und Vorhangfassaden"@de,
+        "Components of windows and curtain walls"@en ;
+    rdfs:comment "Komponenten von Fenstern und Vorhangfassaden"@de,
+        "Components of windows and curtain walls"@en ;
+    obd:okobaudatCategory oekocat:7 .
+
+obd:Steine_und_Elemente a owl:Class ;
+    rdfs:label "Steine und Elemente"@de,
+        "Stones and Elements"@en ;
+    rdfs:comment "Mineralische Baustoffe/Steine und Elemente"@de,
+        "Mineral Building Materials/Stones and Elements"@en ;
+    rdfs:subClassOf obd:Mineralische_Baustoffe ;
+    obd:okobaudatCategory oekocat:1.3 .
+
+obd:Dämmstoffe a owl:Class ;
+    rdfs:label "Dämmstoffe"@de,
+        "Insulation Materials"@en ;
+    rdfs:comment "Dämmstoffe"@de,
+        "Insulation Materials"@en ;
+    obd:okobaudatCategory oekocat:2 .
+
+obd:End_of_life_Prozesse a owl:Class ;
+    rdfs:label "End-of-life-Prozesse"@de,
+        "End-of-life processes"@en ;
+    rdfs:comment "Beschichtungen/End-of-life-Prozesse"@de,
+        "Dämmstoffe/End-of-life-Prozesse"@de,
+        "Gebäudetechnik/End-of-life-Prozesse"@de,
+        "Holz/End-of-life-Prozesse"@de,
+        "Komponenten von Fenstern und Vorhangfassaden/End-of-life-Prozesse"@de,
+        "Mineralische Baustoffe/End-of-life-Prozesse"@de,
+        "Building Services/End-of-life processes"@en,
+        "Coatings/End-of-life processes"@en,
+        "Components of windows and curtain walls/End-of-life processes"@en,
+        "Insulation Materials/End-of-life processes"@en,
+        "Mineral Building Materials/End-of-life processes"@en,
+        "Wood/End-of-life processes"@en ;
+    rdfs:subClassOf obd:Beschichtungen,
+        obd:Dämmstoffe,
+        obd:Gebäudetechnik,
+        obd:Holz,
+        obd:Komponenten_von_Fenstern_und_Vorhangfassaden,
+        obd:Mineralische_Baustoffe ;
+    obd:okobaudatCategory oekocat:1.6,
+        oekocat:2.22,
+        oekocat:3.4,
+        oekocat:5.7,
+        oekocat:7.5,
+        oekocat:8.7 .
+

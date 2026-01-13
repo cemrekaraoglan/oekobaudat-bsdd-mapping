@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:CategorySystem xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:ns2="http://lca.jrc.it/ILCD/Categories" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="OEKOBAU.DAT">
+    <ns2:categories dataType="Process">
+        <ns2:category id="1" name="Mineralische Baustoffe">
+            <ns2:category id="1.1" name="Bindemittel">
+                <ns2:category id="1.1.01" name="Zement"/>
+                <ns2:category id="1.1.02" name="Kalk"/>
+                <ns2:category id="1.1.03" name="Gips"/>
+                <ns2:category id="1.1.04" name="Lehm"/>
+            </ns2:category>
+            <ns2:category id="1.2" name="Zuschläge">
+                <ns2:category id="1.2.01" name="Sand und Kies"/>
+                <ns2:category id="1.2.02" name="Naturstein"/>
+                <ns2:category id="1.2.03" name="Bims"/>
+                <ns2:category id="1.2.04" name="Blähton"/>
+                <ns2:category id="1.2.05" name="Blähschiefer"/>
+                <ns2:category id="1.2.06" name="Blähglas"/>
+                <ns2:category id="1.2.07" name="Perlite"/>
+                <ns2:category id="1.2.08" name="Kraftwerksnebenprodukte"/>
+                <ns2:category id="1.2.09" name="Puzzolan"/>
+                <ns2:category id="1.2.10" name="Trockenschüttung"/>
+            </ns2:category>
+            <ns2:category id="1.3" name="Steine und Elemente">
+                <ns2:category id="1.3.01" name="Kalksandstein"/>
+                <ns2:category id="1.3.02" name="Ziegel"/>
+                <ns2:category id="1.3.03" name="Porenbeton"/>
+                <ns2:category id="1.3.04" name="Leichtbeton"/>
+                <ns2:category id="1.3.05" name="Betonfertigteile und Betonwaren"/>
+                <ns2:category id="1.3.06" name="Steinzeug"/>
+                <ns2:category id="1.3.07" name="Fliesen und Platten"/>
+                <ns2:category id="1.3.08" name="Naturwerkstein"/>
+                <ns2:category id="1.3.09" name="Schiefer"/>
+                <ns2:category id="1.3.10" name="Dachziegel"/>
+                <ns2:category id="1.3.11" name="Dachsteine"/>
+                <ns2:category id="1.3.12" name="Faserzement"/>
+                <ns2:category id="1.3.13" name="Gipsplatten"/>
+                <ns2:category id="1.3.14" name="Trockenestrich"/>
+                <ns2:category id="1.3.15" name="Deckenplatten"/>
+                <ns2:category id="1.3.16" name="Glasbausteine"/>
+                <ns2:category id="1.3.17" name="Lehmsteine"/>
+                <ns2:category id="1.3.18" name="Brandschutzplatten"/>
+                <ns2:category id="1.3.19" name="Substrate"/>
+                <ns2:category id="1.3.20" name="Kunststein"/>
+            </ns2:category>
+            <ns2:category id="1.4" name="Mörtel und Beton">
+                <ns2:category id="1.4.01" name="Beton"/>
+                <ns2:category id="1.4.02" name="Mauermörtel"/>
+                <ns2:category id="1.4.03" name="Estrich trocken"/>
+                <ns2:category id="1.4.04" name="Putz und Putzmörtel"/>
+                <ns2:category id="1.4.05" name="Kleber und Klebemörtel"/>
+                <ns2:category id="1.4.06" name="Betonzusatzmittel"/>
+            </ns2:category>
+            <ns2:category id="1.5" name="Asphalt">
+                <ns2:category id="1.5.01" name="Splittmastixasphalt"/>
+                <ns2:category id="1.5.02" name="Gussassphalt"/>
+                <ns2:category id="1.5.03" name="Asphaltbinder"/>
+                <ns2:category id="1.5.04" name="Tragschichten"/>
+            </ns2:category>
+            <ns2:category id="1.6" name="End-of-life-Prozesse">
+                <ns2:category id="1.6.01" name="EoL Putz"/>
+                <ns2:category id="1.6.02" name="EoL Armierungen"/>
+            </ns2:category>
+            <ns2:category id="1.7" name="Pigmente">
+                <ns2:category id="1.7.01" name="Anorganische Pigmente"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="2" name="Dämmstoffe">
+            <ns2:category id="2.1" name="Mineralwolle">
+                <ns2:category id="2.1.01" name="Mineralwolle"/>
+                <ns2:category id="2.1.02" name="Glaswolle"/>
+                <ns2:category id="2.1.03" name="Steinwolle"/>
+            </ns2:category>
+            <ns2:category id="2.2" name="Expandiertes Polystyrol (EPS)">
+                <ns2:category id="2.2.01" name="EPS weiß"/>
+                <ns2:category id="2.2.02" name="EPS grau"/>
+                <ns2:category id="2.2.03" name="EPS grau-weiß"/>
+            </ns2:category>
+            <ns2:category id="2.3" name="Extrudiertes Polystyrol (XPS)">
+                <ns2:category id="2.3.01" name="XPS weiß"/>
+            </ns2:category>
+            <ns2:category id="2.4" name="Polyurethan-Hartschaum (PU)">
+                <ns2:category id="2.4.01" name="PU mit Aluminium"/>
+                <ns2:category id="2.4.02" name="PU mit Mineralvlies"/>
+                <ns2:category id="2.4.03" name="PU Blockschaum"/>
+                <ns2:category id="2.4.04" name="PIR-Hartschaum"/>
+            </ns2:category>
+            <ns2:category id="2.5" name="Phenolharz-Hartschaum (PF)">
+                <ns2:category id="2.5.01" name="PF-Platten"/>
+            </ns2:category>
+            <ns2:category id="2.6" name="Schaumglas">
+                <ns2:category id="2.6.01" name="Platten"/>
+                <ns2:category id="2.6.02" name="Granulat"/>
+            </ns2:category>
+            <ns2:category id="2.7" name="Holzwolleplatten">
+                <ns2:category id="2.7.01" name="Holzwolleleichtbauplatten"/>
+            </ns2:category>
+            <ns2:category id="2.8" name="Blähperlit">
+                <ns2:category id="2.8.01" name="Platten"/>
+                <ns2:category id="2.8.02" name="Granulat"/>
+            </ns2:category>
+            <ns2:category id="2.9" name="Expandierter Kork">
+                <ns2:category id="2.9.01" name="Expandierter Kork"/>
+            </ns2:category>
+            <ns2:category id="2.10" name="Holzfasern">
+                <ns2:category id="2.10.01" name="Holzfaserdämmplatte"/>
+                <ns2:category id="2.10.02" name="Holzfasern und Holzspäne, lose"/>
+            </ns2:category>
+            <ns2:category id="2.11" name="Zellulosefaser">
+                <ns2:category id="2.11.01" name="Zellulose-Einblas-Dämmstoff"/>
+                <ns2:category id="2.11.02" name="Zelluloseplatten"/>
+            </ns2:category>
+            <ns2:category id="2.12" name="Flachsfaser">
+                <ns2:category id="2.12.01" name="Vlies"/>
+            </ns2:category>
+            <ns2:category id="2.13" name="Hanffaser">
+                <ns2:category id="2.13.01" name="Vlies"/>
+            </ns2:category>
+            <ns2:category id="2.14" name="Baumwolle">
+                <ns2:category id="2.14.01" name="Baumwolle konventionell"/>
+                <ns2:category id="2.14.02" name="Baumwolle ökologisch"/>
+            </ns2:category>
+            <ns2:category id="2.15" name="Schafswolle"/>
+            <ns2:category id="2.16" name="Harnstoff-Formaldehydharz">
+                <ns2:category id="2.16.01" name="Ortschaum"/>
+            </ns2:category>
+            <ns2:category id="2.17" name="Melaminharz">
+                <ns2:category id="2.17.01" name="Schaum"/>
+            </ns2:category>
+            <ns2:category id="2.18" name="Polyethylen">
+                <ns2:category id="2.18.01" name="Schaum"/>
+            </ns2:category>
+            <ns2:category id="2.19" name="Kautschuk">
+                <ns2:category id="2.19.01" name="Schaum"/>
+            </ns2:category>
+            <ns2:category id="2.20" name="Calciumsilikat / Calcium-Silikathydrat">
+                <ns2:category id="2.20.01" name="Porenbeton"/>
+                <ns2:category id="2.20.02" name="Calciumsilikat"/>
+            </ns2:category>
+            <ns2:category id="2.21" name="Wärmedämmverbundsystem">
+                <ns2:category id="2.21.01" name="Wärmedämmverbundsystem"/>
+                <ns2:category id="2.21.02" name="WDVS-Dübel"/>
+                <ns2:category id="2.21.03" name="WDVS komplett"/>
+            </ns2:category>
+            <ns2:category id="2.22" name="End-of-life-Prozesse">
+                <ns2:category id="2.22.01" name="EoL Holzfaserdämmplatten"/>
+                <ns2:category id="2.22.02" name="EoL Glaswolle"/>
+                <ns2:category id="2.22.03" name="EoL Mineralwolle"/>
+                <ns2:category id="2.22.04" name="EoL WDVS-Dübel"/>
+                <ns2:category id="2.22.05" name="EoL WDVS"/>
+                <ns2:category id="2.22.06" name="EoL EPS"/>
+                <ns2:category id="2.22.07" name="EoL Holzwolle"/>
+            </ns2:category>
+            <ns2:category id="2.23" name="Stroh">
+                <ns2:category id="2.23.01" name="Strohballen"/>
+                <ns2:category id="2.23.02" name="Strohplatten"/>
+                <ns2:category id="2.23.03" name="Strohfasern"/>
+            </ns2:category>
+            <ns2:category id="2.24" name="Siliziumdioxid-basiert">
+                <ns2:category id="2.24.01" name="Vakuumisolationspaneele"/>
+                <ns2:category id="2.24.02" name="Hydrophobe Platten"/>
+            </ns2:category>
+            <ns2:category id="2.25" name="Dämmelemente">
+                <ns2:category id="2.25.01" name="Tragende Wärmedämmelemente"/>
+            </ns2:category>
+            <ns2:category id="2.26" name="Ortschaum">
+                <ns2:category id="2.26.01" name="Mineralisch"/>
+                <ns2:category id="2.26.02" name="Organisch"/>
+            </ns2:category>
+            <ns2:category id="2.27" name="Schaumbeton">
+                <ns2:category id="2.27.01" name="Schaumbeton Dämmplatten"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="3" name="Holz">
+            <ns2:category id="3.1" name="Vollholz">
+                <ns2:category id="3.1.01" name="Bau-Schnittholz"/>
+                <ns2:category id="3.1.02" name="Konstruktionsvollholz"/>
+                <ns2:category id="3.1.03" name="Balkenschichtholz (Duo-Triobalken)"/>
+                <ns2:category id="3.1.04" name="Brettschichtholz (BSH)"/>
+                <ns2:category id="3.1.05" name="Brettschichtholzplatte"/>
+            </ns2:category>
+            <ns2:category id="3.2" name="Holzwerkstoffe">
+                <ns2:category id="3.2.01" name="3- und 5-Schichtplatten"/>
+                <ns2:category id="3.2.02" name="Sperrholz"/>
+                <ns2:category id="3.2.03" name="Funierschichtholz"/>
+                <ns2:category id="3.2.04" name="OSB-Platte"/>
+                <ns2:category id="3.2.05" name="Laminated Veneer Lumber (LVL)"/>
+                <ns2:category id="3.2.06" name="Spanplatten"/>
+                <ns2:category id="3.2.07" name="Holzfaserplatten"/>
+                <ns2:category id="3.2.08" name="Holzzementplatten"/>
+                <ns2:category id="3.2.09" name="Wood-Plastic-Composites"/>
+                <ns2:category id="3.2.10" name="Elemente aus Holzwerkstoffen"/>
+            </ns2:category>
+            <ns2:category id="3.3" name="Holzböden">
+                <ns2:category id="3.3.01" name="Laminat"/>
+                <ns2:category id="3.3.02" name="Parkett"/>
+                <ns2:category id="3.3.03" name="Kork"/>
+                <ns2:category id="3.3.04" name="Mehrschichtig modulare Bodenbeläge"/>
+            </ns2:category>
+            <ns2:category id="3.4" name="End-of-life-Prozesse">
+                <ns2:category id="3.4.01" name="EoL Spanplatte"/>
+                <ns2:category id="3.4.02" name="EoL OSB"/>
+                <ns2:category id="3.4.03" name="EoL allgemein"/>
+                <ns2:category id="3.4.04" name="EoL Holzfaserplatte"/>
+                <ns2:category id="3.4.05" name="EoL Laminat"/>
+                <ns2:category id="3.4.06" name="EoL Schichtplatten"/>
+            </ns2:category>
+            <ns2:category id="3.5" name="Modifiziertes Holz">
+                <ns2:category id="3.5.01" name="Acetyliertes Holz"/>
+                <ns2:category id="3.5.02" name="Thermisch behandeltes Holz"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="4" name="Metalle">
+            <ns2:category id="4.1" name="Stahl und Eisen">
+                <ns2:category id="4.1.01" name="Betonstabstahl"/>
+                <ns2:category id="4.1.02" name="Betonstahlmatten"/>
+                <ns2:category id="4.1.03" name="Stahlprofile"/>
+                <ns2:category id="4.1.04" name="Stahlbleche"/>
+                <ns2:category id="4.1.05" name="Guss- und Schmiedeteile aus Stahl und Eisen"/>
+                <ns2:category id="4.1.06" name="Befestigungsmittel"/>
+            </ns2:category>
+            <ns2:category id="4.2" name="Edelstahl">
+                <ns2:category id="4.2.01" name="Edelstahlbleche"/>
+                <ns2:category id="4.2.02" name="Edelstahlprofile"/>
+                <ns2:category id="4.2.03" name="Edelstahl Trinkwasserrohre"/>
+                <ns2:category id="4.2.04" name="Befestigungsmittel"/>
+            </ns2:category>
+            <ns2:category id="4.3" name="Aluminium">
+                <ns2:category id="4.3.01" name="Aluminiumbleche"/>
+                <ns2:category id="4.3.02" name="Aluminiumprofil"/>
+                <ns2:category id="4.3.03" name="Gussteile aus Aluminium"/>
+                <ns2:category id="4.3.04" name="Aluminiumfolie"/>
+            </ns2:category>
+            <ns2:category id="4.4" name="Kupfer">
+                <ns2:category id="4.4.01" name="Kupferbleche"/>
+                <ns2:category id="4.4.02" name="Kupferrohre"/>
+                <ns2:category id="4.4.03" name="Kupferprofile"/>
+                <ns2:category id="4.4.04" name="Schmiede- und Gussteile aus Kupfer und Messing"/>
+            </ns2:category>
+            <ns2:category id="4.5" name="Zink">
+                <ns2:category id="4.5.01" name="Zinkbleche"/>
+            </ns2:category>
+            <ns2:category id="4.6" name="Blei">
+                <ns2:category id="4.6.01" name="Bleibleche"/>
+            </ns2:category>
+            <ns2:category id="4.7" name="Oberflächenbehandlung und Beschichtung von Metallen">
+                <ns2:category id="4.7.01" name="Anodisieren von Aluminium"/>
+                <ns2:category id="4.7.02" name="(Nass-) Lackieren von Metallen"/>
+                <ns2:category id="4.7.03" name="Pulverbeschichten"/>
+                <ns2:category id="4.7.04" name="Verzinken von Stahl"/>
+            </ns2:category>
+            <ns2:category id="4.8" name="End-of-life-Prozesse von Metallen">
+                <ns2:category id="4.8.01" name="EoL von Aluminium"/>
+                <ns2:category id="4.8.02" name="EoL von Edelstahl"/>
+                <ns2:category id="4.8.03" name="EoL von Kupferblechen"/>
+                <ns2:category id="4.8.04" name="EoL von Kupferblech (Bronze legiert)"/>
+                <ns2:category id="4.8.05" name="EoL von Kupferblech (Gold legiert)"/>
+                <ns2:category id="4.8.06" name="EoL von Kupferrohr"/>
+                <ns2:category id="4.8.07" name="EoL von Sandwichelemente"/>
+                <ns2:category id="4.8.08" name="EoL von Stahlblechen"/>
+                <ns2:category id="4.8.09" name="EoL von Stahlprofilen"/>
+                <ns2:category id="4.8.10" name="EoL von Zinkblechen"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="5" name="Beschichtungen">
+            <ns2:category id="5.1" name="Grundierungen">
+                <ns2:category id="5.1.01" name="Grundierungen Farben und Putze"/>
+            </ns2:category>
+            <ns2:category id="5.2" name="Bodenbeschichtungen"/>
+            <ns2:category id="5.3" name="Bituminöse Anstriche">
+                <ns2:category id="5.3.01" name="Bitumenbeschichtungen"/>
+            </ns2:category>
+            <ns2:category id="5.4" name="Fassadenfarben">
+                <ns2:category id="5.4.01" name="Dispersion"/>
+                <ns2:category id="5.4.02" name="Silikat-Dispersion"/>
+                <ns2:category id="5.4.03" name="Silikonharz"/>
+            </ns2:category>
+            <ns2:category id="5.5" name="Innenbeschichtungen">
+                <ns2:category id="5.5.01" name="Wand- und Deckenbeläge"/>
+                <ns2:category id="5.5.02" name="Innenfarben"/>
+                <ns2:category id="5.5.03" name="Dispersionsklebstoffe"/>
+            </ns2:category>
+            <ns2:category id="5.6" name="Lacke und Lasuren">
+                <ns2:category id="5.6.01" name="Lacksysteme Holzfenster"/>
+                <ns2:category id="5.6.02" name="Lacksysteme Holzfassade"/>
+                <ns2:category id="5.6.03" name="Parkettlack"/>
+                <ns2:category id="5.6.04" name="Lacksysteme Metall"/>
+            </ns2:category>
+            <ns2:category id="5.7" name="End-of-life-Prozesse">
+                <ns2:category id="5.7.01" name="EoL Grundierung"/>
+            </ns2:category>
+            <ns2:category id="5.8" name="Reaktionsharze">
+                <ns2:category id="5.8.01" name="Reaktionsharze auf Epoxidharzbasis"/>
+                <ns2:category id="5.8.02" name="Reaktionsharze auf PU-Basis"/>
+                <ns2:category id="5.8.03" name="Reaktionsharze auf Methacrylatbasis"/>
+            </ns2:category>
+            <ns2:category id="5.9" name="Brandschutz">
+                <ns2:category id="5.9.01" name="Innen- und Außenbeschichtungen"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="6" name="Kunststoffe">
+            <ns2:category id="6.1" name="Rohre">
+                <ns2:category id="6.1.01" name="Trinkwasserrohre"/>
+                <ns2:category id="6.1.02" name="Abwasserrohre"/>
+                <ns2:category id="6.1.03" name="Regen-/Grauwasserrohre"/>
+            </ns2:category>
+            <ns2:category id="6.2" name="Bodenbeläge">
+                <ns2:category id="6.2.01" name="PVC-Bodenbeläge"/>
+                <ns2:category id="6.2.02" name="Gummi-/Kautschuk-Bodenbeläge"/>
+                <ns2:category id="6.2.03" name="Synth. Thermoplast / Polyolefin"/>
+                <ns2:category id="6.2.04" name="Linoleum-Bodenbeläge"/>
+                <ns2:category id="6.2.05" name="Textile Bodenbeläge"/>
+                <ns2:category id="6.2.06" name="Mehrschichtig modulare Bodenbeläge"/>
+            </ns2:category>
+            <ns2:category id="6.3" name="Dachbahnen">
+                <ns2:category id="6.3.01" name="Bitumen-Dachbahnen"/>
+                <ns2:category id="6.3.02" name="PVC-Dachbahnen"/>
+                <ns2:category id="6.3.03" name="Elastomer-Dachbahnen"/>
+                <ns2:category id="6.3.04" name="EVA-Dachbahnen (Etylen-Vinylacetat)"/>
+                <ns2:category id="6.3.05" name="TPO-Dachbahnen (FPO)"/>
+                <ns2:category id="6.3.06" name="Solar-Kunststoffdachbahnen"/>
+                <ns2:category id="6.3.07" name="Dübel für Bahnen"/>
+                <ns2:category id="6.3.08" name="ECB-Dachbahnen (Ethylen-Copolymer-Bitumen)"/>
+                <ns2:category id="6.3.09" name="PIB-Dachbahnen (Polyisobutylen)"/>
+            </ns2:category>
+            <ns2:category id="6.4" name="Profile">
+                <ns2:category id="6.4.01" name="Kunststoffprofile hart"/>
+                <ns2:category id="6.4.02" name="Kunststoffprofile elastisch"/>
+            </ns2:category>
+            <ns2:category id="6.5" name="Kunststoffprofile elastisch">
+                <ns2:category id="6.5.01" name="Harz-Komposit Fassadenplatten"/>
+                <ns2:category id="6.5.02" name="Transparente Platten"/>
+                <ns2:category id="6.5.03" name="Dübelsysteme für Platten"/>
+            </ns2:category>
+            <ns2:category id="6.6" name="Folien und Vliese">
+                <ns2:category id="6.6.01" name="Unterspannbahn"/>
+                <ns2:category id="6.6.02" name="Dampfbremse / Dampfsperre"/>
+                <ns2:category id="6.6.03" name="Folien zur Abdichtung"/>
+                <ns2:category id="6.6.04" name="Vliese"/>
+                <ns2:category id="6.6.05" name="Baupappen"/>
+                <ns2:category id="6.6.06" name="Folienkissen"/>
+                <ns2:category id="6.6.07" name="Technische Textilien"/>
+            </ns2:category>
+            <ns2:category id="6.7" name="Dichtmassen">
+                <ns2:category id="6.7.01" name="Kautschuk"/>
+                <ns2:category id="6.7.02" name="Silikon"/>
+                <ns2:category id="6.7.03" name="PUR"/>
+                <ns2:category id="6.7.04" name="Bitumen"/>
+                <ns2:category id="6.7.05" name="PVC"/>
+                <ns2:category id="6.7.06" name="Acrylat"/>
+                <ns2:category id="6.7.07" name="Polysulfid"/>
+            </ns2:category>
+            <ns2:category id="6.8" name="End-of-life-Prozesse Kunststoffe">
+                <ns2:category id="6.8.01" name="EoL allgemein"/>
+                <ns2:category id="6.8.02" name="EoL Dübelsystem für Platten"/>
+                <ns2:category id="6.8.03" name="EoL Dübelsystem für Planen"/>
+                <ns2:category id="6.8.04" name="EoL Elastomer-Dachbahnen"/>
+                <ns2:category id="6.8.05" name="EoL EVA-Dachbahnen"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="7" name="Komponenten von Fenstern und Vorhangfassaden">
+            <ns2:category id="7.1" name="Rahmen / Profile">
+                <ns2:category id="7.1.01" name="Holz"/>
+                <ns2:category id="7.1.02" name="Holz thermisch getrennt"/>
+                <ns2:category id="7.1.03" name="Holzwerkstoff"/>
+                <ns2:category id="7.1.04" name="Holz-Aluminium"/>
+                <ns2:category id="7.1.05" name="Aluminium"/>
+                <ns2:category id="7.1.06" name="Aluminium thermisch getrennt"/>
+                <ns2:category id="7.1.07" name="Stahl"/>
+                <ns2:category id="7.1.08" name="Stahl verzinkt"/>
+                <ns2:category id="7.1.09" name="PVC"/>
+                <ns2:category id="7.1.10" name="harter PUR-Integralschaumstoff"/>
+            </ns2:category>
+            <ns2:category id="7.2" name="Füllungen">
+                <ns2:category id="7.2.01" name="Transparente Füllungen"/>
+                <ns2:category id="7.2.02" name="Opake Füllungen"/>
+            </ns2:category>
+            <ns2:category id="7.3" name="Dichtungskomponenten / -materialien">
+                <ns2:category id="7.3.01" name="Dichtprofile"/>
+                <ns2:category id="7.3.02" name="Spritzbare Dichtstoffe"/>
+                <ns2:category id="7.3.03" name="Imprägnierte Dichtungsbänder aus Schaumkunststoff"/>
+                <ns2:category id="7.3.04" name="Fugendichtungsbänder"/>
+                <ns2:category id="7.3.05" name="Elastomer-Fugenbänder"/>
+                <ns2:category id="7.3.06" name="Dichtfolien"/>
+                <ns2:category id="7.3.07" name="Anputzdichtleisten"/>
+            </ns2:category>
+            <ns2:category id="7.4" name="Beschläge">
+                <ns2:category id="7.4.01" name="Stahlbeschläge"/>
+                <ns2:category id="7.4.02" name="Aluminiumbeschläge"/>
+                <ns2:category id="7.4.03" name="Bronzebeschläge"/>
+                <ns2:category id="7.4.04" name="Messingbeschläge"/>
+                <ns2:category id="7.4.05" name="Edelstahlbeschläge"/>
+                <ns2:category id="7.4.06" name="Befestigungen"/>
+                <ns2:category id="7.4.07" name="Fenstergriffe"/>
+                <ns2:category id="7.4.08" name="Zinkbeschläge"/>
+                <ns2:category id="7.4.09" name="Kunststoffbeschläge"/>
+            </ns2:category>
+            <ns2:category id="7.5" name="End-of-life-Prozesse">
+                <ns2:category id="7.5.01" name="EoL Stahl"/>
+                <ns2:category id="7.5.02" name="EoL Aluminium"/>
+                <ns2:category id="7.5.03" name="EoL Bronze"/>
+                <ns2:category id="7.5.04" name="EoL Messing"/>
+                <ns2:category id="7.5.05" name="EoL Edelstahl"/>
+                <ns2:category id="7.5.06" name="EoL Zink"/>
+                <ns2:category id="7.5.07" name="EoL Fenster"/>
+            </ns2:category>
+            <ns2:category id="7.6" name="Türen und Tore">
+                <ns2:category id="7.6.01" name="Stahl"/>
+                <ns2:category id="7.6.02" name="Aluminium"/>
+                <ns2:category id="7.6.03" name="Holz"/>
+                <ns2:category id="7.6.04" name="Kunststoff"/>
+            </ns2:category>
+            <ns2:category id="7.7" name="Antriebssysteme">
+                <ns2:category id="7.7.01" name="mechanisch"/>
+                <ns2:category id="7.7.02" name="elektrisch"/>
+            </ns2:category>
+            <ns2:category id="7.8" name="Fenster">
+                <ns2:category id="7.8.01" name="Holzfenster"/>
+                <ns2:category id="7.8.02" name="Holz-Metallfenster"/>
+                <ns2:category id="7.8.03" name="Metallfenster"/>
+                <ns2:category id="7.8.04" name="Kunststofffenster"/>
+                <ns2:category id="7.8.05" name="Sonstige Fenster"/>
+            </ns2:category>
+            <ns2:category id="7.9" name="Fassaden">
+                <ns2:category id="7.9.01" name="Vorhangfassade - Pfosten-Riegel-Fassaden"/>
+                <ns2:category id="7.9.02" name="Vorhangfassade - Element-Fassaden"/>
+                <ns2:category id="7.9.03" name="Sonstige Fassaden"/>
+            </ns2:category>
+            <ns2:category id="7.10" name="Tageslichtsysteme und Rauch- / Wärmeabzugsanlagen ">
+                <ns2:category id="7.10.01" name="Oberlichter"/>
+                <ns2:category id="7.10.02" name="Rauch-/Wärmeabzugsanlagen"/>
+                <ns2:category id="7.10.03" name="Sonstige Tageslichtsysteme"/>
+            </ns2:category>
+            <ns2:category id="7.11" name="Zubehör für Fenster, Fassaden, Türen und Tore">
+                <ns2:category id="7.11.01" name="Sonnenschutzsysteme"/>
+                <ns2:category id="7.11.02" name="Fingerschutzsysteme"/>
+                <ns2:category id="7.11.03" name="Feuer-/Rauchschutzsysteme"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="8" name="Gebäudetechnik">
+            <ns2:category id="8.1" name="Heizung">
+                <ns2:category id="8.1.01" name="Wärmeerzeuger"/>
+                <ns2:category id="8.1.02" name="Wärmeverteilung und Abgabe"/>
+                <ns2:category id="8.1.03" name="Speicher"/>
+                <ns2:category id="8.1.04" name="Wärmeübertragung"/>
+                <ns2:category id="8.1.05" name="Regelung und Hydraulik"/>
+            </ns2:category>
+            <ns2:category id="8.2" name="Klimatisierung und Lüftung">
+                <ns2:category id="8.2.01" name="Lüftungsanlagen"/>
+                <ns2:category id="8.2.02" name="Klimatisierung/Kältemaschinen"/>
+                <ns2:category id="8.2.03" name="Zubehör"/>
+                <ns2:category id="8.2.04" name="Kältemittel"/>
+                <ns2:category id="8.2.05" name="Wärmeabführung"/>
+            </ns2:category>
+            <ns2:category id="8.3" name="Sanitär">
+                <ns2:category id="8.3.01" name="Sanitärkeramik"/>
+                <ns2:category id="8.3.02" name="Armaturen"/>
+                <ns2:category id="8.3.03" name="Dusch- und Badewannen"/>
+            </ns2:category>
+            <ns2:category id="8.4" name="Elektro">
+                <ns2:category id="8.4.01" name="Kabel"/>
+                <ns2:category id="8.4.02" name="Schalter und Steckdosen"/>
+                <ns2:category id="8.4.03" name="Sicherungs- und Schaltschränke"/>
+                <ns2:category id="8.4.04" name="Beleuchtung"/>
+                <ns2:category id="8.4.05" name="Batteriespeicher"/>
+            </ns2:category>
+            <ns2:category id="8.5" name="Beförderung">
+                <ns2:category id="8.5.01" name="Fahrstuhl"/>
+                <ns2:category id="8.5.02" name="Fahrtreppe"/>
+            </ns2:category>
+            <ns2:category id="8.6" name="Nutzung">
+                <ns2:category id="8.6.01" name="Nutzung Wärmeerzeuger"/>
+                <ns2:category id="8.6.02" name="Nutzung Lüftung und Klimatechnik"/>
+                <ns2:category id="8.6.03" name="Nutzung Armaturen"/>
+                <ns2:category id="8.6.04" name="Nutzung Beleuchtung"/>
+                <ns2:category id="8.6.05" name="Nutzung Beförderungstechnik"/>
+                <ns2:category id="8.6.06" name="Nutzung Wärmeerzeuger (EnEV)"/>
+            </ns2:category>
+            <ns2:category id="8.7" name="End-of-life-Prozesse">
+                <ns2:category id="8.7.01" name="EoL Wärmeerzeuger"/>
+                <ns2:category id="8.7.02" name="EoL Lüftungen und Klimatechnik"/>
+                <ns2:category id="8.7.03" name="EoL Sanitär"/>
+                <ns2:category id="8.7.04" name="EoL Elektro"/>
+                <ns2:category id="8.7.05" name="EoL Beförderungstechnik"/>
+            </ns2:category>
+            <ns2:category id="8.8" name="Brandschutz">
+                <ns2:category id="8.8.01" name="Schutzsysteme zur Kabel- und Rohrabschottung"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="9" name="Sonstige">
+            <ns2:category id="9.1" name="Baustellenprozesse">
+                <ns2:category id="9.1.01" name="Bagger/Aushub"/>
+                <ns2:category id="9.1.02" name="Betonieren"/>
+                <ns2:category id="9.1.03" name="Schalung"/>
+                <ns2:category id="9.1.04" name="Schweißen"/>
+            </ns2:category>
+            <ns2:category id="9.2" name="Energieträger - Bereitstellung frei Verbraucher">
+                <ns2:category id="9.2.01" name="Erdgas"/>
+                <ns2:category id="9.2.02" name="Flüssiggas"/>
+                <ns2:category id="9.2.03" name="Heizöl"/>
+                <ns2:category id="9.2.04" name="Holz-Pellets"/>
+                <ns2:category id="9.2.05" name="Strom"/>
+                <ns2:category id="9.2.06" name="Fernwärme"/>
+                <ns2:category id="9.2.07" name="Trinkwasser"/>
+                <ns2:category id="9.2.08" name="Biogas"/>
+                <ns2:category id="9.2.09" name="Pflanzenölkraftstoff"/>
+            </ns2:category>
+            <ns2:category id="9.3" name="Güter - Transporte[t km]">
+                <ns2:category id="9.3.01" name="LKW"/>
+                <ns2:category id="9.3.02" name="Bahn"/>
+                <ns2:category id="9.3.03" name="Binnenschiff"/>
+                <ns2:category id="9.3.04" name="Seeschiff"/>
+            </ns2:category>
+            <ns2:category id="9.4" name="Personen - Transporte[Personen km]">
+                <ns2:category id="9.4.01" name="PKW"/>
+                <ns2:category id="9.4.02" name="Bahn"/>
+                <ns2:category id="9.4.03" name="Flugzeug"/>
+            </ns2:category>
+            <ns2:category id="9.5" name="Abfallaufbereitung und -entsorgung (EoL)">
+                <ns2:category id="9.5.01" name="Bauschuttaufbereitung"/>
+                <ns2:category id="9.5.02" name="Bauschuttdeponierung"/>
+                <ns2:category id="9.5.03" name="Regeldeponie"/>
+                <ns2:category id="9.5.04" name="Müllverbrennung"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="10" name="Komposite">
+            <ns2:category id="10.1" name="Systembauteile">
+                <ns2:category id="10.1.04" name="Innenwände"/>
+                <ns2:category id="10.1.05" name="Decken"/>
+                <ns2:category id="10.1.03" name="Aussenwände"/>
+                <ns2:category id="10.1.06" name="Böden"/>
+                <ns2:category id="10.1.07" name="Bewehrung"/>
+                <ns2:category id="10.1.09" name="Dachaufbauten"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="100" name="End of Life">
+            <ns2:category id="100.1" name="Generisch">
+                <ns2:category id="100.1.01" name="Bauschutt"/>
+                <ns2:category id="100.1.02" name="Hausmüll"/>
+                <ns2:category id="100.1.03" name="Holz"/>
+                <ns2:category id="100.1.04" name="Metalle"/>
+                <ns2:category id="100.1.06" name="Kunststoffe"/>
+                <ns2:category id="100.1.08" name="Gebäudetechnik"/>
+            </ns2:category>
+        </ns2:category>
+    </ns2:categories>
+    <ns2:categories dataType="Flow">
+        <ns2:category id="1" name="Mineralische Baustoffe">
+            <ns2:category id="1.1" name="Bindemittel">
+                <ns2:category id="1.1.01" name="Zement"/>
+                <ns2:category id="1.1.02" name="Kalk"/>
+                <ns2:category id="1.1.03" name="Gips"/>
+                <ns2:category id="1.1.04" name="Lehm"/>
+            </ns2:category>
+            <ns2:category id="1.2" name="Zuschläge">
+                <ns2:category id="1.2.01" name="Sand und Kies"/>
+                <ns2:category id="1.2.02" name="Naturstein"/>
+                <ns2:category id="1.2.03" name="Bims"/>
+                <ns2:category id="1.2.04" name="Blähton"/>
+                <ns2:category id="1.2.05" name="Blähschiefer"/>
+                <ns2:category id="1.2.06" name="Blähglas"/>
+                <ns2:category id="1.2.07" name="Perlite"/>
+                <ns2:category id="1.2.08" name="Kraftwerksnebenprodukte"/>
+                <ns2:category id="1.2.09" name="Puzzolan"/>
+                <ns2:category id="1.2.10" name="Trockenschüttung"/>
+            </ns2:category>
+            <ns2:category id="1.3" name="Steine und Elemente">
+                <ns2:category id="1.3.01" name="Kalksandstein"/>
+                <ns2:category id="1.3.02" name="Ziegel"/>
+                <ns2:category id="1.3.03" name="Porenbeton"/>
+                <ns2:category id="1.3.04" name="Leichtbeton"/>
+                <ns2:category id="1.3.05" name="Betonfertigteile und Betonwaren"/>
+                <ns2:category id="1.3.06" name="Steinzeug"/>
+                <ns2:category id="1.3.07" name="Fliesen und Platten"/>
+                <ns2:category id="1.3.08" name="Naturwerkstein"/>
+                <ns2:category id="1.3.09" name="Schiefer"/>
+                <ns2:category id="1.3.10" name="Dachziegel"/>
+                <ns2:category id="1.3.11" name="Dachsteine"/>
+                <ns2:category id="1.3.12" name="Faserzement"/>
+                <ns2:category id="1.3.13" name="Gipsplatten"/>
+                <ns2:category id="1.3.14" name="Trockenestrich"/>
+                <ns2:category id="1.3.15" name="Deckenplatten"/>
+                <ns2:category id="1.3.16" name="Glasbausteine"/>
+                <ns2:category id="1.3.17" name="Lehmsteine"/>
+                <ns2:category id="1.3.18" name="Brandschutzplatten"/>
+                <ns2:category id="1.3.19" name="Substrate"/>
+                <ns2:category id="1.3.20" name="Kunststein"/>
+            </ns2:category>
+            <ns2:category id="1.4" name="Mörtel und Beton">
+                <ns2:category id="1.4.01" name="Beton"/>
+                <ns2:category id="1.4.02" name="Mauermörtel"/>
+                <ns2:category id="1.4.03" name="Estrich trocken"/>
+                <ns2:category id="1.4.04" name="Putz und Putzmörtel"/>
+                <ns2:category id="1.4.05" name="Kleber und Klebemörtel"/>
+                <ns2:category id="1.4.06" name="Betonzusatzmittel"/>
+            </ns2:category>
+            <ns2:category id="1.5" name="Asphalt">
+                <ns2:category id="1.5.01" name="Splittmastixasphalt"/>
+                <ns2:category id="1.5.02" name="Gussassphalt"/>
+                <ns2:category id="1.5.03" name="Asphaltbinder"/>
+                <ns2:category id="1.5.04" name="Tragschichten"/>
+            </ns2:category>
+            <ns2:category id="1.6" name="End-of-life-Prozesse">
+                <ns2:category id="1.6.01" name="EoL Putz"/>
+                <ns2:category id="1.6.02" name="EoL Armierungen"/>
+            </ns2:category>
+            <ns2:category id="1.7" name="Pigmente">
+                <ns2:category id="1.7.01" name="Anorganische Pigmente"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="2" name="Dämmstoffe">
+            <ns2:category id="2.1" name="Mineralwolle">
+                <ns2:category id="2.1.01" name="Mineralwolle"/>
+                <ns2:category id="2.1.02" name="Glaswolle"/>
+                <ns2:category id="2.1.03" name="Steinwolle"/>
+            </ns2:category>
+            <ns2:category id="2.2" name="Expandiertes Polystyrol (EPS)">
+                <ns2:category id="2.2.01" name="EPS weiß"/>
+                <ns2:category id="2.2.02" name="EPS grau"/>
+                <ns2:category id="2.2.03" name="EPS grau-weiß"/>
+            </ns2:category>
+            <ns2:category id="2.3" name="Extrudiertes Polystyrol (XPS)">
+                <ns2:category id="2.3.01" name="XPS weiß"/>
+            </ns2:category>
+            <ns2:category id="2.4" name="Polyurethan-Hartschaum (PU)">
+                <ns2:category id="2.4.01" name="PU mit Aluminium"/>
+                <ns2:category id="2.4.02" name="PU mit Mineralvlies"/>
+                <ns2:category id="2.4.03" name="PU Blockschaum"/>
+                <ns2:category id="2.4.04" name="PIR-Hartschaum"/>
+            </ns2:category>
+            <ns2:category id="2.5" name="Phenolharz-Hartschaum (PF)">
+                <ns2:category id="2.5.01" name="PF-Platten"/>
+            </ns2:category>
+            <ns2:category id="2.6" name="Schaumglas">
+                <ns2:category id="2.6.01" name="Platten"/>
+                <ns2:category id="2.6.02" name="Granulat"/>
+            </ns2:category>
+            <ns2:category id="2.7" name="Holzwolleplatten">
+                <ns2:category id="2.7.01" name="Holzwolleleichtbauplatten"/>
+            </ns2:category>
+            <ns2:category id="2.8" name="Blähperlit">
+                <ns2:category id="2.8.01" name="Platten"/>
+                <ns2:category id="2.8.02" name="Granulat"/>
+            </ns2:category>
+            <ns2:category id="2.9" name="Expandierter Kork">
+                <ns2:category id="2.9.01" name="Expandierter Kork"/>
+            </ns2:category>
+            <ns2:category id="2.10" name="Holzfasern">
+                <ns2:category id="2.10.01" name="Holzfaserdämmplatte"/>
+                <ns2:category id="2.10.02" name="Holzfasern und Holzspäne, lose"/>
+            </ns2:category>
+            <ns2:category id="2.11" name="Zellulosefaser">
+                <ns2:category id="2.11.01" name="Zellulose-Einblas-Dämmstoff"/>
+                <ns2:category id="2.11.02" name="Zelluloseplatten"/>
+            </ns2:category>
+            <ns2:category id="2.12" name="Flachsfaser">
+                <ns2:category id="2.12.01" name="Vlies"/>
+            </ns2:category>
+            <ns2:category id="2.13" name="Hanffaser">
+                <ns2:category id="2.13.01" name="Vlies"/>
+            </ns2:category>
+            <ns2:category id="2.14" name="Baumwolle">
+                <ns2:category id="2.14.01" name="Baumwolle konventionell"/>
+                <ns2:category id="2.14.02" name="Baumwolle ökologisch"/>
+            </ns2:category>
+            <ns2:category id="2.15" name="Schafswolle"/>
+            <ns2:category id="2.16" name="Harnstoff-Formaldehydharz">
+                <ns2:category id="2.16.01" name="Ortschaum"/>
+            </ns2:category>
+            <ns2:category id="2.17" name="Melaminharz">
+                <ns2:category id="2.17.01" name="Schaum"/>
+            </ns2:category>
+            <ns2:category id="2.18" name="Polyethylen">
+                <ns2:category id="2.18.01" name="Schaum"/>
+            </ns2:category>
+            <ns2:category id="2.19" name="Kautschuk">
+                <ns2:category id="2.19.01" name="Schaum"/>
+            </ns2:category>
+            <ns2:category id="2.20" name="Calciumsilikat / Calcium-Silikathydrat">
+                <ns2:category id="2.20.01" name="Porenbeton"/>
+                <ns2:category id="2.20.02" name="Calciumsilikat"/>
+            </ns2:category>
+            <ns2:category id="2.21" name="Wärmedämmverbundsystem">
+                <ns2:category id="2.21.01" name="Wärmedämmverbundsystem"/>
+                <ns2:category id="2.21.02" name="WDVS-Dübel"/>
+                <ns2:category id="2.21.03" name="WDVS komplett"/>
+            </ns2:category>
+            <ns2:category id="2.22" name="End-of-life-Prozesse">
+                <ns2:category id="2.22.01" name="EoL Holzfaserdämmplatten"/>
+                <ns2:category id="2.22.02" name="EoL Glaswolle"/>
+                <ns2:category id="2.22.03" name="EoL Mineralwolle"/>
+                <ns2:category id="2.22.04" name="EoL WDVS-Dübel"/>
+                <ns2:category id="2.22.05" name="EoL WDVS"/>
+                <ns2:category id="2.22.06" name="EoL EPS"/>
+                <ns2:category id="2.22.07" name="EoL Holzwolle"/>
+            </ns2:category>
+            <ns2:category id="2.23" name="Stroh">
+                <ns2:category id="2.23.01" name="Strohballen"/>
+                <ns2:category id="2.23.02" name="Strohplatten"/>
+                <ns2:category id="2.23.03" name="Strohfasern"/>
+            </ns2:category>
+            <ns2:category id="2.24" name="Siliziumdioxid-basiert">
+                <ns2:category id="2.24.01" name="Vakuumisolationspaneele"/>
+                <ns2:category id="2.24.02" name="Hydrophobe Platten"/>
+            </ns2:category>
+            <ns2:category id="2.25" name="Dämmelemente">
+                <ns2:category id="2.25.01" name="Tragende Wärmedämmelemente"/>
+            </ns2:category>
+            <ns2:category id="2.26" name="Ortschaum">
+                <ns2:category id="2.26.01" name="Mineralisch"/>
+                <ns2:category id="2.26.02" name="Organisch"/>
+            </ns2:category>
+            <ns2:category id="2.27" name="Schaumbeton">
+                <ns2:category id="2.27.01" name="Schaumbeton Dämmplatten"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="3" name="Holz">
+            <ns2:category id="3.1" name="Vollholz">
+                <ns2:category id="3.1.01" name="Bau-Schnittholz"/>
+                <ns2:category id="3.1.02" name="Konstruktionsvollholz"/>
+                <ns2:category id="3.1.03" name="Balkenschichtholz (Duo-Triobalken)"/>
+                <ns2:category id="3.1.04" name="Brettschichtholz (BSH)"/>
+                <ns2:category id="3.1.05" name="Brettschichtholzplatte"/>
+            </ns2:category>
+            <ns2:category id="3.2" name="Holzwerkstoffe">
+                <ns2:category id="3.2.01" name="3- und 5-Schichtplatten"/>
+                <ns2:category id="3.2.02" name="Sperrholz"/>
+                <ns2:category id="3.2.03" name="Funierschichtholz"/>
+                <ns2:category id="3.2.04" name="OSB-Platte"/>
+                <ns2:category id="3.2.05" name="Laminated Veneer Lumber (LVL)"/>
+                <ns2:category id="3.2.06" name="Spanplatten"/>
+                <ns2:category id="3.2.07" name="Holzfaserplatten"/>
+                <ns2:category id="3.2.08" name="Holzzementplatten"/>
+                <ns2:category id="3.2.09" name="Wood-Plastic-Composites"/>
+                <ns2:category id="3.2.10" name="Elemente aus Holzwerkstoffen"/>
+            </ns2:category>
+            <ns2:category id="3.3" name="Holzböden">
+                <ns2:category id="3.3.01" name="Laminat"/>
+                <ns2:category id="3.3.02" name="Parkett"/>
+                <ns2:category id="3.3.03" name="Kork"/>
+                <ns2:category id="3.3.04" name="Mehrschichtig modulare Bodenbeläge"/>
+            </ns2:category>
+            <ns2:category id="3.4" name="End-of-life-Prozesse">
+                <ns2:category id="3.4.01" name="EoL Spanplatte"/>
+                <ns2:category id="3.4.02" name="EoL OSB"/>
+                <ns2:category id="3.4.03" name="EoL allgemein"/>
+                <ns2:category id="3.4.04" name="EoL Holzfaserplatte"/>
+                <ns2:category id="3.4.05" name="EoL Laminat"/>
+                <ns2:category id="3.4.06" name="EoL Schichtplatten"/>
+            </ns2:category>
+            <ns2:category id="3.5" name="Modifiziertes Holz">
+                <ns2:category id="3.5.01" name="Acetyliertes Holz"/>
+                <ns2:category id="3.5.02" name="Thermisch behandeltes Holz"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="4" name="Metalle">
+            <ns2:category id="4.1" name="Stahl und Eisen">
+                <ns2:category id="4.1.01" name="Betonstabstahl"/>
+                <ns2:category id="4.1.02" name="Betonstahlmatten"/>
+                <ns2:category id="4.1.03" name="Stahlprofile"/>
+                <ns2:category id="4.1.04" name="Stahlbleche"/>
+                <ns2:category id="4.1.05" name="Guss- und Schmiedeteile aus Stahl und Eisen"/>
+                <ns2:category id="4.1.06" name="Befestigungsmittel"/>
+            </ns2:category>
+            <ns2:category id="4.2" name="Edelstahl">
+                <ns2:category id="4.2.01" name="Edelstahlbleche"/>
+                <ns2:category id="4.2.02" name="Edelstahlprofile"/>
+                <ns2:category id="4.2.03" name="Edelstahl Trinkwasserrohre"/>
+                <ns2:category id="4.2.04" name="Befestigungsmittel"/>
+            </ns2:category>
+            <ns2:category id="4.3" name="Aluminium">
+                <ns2:category id="4.3.01" name="Aluminiumbleche"/>
+                <ns2:category id="4.3.02" name="Aluminiumprofil"/>
+                <ns2:category id="4.3.03" name="Gussteile aus Aluminium"/>
+                <ns2:category id="4.3.04" name="Aluminiumfolie"/>
+            </ns2:category>
+            <ns2:category id="4.4" name="Kupfer">
+                <ns2:category id="4.4.01" name="Kupferbleche"/>
+                <ns2:category id="4.4.02" name="Kupferrohre"/>
+                <ns2:category id="4.4.03" name="Kupferprofile"/>
+                <ns2:category id="4.4.04" name="Schmiede- und Gussteile aus Kupfer und Messing"/>
+            </ns2:category>
+            <ns2:category id="4.5" name="Zink">
+                <ns2:category id="4.5.01" name="Zinkbleche"/>
+            </ns2:category>
+            <ns2:category id="4.6" name="Blei">
+                <ns2:category id="4.6.01" name="Bleibleche"/>
+            </ns2:category>
+            <ns2:category id="4.7" name="Oberflächenbehandlung und Beschichtung von Metallen">
+                <ns2:category id="4.7.01" name="Anodisieren von Aluminium"/>
+                <ns2:category id="4.7.02" name="(Nass-) Lackieren von Metallen"/>
+                <ns2:category id="4.7.03" name="Pulverbeschichten"/>
+                <ns2:category id="4.7.04" name="Verzinken von Stahl"/>
+            </ns2:category>
+            <ns2:category id="4.8" name="End-of-life-Prozesse von Metallen">
+                <ns2:category id="4.8.01" name="EoL von Aluminium"/>
+                <ns2:category id="4.8.02" name="EoL von Edelstahl"/>
+                <ns2:category id="4.8.03" name="EoL von Kupferblechen"/>
+                <ns2:category id="4.8.04" name="EoL von Kupferblech (Bronze legiert)"/>
+                <ns2:category id="4.8.05" name="EoL von Kupferblech (Gold legiert)"/>
+                <ns2:category id="4.8.06" name="EoL von Kupferrohr"/>
+                <ns2:category id="4.8.07" name="EoL von Sandwichelemente"/>
+                <ns2:category id="4.8.08" name="EoL von Stahlblechen"/>
+                <ns2:category id="4.8.09" name="EoL von Stahlprofilen"/>
+                <ns2:category id="4.8.10" name="EoL von Zinkblechen"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="5" name="Beschichtungen">
+            <ns2:category id="5.1" name="Grundierungen">
+                <ns2:category id="5.1.01" name="Grundierungen Farben und Putze"/>
+            </ns2:category>
+            <ns2:category id="5.2" name="Bodenbeschichtungen"/>
+            <ns2:category id="5.3" name="Bituminöse Anstriche">
+                <ns2:category id="5.3.01" name="Bitumenbeschichtungen"/>
+            </ns2:category>
+            <ns2:category id="5.4" name="Fassadenfarben">
+                <ns2:category id="5.4.01" name="Dispersion"/>
+                <ns2:category id="5.4.02" name="Silikat-Dispersion"/>
+                <ns2:category id="5.4.03" name="Silikonharz"/>
+            </ns2:category>
+            <ns2:category id="5.5" name="Innenbeschichtungen">
+                <ns2:category id="5.5.01" name="Wand- und Deckenbeläge"/>
+                <ns2:category id="5.5.02" name="Innenfarben"/>
+                <ns2:category id="5.5.03" name="Dispersionsklebstoffe"/>
+            </ns2:category>
+            <ns2:category id="5.6" name="Lacke und Lasuren">
+                <ns2:category id="5.6.01" name="Lacksysteme Holzfenster"/>
+                <ns2:category id="5.6.02" name="Lacksysteme Holzfassade"/>
+                <ns2:category id="5.6.03" name="Parkettlack"/>
+                <ns2:category id="5.6.04" name="Lacksysteme Metall"/>
+            </ns2:category>
+            <ns2:category id="5.7" name="End-of-life-Prozesse">
+                <ns2:category id="5.7.01" name="EoL Grundierung"/>
+            </ns2:category>
+            <ns2:category id="5.8" name="Reaktionsharze">
+                <ns2:category id="5.8.01" name="Reaktionsharze auf Epoxidharzbasis"/>
+                <ns2:category id="5.8.02" name="Reaktionsharze auf PU-Basis"/>
+                <ns2:category id="5.8.03" name="Reaktionsharze auf Methacrylatbasis"/>
+            </ns2:category>
+            <ns2:category id="5.9" name="Brandschutz">
+                <ns2:category id="5.9.01" name="Innen- und Außenbeschichtungen"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="6" name="Kunststoffe">
+            <ns2:category id="6.1" name="Rohre">
+                <ns2:category id="6.1.01" name="Trinkwasserrohre"/>
+                <ns2:category id="6.1.02" name="Abwasserrohre"/>
+                <ns2:category id="6.1.03" name="Regen-/Grauwasserrohre"/>
+            </ns2:category>
+            <ns2:category id="6.2" name="Bodenbeläge">
+                <ns2:category id="6.2.01" name="PVC-Bodenbeläge"/>
+                <ns2:category id="6.2.02" name="Gummi-/Kautschuk-Bodenbeläge"/>
+                <ns2:category id="6.2.03" name="Synth. Thermoplast / Polyolefin"/>
+                <ns2:category id="6.2.04" name="Linoleum-Bodenbeläge"/>
+                <ns2:category id="6.2.05" name="Textile Bodenbeläge"/>
+                <ns2:category id="6.2.06" name="Mehrschichtig modulare Bodenbeläge"/>
+            </ns2:category>
+            <ns2:category id="6.3" name="Dachbahnen">
+                <ns2:category id="6.3.01" name="Bitumen-Dachbahnen"/>
+                <ns2:category id="6.3.02" name="PVC-Dachbahnen"/>
+                <ns2:category id="6.3.03" name="Elastomer-Dachbahnen"/>
+                <ns2:category id="6.3.04" name="EVA-Dachbahnen (Etylen-Vinylacetat)"/>
+                <ns2:category id="6.3.05" name="TPO-Dachbahnen (FPO)"/>
+                <ns2:category id="6.3.06" name="Solar-Kunststoffdachbahnen"/>
+                <ns2:category id="6.3.07" name="Dübel für Bahnen"/>
+                <ns2:category id="6.3.08" name="ECB-Dachbahnen (Ethylen-Copolymer-Bitumen)"/>
+                <ns2:category id="6.3.09" name="PIB-Dachbahnen (Polyisobutylen)"/>
+            </ns2:category>
+            <ns2:category id="6.4" name="Profile">
+                <ns2:category id="6.4.01" name="Kunststoffprofile hart"/>
+                <ns2:category id="6.4.02" name="Kunststoffprofile elastisch"/>
+            </ns2:category>
+            <ns2:category id="6.5" name="Kunststoffprofile elastisch">
+                <ns2:category id="6.5.01" name="Harz-Komposit Fassadenplatten"/>
+                <ns2:category id="6.5.02" name="Transparente Platten"/>
+                <ns2:category id="6.5.03" name="Dübelsysteme für Platten"/>
+            </ns2:category>
+            <ns2:category id="6.6" name="Folien und Vliese">
+                <ns2:category id="6.6.01" name="Unterspannbahn"/>
+                <ns2:category id="6.6.02" name="Dampfbremse / Dampfsperre"/>
+                <ns2:category id="6.6.03" name="Folien zur Abdichtung"/>
+                <ns2:category id="6.6.04" name="Vliese"/>
+                <ns2:category id="6.6.05" name="Baupappen"/>
+                <ns2:category id="6.6.06" name="Folienkissen"/>
+                <ns2:category id="6.6.07" name="Technische Textilien"/>
+            </ns2:category>
+            <ns2:category id="6.7" name="Dichtmassen">
+                <ns2:category id="6.7.01" name="Kautschuk"/>
+                <ns2:category id="6.7.02" name="Silikon"/>
+                <ns2:category id="6.7.03" name="PUR"/>
+                <ns2:category id="6.7.04" name="Bitumen"/>
+                <ns2:category id="6.7.05" name="PVC"/>
+                <ns2:category id="6.7.06" name="Acrylat"/>
+                <ns2:category id="6.7.07" name="Polysulfid"/>
+            </ns2:category>
+            <ns2:category id="6.8" name="End-of-life-Prozesse Kunststoffe">
+                <ns2:category id="6.8.01" name="EoL allgemein"/>
+                <ns2:category id="6.8.02" name="EoL Dübelsystem für Platten"/>
+                <ns2:category id="6.8.03" name="EoL Dübelsystem für Planen"/>
+                <ns2:category id="6.8.04" name="EoL Elastomer-Dachbahnen"/>
+                <ns2:category id="6.8.05" name="EoL EVA-Dachbahnen"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="7" name="Komponenten von Fenstern und Vorhangfassaden">
+            <ns2:category id="7.1" name="Rahmen / Profile">
+                <ns2:category id="7.1.01" name="Holz"/>
+                <ns2:category id="7.1.02" name="Holz thermisch getrennt"/>
+                <ns2:category id="7.1.03" name="Holzwerkstoff"/>
+                <ns2:category id="7.1.04" name="Holz-Aluminium"/>
+                <ns2:category id="7.1.05" name="Aluminium"/>
+                <ns2:category id="7.1.06" name="Aluminium thermisch getrennt"/>
+                <ns2:category id="7.1.07" name="Stahl"/>
+                <ns2:category id="7.1.08" name="Stahl verzinkt"/>
+                <ns2:category id="7.1.09" name="PVC"/>
+                <ns2:category id="7.1.10" name="harter PUR-Integralschaumstoff"/>
+            </ns2:category>
+            <ns2:category id="7.2" name="Füllungen">
+                <ns2:category id="7.2.01" name="Transparente Füllungen"/>
+                <ns2:category id="7.2.02" name="Opake Füllungen"/>
+            </ns2:category>
+            <ns2:category id="7.3" name="Dichtungskomponenten / -materialien">
+                <ns2:category id="7.3.01" name="Dichtprofile"/>
+                <ns2:category id="7.3.02" name="Spritzbare Dichtstoffe"/>
+                <ns2:category id="7.3.03" name="Imprägnierte Dichtungsbänder aus Schaumkunststoff"/>
+                <ns2:category id="7.3.04" name="Fugendichtungsbänder"/>
+                <ns2:category id="7.3.05" name="Elastomer-Fugenbänder"/>
+                <ns2:category id="7.3.06" name="Dichtfolien"/>
+                <ns2:category id="7.3.07" name="Anputzdichtleisten"/>
+            </ns2:category>
+            <ns2:category id="7.4" name="Beschläge">
+                <ns2:category id="7.4.01" name="Stahlbeschläge"/>
+                <ns2:category id="7.4.02" name="Aluminiumbeschläge"/>
+                <ns2:category id="7.4.03" name="Bronzebeschläge"/>
+                <ns2:category id="7.4.04" name="Messingbeschläge"/>
+                <ns2:category id="7.4.05" name="Edelstahlbeschläge"/>
+                <ns2:category id="7.4.06" name="Befestigungen"/>
+                <ns2:category id="7.4.07" name="Fenstergriffe"/>
+                <ns2:category id="7.4.08" name="Zinkbeschläge"/>
+                <ns2:category id="7.4.09" name="Kunststoffbeschläge"/>
+            </ns2:category>
+            <ns2:category id="7.5" name="End-of-life-Prozesse">
+                <ns2:category id="7.5.01" name="EoL Stahl"/>
+                <ns2:category id="7.5.02" name="EoL Aluminium"/>
+                <ns2:category id="7.5.03" name="EoL Bronze"/>
+                <ns2:category id="7.5.04" name="EoL Messing"/>
+                <ns2:category id="7.5.05" name="EoL Edelstahl"/>
+                <ns2:category id="7.5.06" name="EoL Zink"/>
+                <ns2:category id="7.5.07" name="EoL Fenster"/>
+            </ns2:category>
+            <ns2:category id="7.6" name="Türen und Tore">
+                <ns2:category id="7.6.01" name="Stahl"/>
+                <ns2:category id="7.6.02" name="Aluminium"/>
+                <ns2:category id="7.6.03" name="Holz"/>
+                <ns2:category id="7.6.04" name="Kunststoff"/>
+            </ns2:category>
+            <ns2:category id="7.7" name="Antriebssysteme">
+                <ns2:category id="7.7.01" name="mechanisch"/>
+                <ns2:category id="7.7.02" name="elektrisch"/>
+            </ns2:category>
+            <ns2:category id="7.8" name="Fenster">
+                <ns2:category id="7.8.01" name="Holzfenster"/>
+                <ns2:category id="7.8.02" name="Holz-Metallfenster"/>
+                <ns2:category id="7.8.03" name="Metallfenster"/>
+                <ns2:category id="7.8.04" name="Kunststofffenster"/>
+                <ns2:category id="7.8.05" name="Sonstige Fenster"/>
+            </ns2:category>
+            <ns2:category id="7.9" name="Fassaden">
+                <ns2:category id="7.9.01" name="Vorhangfassade - Pfosten-Riegel-Fassaden"/>
+                <ns2:category id="7.9.02" name="Vorhangfassade - Element-Fassaden"/>
+                <ns2:category id="7.9.03" name="Sonstige Fassaden"/>
+            </ns2:category>
+            <ns2:category id="7.10" name="Tageslichtsysteme und Rauch- / Wärmeabzugsanlagen ">
+                <ns2:category id="7.10.01" name="Oberlichter"/>
+                <ns2:category id="7.10.02" name="Rauch-/Wärmeabzugsanlagen"/>
+                <ns2:category id="7.10.03" name="Sonstige Tageslichtsysteme"/>
+            </ns2:category>
+            <ns2:category id="7.11" name="Zubehör für Fenster, Fassaden, Türen und Tore">
+                <ns2:category id="7.11.01" name="Sonnenschutzsysteme"/>
+                <ns2:category id="7.11.02" name="Fingerschutzsysteme"/>
+                <ns2:category id="7.11.03" name="Feuer-/Rauchschutzsysteme"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="8" name="Gebäudetechnik">
+            <ns2:category id="8.1" name="Heizung">
+                <ns2:category id="8.1.01" name="Wärmeerzeuger"/>
+                <ns2:category id="8.1.02" name="Wärmeverteilung und Abgabe"/>
+                <ns2:category id="8.1.03" name="Speicher"/>
+                <ns2:category id="8.1.04" name="Wärmeübertragung"/>
+                <ns2:category id="8.1.05" name="Regelung und Hydraulik"/>
+            </ns2:category>
+            <ns2:category id="8.2" name="Klimatisierung und Lüftung">
+                <ns2:category id="8.2.01" name="Lüftungsanlagen"/>
+                <ns2:category id="8.2.02" name="Klimatisierung/Kältemaschinen"/>
+                <ns2:category id="8.2.03" name="Zubehör"/>
+                <ns2:category id="8.2.04" name="Kältemittel"/>
+                <ns2:category id="8.2.05" name="Wärmeabführung"/>
+            </ns2:category>
+            <ns2:category id="8.3" name="Sanitär">
+                <ns2:category id="8.3.01" name="Sanitärkeramik"/>
+                <ns2:category id="8.3.02" name="Armaturen"/>
+                <ns2:category id="8.3.03" name="Dusch- und Badewannen"/>
+            </ns2:category>
+            <ns2:category id="8.4" name="Elektro">
+                <ns2:category id="8.4.01" name="Kabel"/>
+                <ns2:category id="8.4.02" name="Schalter und Steckdosen"/>
+                <ns2:category id="8.4.03" name="Sicherungs- und Schaltschränke"/>
+                <ns2:category id="8.4.04" name="Beleuchtung"/>
+                <ns2:category id="8.4.05" name="Batteriespeicher"/>
+            </ns2:category>
+            <ns2:category id="8.5" name="Beförderung">
+                <ns2:category id="8.5.01" name="Fahrstuhl"/>
+                <ns2:category id="8.5.02" name="Fahrtreppe"/>
+            </ns2:category>
+            <ns2:category id="8.6" name="Nutzung">
+                <ns2:category id="8.6.01" name="Nutzung Wärmeerzeuger"/>
+                <ns2:category id="8.6.02" name="Nutzung Lüftung und Klimatechnik"/>
+                <ns2:category id="8.6.03" name="Nutzung Armaturen"/>
+                <ns2:category id="8.6.04" name="Nutzung Beleuchtung"/>
+                <ns2:category id="8.6.05" name="Nutzung Beförderungstechnik"/>
+                <ns2:category id="8.6.06" name="Nutzung Wärmeerzeuger (EnEV)"/>
+            </ns2:category>
+            <ns2:category id="8.7" name="End-of-life-Prozesse">
+                <ns2:category id="8.7.01" name="EoL Wärmeerzeuger"/>
+                <ns2:category id="8.7.02" name="EoL Lüftungen und Klimatechnik"/>
+                <ns2:category id="8.7.03" name="EoL Sanitär"/>
+                <ns2:category id="8.7.04" name="EoL Elektro"/>
+                <ns2:category id="8.7.05" name="EoL Beförderungstechnik"/>
+            </ns2:category>
+            <ns2:category id="8.8" name="Brandschutz">
+                <ns2:category id="8.8.01" name="Schutzsysteme zur Kabel- und Rohrabschottung"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="9" name="Sonstige">
+            <ns2:category id="9.1" name="Baustellenprozesse">
+                <ns2:category id="9.1.01" name="Bagger/Aushub"/>
+                <ns2:category id="9.1.02" name="Betonieren"/>
+                <ns2:category id="9.1.03" name="Schalung"/>
+                <ns2:category id="9.1.04" name="Schweißen"/>
+            </ns2:category>
+            <ns2:category id="9.2" name="Energieträger - Bereitstellung frei Verbraucher">
+                <ns2:category id="9.2.01" name="Erdgas"/>
+                <ns2:category id="9.2.02" name="Flüssiggas"/>
+                <ns2:category id="9.2.03" name="Heizöl"/>
+                <ns2:category id="9.2.04" name="Holz-Pellets"/>
+                <ns2:category id="9.2.05" name="Strom"/>
+                <ns2:category id="9.2.06" name="Fernwärme"/>
+                <ns2:category id="9.2.07" name="Trinkwasser"/>
+                <ns2:category id="9.2.08" name="Biogas"/>
+                <ns2:category id="9.2.09" name="Pflanzenölkraftstoff"/>
+            </ns2:category>
+            <ns2:category id="9.3" name="Güter - Transporte[t km]">
+                <ns2:category id="9.3.01" name="LKW"/>
+                <ns2:category id="9.3.02" name="Bahn"/>
+                <ns2:category id="9.3.03" name="Binnenschiff"/>
+                <ns2:category id="9.3.04" name="Seeschiff"/>
+            </ns2:category>
+            <ns2:category id="9.4" name="Personen - Transporte[Personen km]">
+                <ns2:category id="9.4.01" name="PKW"/>
+                <ns2:category id="9.4.02" name="Bahn"/>
+                <ns2:category id="9.4.03" name="Flugzeug"/>
+            </ns2:category>
+            <ns2:category id="9.5" name="Abfallaufbereitung und -entsorgung (EoL)">
+                <ns2:category id="9.5.01" name="Bauschuttaufbereitung"/>
+                <ns2:category id="9.5.02" name="Bauschuttdeponierung"/>
+                <ns2:category id="9.5.03" name="Regeldeponie"/>
+                <ns2:category id="9.5.04" name="Müllverbrennung"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="10" name="Komposite">
+            <ns2:category id="10.1" name="Systembauteile">
+                <ns2:category id="10.1.04" name="Innenwände"/>
+                <ns2:category id="10.1.05" name="Decken"/>
+                <ns2:category id="10.1.03" name="Aussenwände"/>
+                <ns2:category id="10.1.06" name="Böden"/>
+                <ns2:category id="10.1.07" name="Bewehrung"/>
+                <ns2:category id="10.1.09" name="Dachaufbauten"/>
+            </ns2:category>
+        </ns2:category>
+        <ns2:category id="100" name="End of Life">
+            <ns2:category id="100.1" name="Generisch">
+                <ns2:category id="100.1.01" name="Bauschutt"/>
+                <ns2:category id="100.1.02" name="Hausmüll"/>
+                <ns2:category id="100.1.03" name="Holz"/>
+                <ns2:category id="100.1.04" name="Metalle"/>
+                <ns2:category id="100.1.06" name="Kunststoffe"/>
+                <ns2:category id="100.1.08" name="Gebäudetechnik"/>
+            </ns2:category>
+        </ns2:category>
+    </ns2:categories>
+</ns2:CategorySystem>

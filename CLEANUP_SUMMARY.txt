@@ -1,0 +1,166 @@
+================================================================================
+REPOSITORY CLEANUP - COMPLETED
+================================================================================
+
+OBJECTIVE: Simplify repository structure, remove unused files, organize 
+           workflow into clear numbered steps.
+
+================================================================================
+WORKFLOW ORGANIZATION
+================================================================================
+
+BEFORE:                                AFTER:
+------                                -----
+- oekobaudat_rdf_builder.py           ✓ 01_build_oekobaudat_rdf.py
+- oekobaudat_rdf_builder_llm_*.py     
+- bsdd_oekobaudat_mapper_v2.py        
+- bsdd_oekobaudat_mapper_llm_only.py  ✓ 02_map_etim_to_oekobaudat_llm.py
+- compare_all_three_methods.py        
+- compare_skos_vs_llm.py              
+- create_validation_sample.py         ✓ 03_create_validation_sample.py
+- validate_accuracy.py                ✓ 03_validate_accuracy.py
+- quick_start.py                      
+
+================================================================================
+FILES DELETED
+================================================================================
+
+WORKFLOW SCRIPTS (Consolidated):
+- oekobaudat_rdf_builder.py (renamed to 01_*)
+- oekobaudat_rdf_builder_llm_translation.py (functionality merged into 01_*)
+- bsdd_oekobaudat_mapper_v2.py (SKOS mapper - LLM-only approach kept)
+- bsdd_oekobaudat_mapper_llm_only.py (renamed to 02_*)
+- create_validation_sample.py (renamed to 03_*)
+- validate_accuracy.py (renamed to 03_*)
+
+COMPARISON TOOLS (No longer needed):
+- compare_all_three_methods.py
+- compare_skos_vs_llm.py
+- quick_start.py
+
+DOCUMENTATION (Consolidated into README.md and ADVANCED.md):
+- FILES.txt
+
+OLD OUTPUT FILES (Mapping folder):
+- bsdd_oekobaudat_mappings_v2.json (4.6 MB, from old SKOS mapper)
+- bsdd_oekobaudat_mappings_v2.ttl (1.7 MB, from old SKOS mapper)
+
+================================================================================
+FILES KEPT
+================================================================================
+
+WORKFLOW (Numbered):
+✓ 01_build_oekobaudat_rdf.py          - Build OWL ontology with translations
+✓ 02_map_etim_to_oekobaudat_llm.py    - LLM semantic mapping
+✓ 03_create_validation_sample.py      - Create validation dataset (stub)
+✓ 03_validate_accuracy.py             - Measure accuracy (stub)
+
+SUPPORTING MODULES (in utils/ folder):
+✓ utils/etim_local_loader.py          - Load ETIM from local JSON
+✓ utils/llm_matcher_azure.py          - Azure OpenAI integration
+✓ utils/test_azure_openai.py          - Test credentials
+✓ utils/__init__.py                   - Package initialization
+
+DOCUMENTATION:
+✓ README.md                           - Main documentation (rewritten)
+✓ ADVANCED.md                         - Detailed guide (rewritten)
+✓ requirements_mapper.txt             - Python dependencies
+
+VIEWER:
+✓ mapping_viewer.html                 - Interactive results viewer
+
+DATA FILES (Mapping folder):
+✓ OEKOBAUDAT Product Categories.xml   - Source data
+✓ oekobaudat_owl.ttl                  - Generated OWL ontology (current)
+✓ oekobaudat_translated.json          - JSON export with translations
+✓ oekobaudat_translation_cache.json   - 434 cached LLM translations
+
+DATA REPOSITORY:
+✓ bsDD Repo/                          - Full bsDD repository
+  ├── etim-10.1.json                  - ETIM data (2.1M lines)
+  ├── LICENSE                         - buildingSMART license
+  └── ... (documentation, examples)
+
+================================================================================
+KEY IMPROVEMENTS
+================================================================================
+
+✓ Simplified workflow: 3 clear numbered steps
+✓ Single mapping method: LLM-only (best results)
+✓ Proper RDF structure: OWL for ontology, SKOS for mappings
+✓ Cached translations: 434 terms, no repeated LLM calls
+✓ Clean documentation: 2 files instead of 10+
+✓ Reduced output files: Only current/relevant files kept
+✓ Updated match types: exactMatch, closeMatch, relatedMatch, noMatch
+
+================================================================================
+MATCH TYPE SPECIFICATION (Step 02)
+================================================================================
+
+As requested, the mapper now uses:
+- skos:exactMatch    (confidence 0.9-1.0)
+- skos:closeMatch    (confidence 0.7-0.89)
+- skos:relatedMatch  (confidence 0.5-0.69) 
+- noMatch            (confidence <0.5) - custom property
+
+================================================================================
+OUTPUT FILE NAMING
+================================================================================
+
+BEFORE:                                AFTER:
+------                                -----
+oekobaudat_multilingual.ttl           oekobaudat_owl.ttl
+oekobaudat_multilingual_llm.ttl       (consolidated)
+bsdd_oekobaudat_mappings_v2.ttl       etim_oekobaudat_mappings.ttl
+bsdd_oekobaudat_mappings_v2.json      etim_oekobaudat_mappings.json
+
+================================================================================
+VALIDATION STATUS
+================================================================================
+
+Step 03 scripts are currently STUBS pending implementation details.
+They contain TODO comments and will be completed later as requested.
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+1. Run Step 01 to build/update Ökobaudat RDF graph
+2. Configure Azure OpenAI credentials in Step 02
+3. Run Step 02 to generate ETIM → Ökobaudat mappings
+4. Review results in mapping_viewer.html
+5. (Later) Implement validation scripts per user requirements
+
+================================================================================
+VERIFICATION
+================================================================================
+
+✓ Step 01 tested: Successfully generates oekobaudat_owl.ttl
+✓ Imports verified: No references to deleted files
+✓ Documentation updated: README.md and ADVANCED.md reflect new structure
+✓ Translation cache working: 434 terms loaded automatically
+✓ Utils folder created: Helper modules organized in utils/ package
+
+================================================================================
+ADDITIONAL ORGANIZATION (Added Later)
+================================================================================
+
+UTILS FOLDER CREATED:
+- Moved etim_local_loader.py → utils/
+- Moved llm_matcher_azure.py → utils/
+- Moved test_azure_openai.py → utils/
+- Created utils/__init__.py for proper Python package structure
+
+BENEFITS:
+- Root directory now contains only workflow scripts + documentation
+- Helper/wrapper code cleanly separated into utils/ package
+- Easier to navigate and understand project structure
+
+ROOT DIRECTORY NOW:
+- 4 workflow scripts (01, 02, 03a, 03b)
+- 4 documentation files (README, ADVANCED, WORKFLOW, CLEANUP_SUMMARY)
+- 1 viewer (mapping_viewer.html)
+- 1 requirements file
+- 2 folders (utils/, Mapping/, bsDD Repo/)
+
+================================================================================
