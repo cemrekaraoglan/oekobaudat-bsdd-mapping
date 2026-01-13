@@ -12,6 +12,10 @@ build/
 .env
 .env.local
 
+# Large data files (fetch from API instead)
+bsDD Repo/
+ETIM/
+
 # IDE
 .vscode/
 .idea/

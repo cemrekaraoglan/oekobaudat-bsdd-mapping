@@ -459,11 +459,13 @@ Ambiguous cases (e.g., composite materials): 70-80% accuracy
 
 **Solution:**
 ```python
-# Use local loader as fallback
+# Use local loader as fallback (if you have downloaded ETIM JSON)
 from utils.etim_local_loader import LocalEtimLoader
-loader = LocalEtimLoader("bsDD Repo/etim-10.1.json")
+loader = LocalEtimLoader("path/to/etim-10.1.json")
 classes = loader.load()
 ```
+
+**Note:** Download ETIM JSON from [buildingSMART bsDD Repository](https://github.com/buildingSMART/bSDD) if needed for offline work.
 
 ### Credential Errors
 

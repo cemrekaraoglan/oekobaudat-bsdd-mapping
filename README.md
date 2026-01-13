@@ -226,7 +226,7 @@ Using GPT-5-mini:
 
 ## 📄 License
 
-See `bsDD Repo/LICENSE` for buildingSMART data terms.
+This project is open source. For bsDD data terms, see [buildingSMART License](https://github.com/buildingSMART/bSDD).
 
 ---
 

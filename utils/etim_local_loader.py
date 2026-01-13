@@ -24,7 +24,7 @@ class BsddClass:
 class LocalEtimLoader:
     """Load ETIM classes from local JSON file"""
     
-    def __init__(self, json_path: str = "bsDD Repo/etim-10.1.json"):
+    def __init__(self, json_path: str = "etim-10.1.json"):
         """Initialize with path to ETIM JSON file"""
         self.json_path = json_path
         self.data = None
