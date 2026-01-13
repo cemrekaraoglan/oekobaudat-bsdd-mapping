@@ -8,6 +8,11 @@ __pycache__/
 dist/
 build/
 
+# Virtual environment
+venv/
+env/
+.venv/
+
 # Environment variables (IMPORTANT - keeps credentials private!)
 .env
 .env.local

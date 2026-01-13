@@ -118,8 +118,8 @@ Consider:
                         "content": prompt
                     }
                 ],
-                temperature=0.3,
-                max_tokens=500,
+                # temperature not supported in GPT-5-mini, uses default (1.0)
+                max_completion_tokens=500,  # Updated for GPT-5-mini
                 response_format={"type": "json_object"}  # Ensures JSON output
             )
             return response.choices[0].message.content

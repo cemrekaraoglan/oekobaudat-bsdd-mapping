@@ -179,7 +179,7 @@ GERMAN ÖKOBAUDAT CATEGORIES (choose from):
 {candidates_text}
 
 Instructions:
-1. Understand both the English product and German category names
+1. Understand both the English product and ILCD product category names in German
 2. Match based on actual material type and use case
 3. Determine confidence (0.0-1.0) - be realistic!
 4. Choose match type:
@@ -206,14 +206,15 @@ Respond ONLY with valid JSON:
                 {"role": "system", "content": "You are a building materials expert. Respond with valid JSON only."},
                 {"role": "user", "content": prompt}
             ],
-            temperature=0.3,
-            max_tokens=500,
+            # temperature not supported in GPT-5-mini, uses default (1.0)
+            max_completion_tokens=500,  # Updated for GPT-5-mini
             response_format={"type": "json_object"}
         )
         return response.choices[0].message.content
     
     def create_mapping(self, bsdd_class: BsddClass, 
-                      categories: List[OekobaudatCategory]) -> Optional[Mapping]:
+                      categories: List[OekobaudatCategory], 
+                      debug: bool = False) -> Optional[Mapping]:
         """Create mapping using LLM"""
         
         # Create prompt
@@ -222,6 +223,17 @@ Respond ONLY with valid JSON:
         try:
             # Query LLM
             response = self.query_llm(prompt)
+            
+            # Debug: Show raw response
+            if debug:
+                print(f"\n  DEBUG - Raw LLM response:")
+                print(f"  {response[:200]}..." if len(response) > 200 else f"  {response}")
+            
+            # Check if response is empty
+            if not response or not response.strip():
+                print(f"  ⚠️  Error: LLM returned empty response")
+                return None
+            
             result = json.loads(response.strip())
             
             # Find the category
@@ -230,15 +242,32 @@ Respond ONLY with valid JSON:
                 print(f"  ⚠️  LLM returned unknown category ID: {result['category_id']}")
                 return None
             
+            # Check confidence threshold (minimum 0.5 for meaningful matches)
+            confidence = float(result['confidence'])
+            if confidence < 0.5:
+                print(f"  ⚠️  Low confidence ({confidence:.2f}) - marked as noMatch")
+                # Still create mapping but mark as noMatch
+                return Mapping(
+                    bsdd_class=bsdd_class,
+                    oekobaudat_category=category,
+                    match_type='noMatch',
+                    confidence_score=confidence,
+                    reasoning=result['reasoning'],
+                    method="llm-only"
+                )
+            
             return Mapping(
                 bsdd_class=bsdd_class,
                 oekobaudat_category=category,
                 match_type=result.get('match_type', 'closeMatch'),
-                confidence_score=float(result['confidence']),
+                confidence_score=confidence,
                 reasoning=result['reasoning'],
                 method="llm-only"
             )
             
+        except json.JSONDecodeError as e:
+            print(f"  ⚠️  JSON Error: Invalid response format - {str(e)[:50]}")
+            return None
         except Exception as e:
             print(f"  ⚠️  Error: {e}")
             return None
@@ -296,16 +325,14 @@ class RdfGenerator:
 def main():
     """Main execution"""
     print("=" * 80)
-    print("bsDD to Ökobaudat Mapper - LLM Only (No Translation)")
+    print("bsDD to Ökobaudat Mapper")
     print("=" * 80)
     
     # Configuration
     OEKOBAUDAT_XML = "Mapping/OEKOBAUDAT Product Categories.xml"
     OUTPUT_RDF = "Mapping/etim_oekobaudat_mappings.ttl"
     OUTPUT_JSON = "Mapping/etim_oekobaudat_mappings.json"
-    
-    ETIM_NAMESPACE = "https://identifier.buildingsmart.org/uri/etim/etim-9.0"
-    
+        
     # Azure OpenAI credentials (from environment variables)
     from utils.config import get_azure_config
     
@@ -324,7 +351,7 @@ def main():
     print("\n[1/4] Loading German Ökobaudat categories...")
     parser = OekobaudatParser(OEKOBAUDAT_XML)
     categories = parser.parse()
-    print(f"   Loaded {len(categories)} categories (German only)")
+    print(f"   Loaded {len(categories)} categories")
     
     # Step 2: Fetch ETIM from bsDD API
     print("\n[2/4] Fetching ETIM classes from bsDD API...")
@@ -334,17 +361,21 @@ def main():
         # Initialize API client (production)
         api_client = BsddApiClient(use_test=False)
         
-        # Fetch ETIM classes from latest version
-        # Specify version if needed: api_client.get_etim_classes(version="10.1")
-        bsdd_classes = api_client.get_etim_classes()
+        # Fetch ETIM classes - Building Materials only (EC00* codes)
+        # ETIM sectors:
+        #   - EC00*: Building materials (Baustoffe)
+        #   - EC01*: Electrotechnical (Elektrotechnik)
+        #   - etc.
+        print("   Filtering: Building Materials sector only (EC00)")
+        bsdd_classes = api_client.get_etim_classes(filter_category="EC00")
         
         # Optional: Limit for testing
-        # bsdd_classes = bsdd_classes[:100]
+        # bsdd_classes = bsdd_classes[:50]
         
         if not bsdd_classes:
             print("   ERROR: No classes retrieved from bsDD API")
             print("   Check internet connection or API status")
-            print("   Fallback: Use LocalEtimLoader with local JSON file")
+            print("   Tip: Remove filter_category to get all sectors")
             return
             
     except Exception as e:
@@ -353,8 +384,8 @@ def main():
         return
     
     # Step 3: LLM matching (English ETIM → German Ökobaudat)
-    print("\n[3/4] LLM matching (no translation needed)...")
-    print("   LLM understands both English and German natively")
+    print("\n[3/4] LLM matching...")
+    print("   Note: Showing debug output for first 10 items to inspect LLM responses\n")
     
     matcher = LLMOnlyMatcher(AZURE_ENDPOINT, AZURE_KEY, AZURE_DEPLOYMENT)
     
@@ -362,7 +393,10 @@ def main():
     for i, cls in enumerate(bsdd_classes, 1):
         print(f"   [{i}/{len(bsdd_classes)}] {cls.name}")
         
-        mapping = matcher.create_mapping(cls, categories)
+        # Enable debug for first 10 items to see what LLM returns
+        debug_mode = (i <= 10)
+        mapping = matcher.create_mapping(cls, categories, debug=debug_mode)
+        
         if mapping:
             mappings.append(mapping)
             print(f"      → {mapping.oekobaudat_category.name_de} ({mapping.confidence_score:.2f})")

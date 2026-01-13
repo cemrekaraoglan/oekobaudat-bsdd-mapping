@@ -124,7 +124,7 @@ class BsddApiClient:
     def get_dictionary_classes(self, dictionary_uri: str, 
                                 include_test_classes: bool = False) -> List[Dict]:
         """
-        Get all classes from a dictionary
+        Get all classes from a dictionary (with pagination support)
         
         Args:
             dictionary_uri: Full URI of dictionary (e.g., "https://identifier.buildingsmart.org/uri/etim/etim-10.1")
@@ -136,21 +136,41 @@ class BsddApiClient:
         # Use the Dictionary Classes endpoint
         url = f"{self.base_url}/api/Dictionary/v1/Classes"
         
-        params = {
-            'Uri': dictionary_uri,
-            'includeTestClasses': str(include_test_classes).lower()
-        }
+        all_classes = []
+        offset = 0
+        limit = 1000  # API default limit per page
         
         try:
             print(f"Fetching classes from: {dictionary_uri}")
-            response = self.session.get(url, params=params, timeout=self.timeout)
-            response.raise_for_status()
             
-            data = response.json()
-            classes = data.get('classes', [])
+            while True:
+                params = {
+                    'Uri': dictionary_uri,
+                    'includeTestClasses': str(include_test_classes).lower(),
+                    'Offset': offset,
+                    'Limit': limit
+                }
+                
+                response = self.session.get(url, params=params, timeout=self.timeout)
+                response.raise_for_status()
+                
+                data = response.json()
+                classes = data.get('classes', [])
+                
+                if not classes:
+                    break  # No more classes
+                
+                all_classes.extend(classes)
+                print(f"   Retrieved {len(all_classes)} classes so far...")
+                
+                # Check if we got less than limit (last page)
+                if len(classes) < limit:
+                    break
+                
+                offset += limit
             
-            print(f"Retrieved {len(classes)} classes")
-            return classes
+            print(f"   Total: {len(all_classes)} classes")
+            return all_classes
             
         except requests.exceptions.RequestException as e:
             print(f"Error fetching classes: {e}")
@@ -189,10 +209,15 @@ class BsddApiClient:
         
         Args:
             version: ETIM version (e.g., "10.1"), or None for latest
-            filter_category: Optional category filter (e.g., "EC00" for building materials)
+            filter_category: Optional category filter by code prefix
+                Examples:
+                - "EC00" for Building Materials (Baustoffe)
+                - "EC01" for Electrotechnical (Elektrotechnik)
+                - "EC02" for HVAC
+                - etc.
         
         Returns:
-            List of BsddClass objects
+            List of BsddClass objects (supports pagination for all results)
         """
         print("\n" + "=" * 80)
         print("Fetching ETIM Classes from bsDD API")
